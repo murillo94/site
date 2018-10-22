@@ -1,0 +1,59 @@
+import Head from 'next/head';
+
+export default ({ children }) => (
+  <main>
+    <Head>
+      <title>Murillo de Miranda</title>
+
+      <link rel="apple-touch-icon" href="../static/icon.png" />
+      <link rel="icon" href="../static/icon.png" type="image/png" />
+
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta
+        name="description"
+        content="A cool guy that coding and lover UI design."
+      />
+      <meta name="twitter:site" content="@murillodmiranda" />
+      <meta name="twitter:creator" content="@murillodmiranda" />
+    </Head>
+
+    {children}
+
+    <style jsx global>{`
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica Neue,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        color: #454545;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      main {
+        padding: 30px;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 31px;
+        font-weight: 400;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      @media (min-width: 768px) {
+        main {
+          padding: 35px 45px;
+        }
+      }
+    `}</style>
+  </main>
+);
