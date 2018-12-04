@@ -12,20 +12,58 @@ export default () => (
         <p>Murillo de Miranda Pereira</p>
         <p>Joinville, SC, Brazil</p>
         <p>murillomir0@gmail.com</p>
-        <Link href={'https://www.linkedin.com/in/murillodmiranda/'}>
-          <a>Linkedin</a>
-        </Link>
-        <Link href={'https://github.com/murillo94'}>
-          <a>Github</a>
-        </Link>
+        <div className="link-bio">
+          <div>
+            <Link href={'https://www.linkedin.com/in/murillodmiranda/'}>
+              <a>Linkedin</a>
+            </Link>
+          </div>
+          <div>
+            <Link href={'https://github.com/murillo94'}>
+              <a>Github</a>
+            </Link>
+            <span>- codes and contributions</span>
+          </div>
+          <div>
+            <Link
+              href={
+                'https://en.wikipedia.org/w/index.php?limit=50&title=Special%3AContributions&contribs=user&target=Murillodmiranda&namespace=&tagfilter=&start=&end='
+              }
+            >
+              <a>Wikipedia</a>
+            </Link>
+            <span>- translations</span>
+          </div>
+          <div>
+            <Link
+              href={
+                'https://developer.mozilla.org/pt-BR/profiles/murillodmiranda'
+              }
+            >
+              <a>MDN</a>
+            </Link>
+            <span>- translations</span>
+          </div>
+          <div>
+            <Link
+              href={
+                'https://stackoverflow.com/users/10746566/murillo-de-miranda-pereira'
+              }
+            >
+              <a>Stack Overflow</a>
+            </Link>
+          </div>
+        </div>
       </div>
 
       <div>
         <p>
-          I have a experience ranging React, React Native, Angular to doing stuffs in backend with Python, NodeJS, Java.
+          I have a experience ranging React, React Native, Angular to doing
+          stuffs in backend with Python, NodeJS, Java.
         </p>
         <p>
-          I'm constanting learning about things like folks, enviroments or tech. Let's learn together.
+          I'm constanting learning about things like folks, enviroments or tech.
+          Let's learn together.
         </p>
       </div>
 
@@ -43,7 +81,8 @@ export default () => (
         <div>
           <h2>Love work with</h2>
           <p>
-            Frontend web development, Mobile development, Functional programming, UX principles, Performance First
+            Frontend web development, Mobile development, Performance First, UX
+            principles, Functional programming,
           </p>
         </div>
         <div>
@@ -62,7 +101,8 @@ export default () => (
           <p>
             Frameworks / Libs:
             <span>
-              ReactJS, Nextjs, React Native, ReasonReact, NodeJS, AngularJS, Ionic
+              ReactJS, Nextjs, React Native, ReasonReact, NodeJS, AngularJS,
+              Ionic
             </span>
           </p>
           <p>
@@ -84,7 +124,8 @@ export default () => (
           </p>
           <ul>
             <li>
-              Helping companies to find out where target audience, explore new markets, control the team flow, and sell more
+              Helping companies to find out where target audience, explore new
+              markets, control the team flow, and sell more
             </li>
             <li>2016 / Current</li>
           </ul>
@@ -155,6 +196,15 @@ export default () => (
 
         li {
           margin-bottom: 10px;
+        }
+
+        .link-bio div {
+          margin: 0;
+          display: flex;
+        }
+
+        .link-bio span {
+          color: inherit;
         }
 
         .infos p {
