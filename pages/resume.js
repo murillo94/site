@@ -82,7 +82,7 @@ export default () => (
           <h2>Love work with</h2>
           <p>
             Frontend web development, Mobile development, Performance First, UX
-            principles, Functional programming,
+            principles, Functional programming
           </p>
         </div>
         <div>
@@ -107,7 +107,7 @@ export default () => (
           </p>
           <p>
             Platforms and Tools:
-            <span>AWS (Lambda, S3, DynamoDB), Git</span>
+            <span>AWS (Lambda, S3, DynamoDB and others services), Git</span>
           </p>
         </div>
         <div>
