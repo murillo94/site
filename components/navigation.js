@@ -46,10 +46,10 @@ export default () => (
         />
       </li>
       <li>
-        <LinkPage title={'Essays'} link={'/essays'} prefetch />
+        <LinkPage title={'Essays'} link={'/essays'} fetch={true} />
       </li>
       <li>
-        <LinkPage title={'Resume'} link={'/resume'} prefetch />
+        <LinkPage title={'Resume'} link={'/resume'} fetch={true} />
       </li>
     </ul>
 

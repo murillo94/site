@@ -15,7 +15,7 @@ export default () => (
         <ul>
           {posts.map(post => (
             <li key={post.id}>
-              <Link href={post.link} prefetch>
+              <Link href={post.link}>
                 <a>
                   <b>{post.title}</b>
                   <span>{dayjs(post.date).format('MMM DD, YYYY')}</span>
