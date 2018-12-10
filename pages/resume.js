@@ -13,18 +13,28 @@ export default () => (
         <p>Joinville, SC, Brazil</p>
         <p>murillomir0@gmail.com</p>
         <div className="link-bio">
+          <div className="show-print">
+            <Link href={'https://github.com/murillo94'}>
+              <a>Site</a>
+            </Link>
+            <span>- murillodmiranda.com</span>
+          </div>
           <div>
             <Link href={'https://www.linkedin.com/in/murillodmiranda/'}>
               <a>Linkedin</a>
             </Link>
+            <span className="show-print">
+              - linkedin.com/in/murillodmiranda
+            </span>
           </div>
           <div>
             <Link href={'https://github.com/murillo94'}>
               <a>Github</a>
             </Link>
-            <span>- codes and contributions</span>
+            <span className="hide-print">- codes and contributions</span>
+            <span className="show-print">- github.com/murillo94</span>
           </div>
-          <div>
+          <div className="hide-print">
             <Link
               href={
                 'https://en.wikipedia.org/w/index.php?limit=50&title=Special%3AContributions&contribs=user&target=Murillodmiranda&namespace=&tagfilter=&start=&end='
@@ -34,7 +44,7 @@ export default () => (
             </Link>
             <span>- translations</span>
           </div>
-          <div>
+          <div className="hide-print">
             <Link
               href={
                 'https://developer.mozilla.org/pt-BR/profiles/murillodmiranda'
@@ -44,7 +54,7 @@ export default () => (
             </Link>
             <span>- translations</span>
           </div>
-          <div>
+          <div className="hide-print">
             <Link
               href={
                 'https://stackoverflow.com/users/10746566/murillo-de-miranda-pereira'
@@ -59,7 +69,7 @@ export default () => (
       <div>
         <p>
           I have a experience ranging React, React Native, Angular to doing
-          stuffs in backend with Python, NodeJS, Java.
+          stuffs in backend with NodeJS, Python, Java.
         </p>
         <p>
           I'm constanting learning about things like folks, enviroments or tech.
@@ -70,13 +80,26 @@ export default () => (
       <div className="infos">
         <div>
           <h2>Education</h2>
-          <p>
-            Centro Universitário - Católica de Santa Catarina, Joinville/Brazil
-          </p>
-          <ul>
-            <li>Software Engineering</li>
-            <li>2017 / 2020</li>
-          </ul>
+          <div>
+            <p>
+              Centro Universitário - Católica de Santa Catarina,
+              Joinville/Brazil
+            </p>
+            <ul>
+              <li>Software Engineering</li>
+              <li>2017 / 2020</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              UNISOCIESC - Universidade Sociedade Educacional de Santa Catarina,
+              Joinville/Brazil
+            </p>
+            <ul>
+              <li>Computer Engineering</li>
+              <li>2016 / 2016</li>
+            </ul>
+          </div>
         </div>
         <div>
           <h2>Love work with</h2>
@@ -85,7 +108,8 @@ export default () => (
             principles, Functional programming
           </p>
         </div>
-        <div>
+        <div className="break-page" />
+        <div className="margin-print">
           <h2>Also know/like</h2>
           <p>
             Languages:
@@ -209,6 +233,35 @@ export default () => (
 
         .infos p {
           font-weight: 500;
+        }
+
+        .infos div > div {
+          margin-bottom: 20px;
+        }
+
+        .show-print {
+          display: none !important;
+          opacity: 0;
+        }
+
+        .break-page {
+          page-break-after: always;
+        }
+
+        @media print {
+          .show-print {
+            display: inline-flex !important;
+            opacity: 1;
+          }
+
+          .hide-print {
+            display: none !important;
+            opacity: 0;
+          }
+
+          .margin-print {
+            margin-top: 1.3cm;
+          }
         }
       `}
     </style>

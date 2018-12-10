@@ -40,6 +40,12 @@ export default ({ to = '/' }) => (
           transform: scale(1.15);
         }
       }
+
+      @media print {
+        a {
+          display: none;
+        }
+      }
     `}</style>
   </div>
 );

@@ -84,6 +84,17 @@ export default ({ children }) => (
           padding: 35px 45px;
         }
       }
+
+      @media print {
+        @page {
+          size: auto;
+          margin: 0;
+        }
+
+        body {
+          margin: 0.5cm;
+        }
+      }
     `}</style>
   </main>
 );
