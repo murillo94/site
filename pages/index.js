@@ -23,7 +23,7 @@ export default () => (
       section div {
         width: 100%;
         text-align: left;
-        margin-bottom: 7.5em;
+        margin-bottom: 8em;
       }
 
       span {
@@ -43,6 +43,7 @@ export default () => (
       @media (min-width: 768px) {
         section div {
           text-align: center;
+          margin-bottom: 5.5em;
         }
 
         h1 {

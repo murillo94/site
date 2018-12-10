@@ -68,7 +68,7 @@ export default () => (
           font-size: 13px;
           font-weight: 400;
           color: #aaa;
-          margin-left: 12px;
+          margin-left: 5px;
         }
 
         a:hover b {
@@ -78,6 +78,7 @@ export default () => (
         @media (min-width: 992px) {
           span {
             opacity: 0;
+            margin-left: 12px;
           }
 
           li {
