@@ -17,7 +17,7 @@ const LinkPage = ({ title, link, fetch = false }) => (
         a {
           font-size: 15px;
           margin: 0 5px;
-          padding: 5px 10px;
+          padding: 6px 10px;
         }
         a:hover {
           background: #efefef;

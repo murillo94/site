@@ -9,26 +9,35 @@ export default ({ to = '/' }) => (
     <style jsx>{`
       div {
         float: right;
-        margin-top: 20px;
+        margin: 0;
       }
 
       a {
         font-size: 18px;
         font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #eee;
-        padding: 10px;
-        border-radius: 30px;
+        border-radius: 100%;
         transition: all 0.2s;
+        will-change: auto;
+        width: 2.6em;
+        height: 2.6em;
       }
 
       @media (min-width: 768px) {
+        div {
+          margin-top: 20px;
+        }
+
         a {
           font-size: 22px;
-          padding: 15px;
         }
 
         a:hover {
           background-color: #dedede;
+          transform: scale(1.15);
         }
       }
     `}</style>

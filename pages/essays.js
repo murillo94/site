@@ -68,7 +68,7 @@ export default () => (
           font-size: 13px;
           font-weight: 400;
           color: #aaa;
-          margin-left: 5px;
+          margin-left: 12px;
         }
 
         a:hover b {

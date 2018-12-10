@@ -6,21 +6,36 @@ export default ({ children }) => (
       <title>Murillo de Miranda Pereira</title>
 
       <meta content="Murillo de Miranda Pereira" itemprop="name" />
-	    <meta content="A cool guy that coding and loves UI design." itemprop="description" />
+      <meta
+        content="A cool guy that coding and loves UI design."
+        itemprop="description"
+      />
 
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="A cool guy that coding and loves UI design." />
+      <meta
+        name="description"
+        content="A cool guy that coding and loves UI design."
+      />
 
       <meta property="og:title" content="Murillo de Miranda Pereira" />
       <meta property="og:url" content="https://murillodmiranda.com/" />
-      <meta property="og:image" content="https://murillodmiranda.com/static/icon.png" />
+      <meta
+        property="og:image"
+        content="https://murillodmiranda.com/static/icon.png"
+      />
       <meta property="og:site_name" content="Murillo de Miranda Pereira" />
-      <meta property="og:description" content="A cool guy that coding and loves UI design." />
+      <meta
+        property="og:description"
+        content="A cool guy that coding and loves UI design."
+      />
 
       <meta name="twitter:site" content="@murillodmiranda" />
       <meta name="twitter:creator" content="@murillodmiranda" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:description" content="A cool guy that coding and loves UI design." />
+      <meta
+        name="twitter:description"
+        content="A cool guy that coding and loves UI design."
+      />
       <meta name="twitter:title" content="Murillo de Miranda Pereira" />
       <meta name="twitter:image" content="https://murillodmiranda.com/" />
 
