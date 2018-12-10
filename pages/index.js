@@ -23,7 +23,7 @@ export default () => (
       section div {
         width: 100%;
         text-align: left;
-        margin-bottom: 5.5em;
+        margin-bottom: 7.5em;
       }
 
       span {

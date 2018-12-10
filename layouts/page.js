@@ -75,6 +75,10 @@ export default ({ children }) => (
         color: inherit;
       }
 
+      ::selection {
+        background: #ffe166;
+      }
+
       @media (min-width: 768px) {
         main {
           padding: 35px 45px;
