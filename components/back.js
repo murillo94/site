@@ -9,6 +9,7 @@ export default ({ to = '/' }) => (
     <style jsx>{`
       div {
         float: right;
+        clear: both;
         margin: 0;
       }
 
