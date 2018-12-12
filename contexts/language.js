@@ -30,7 +30,7 @@ export const languages = {
     exp1_position: 'Founder & Developer',
     exp1_desc:
       'Helping companies to find out where target audience, explore new markets, control the team flow, and sell more',
-    lng_speak: 'Languages',
+    lng_speak: 'Language',
     native: 'Native',
     intermediate: 'Advanced (reading, speaking and writing)',
     portuguese: 'Portuguese',
@@ -65,7 +65,7 @@ export const languages = {
     exp1_position: 'Fundador & Desenvolvedor',
     exp1_desc:
       'Ajudando as empresas a encontrar novos clientes, explorar novos mercados, controlar o fluxo de atividades do time, e vender mais',
-    lng_speak: 'Línguas',
+    lng_speak: 'Língua',
     native: 'Nativo',
     intermediate: 'Avançado (ler, falar e escrever)',
     portuguese: 'Português',
