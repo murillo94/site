@@ -10,11 +10,11 @@ export default function() {
   };
 
   return (
-    <div onClick={handleClick}>
+    <div>
       {language === 'en' ? (
-        <a>&#x1F1FA;&#x1F1F8;</a>
+        <a onClick={handleClick}>&#x1F1FA;&#x1F1F8;</a>
       ) : (
-        <a>&#x1F1E7;&#x1F1F7;</a>
+        <a onClick={handleClick}>&#x1F1E7;&#x1F1F7;</a>
       )}
 
       <style jsx>{`
@@ -22,8 +22,6 @@ export default function() {
           float: right;
           clear: both;
           margin-top: 20px;
-          cursor: pointer;
-          user-select: none;
         }
 
         a {
@@ -38,6 +36,8 @@ export default function() {
           will-change: auto;
           width: 2.6em;
           height: 2.6em;
+          cursor: pointer;
+          user-select: none;
         }
 
         @media (min-width: 768px) {
