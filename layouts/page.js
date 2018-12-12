@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default ({ children }) => (
+export default ({ children, center = false }) => (
   <main>
     <Head>
       <title>Murillo de Miranda Pereira</title>
@@ -50,18 +50,21 @@ export default ({ children }) => (
         font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica Neue,
           sans-serif;
         -webkit-font-smoothing: antialiased;
+        height: 100%;
         margin: 0;
         color: #454545;
       }
 
-      html,
-      body {
+      body > div:first-child,
+      #__next,
+      #__next > div,
+      #__next > div > div {
         height: 100%;
       }
 
       main {
         padding: 30px;
-        height: 100vh;
+        height: ${center ? '100vh' : '100%'};
         box-sizing: border-box;
       }
 

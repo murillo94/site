@@ -2,7 +2,7 @@ import Page from '../layouts/page';
 import Navigation from '../components/navigation';
 
 export default () => (
-  <Page>
+  <Page center>
     <section>
       <div>
         <span>Hi im</span>
@@ -48,7 +48,7 @@ export default () => (
 
         h1 {
           margin: 0;
-          display: inline-block;
+          display: inline;
         }
       }
     `}</style>

@@ -140,8 +140,19 @@ function Bio() {
             </span>
           </p>
           <p>
-            {content.others}:<span>CI/CD, TDD, SEO, XP, Scrum, Kanban</span>
+            {content.others}:
+            <span>CI/CD, TDD, SEO, APIs REST, RPC, XP, Scrum, Kanban</span>
           </p>
+        </div>
+        <div>
+          <h2>{content.publication}</h2>
+          <ol>
+            <li>
+              <b>Murillo M. Pereira</b>, Gabriel Back, Nabor W. Júnior.
+              <i> "Arquitetura baseada em microserviço"</i>. The Open Software
+              Engineering Journal, 2018
+            </li>
+          </ol>
         </div>
         <div>
           <h2>{content.exp}</h2>
@@ -219,6 +230,11 @@ function Bio() {
             margin-bottom: 0;
           }
 
+          b {
+            font-weight: normal;
+            text-decoration: underline;
+          }
+
           ul {
             margin: 12px 0;
           }
@@ -234,6 +250,11 @@ function Bio() {
 
           .link-bio span {
             color: inherit;
+          }
+
+          .infos,
+          .infos div:last-child {
+            margin: 0;
           }
 
           .infos p {
