@@ -9,15 +9,17 @@ export const languages = {
     first_intro:
       'I have a experience ranging React, React Native, AngularJS to doing stuffs in backend with NodeJS, Python, Java.',
     second_intro:
-      "I'm constanting learning/reading about things like folks, enviroments and tech. Let's learn together.",
+      "I'm constanting learning/reading about things like folks, enviroments and tech.",
     education: 'Education',
     software: 'Software Engineering',
     computer: 'Computer Engineering',
     tec: 'Computer Technologist',
     city_state: 'Joinville/Brazil',
-    love_work: 'Love work with',
+    love_work: 'Love working with',
     love_content:
-      'Full Stack development, Mobile development, Performance First, UX principles, Functional programming and new challenges',
+      'Full Stack development, Performance First, UX principles, Cloud native technologies, CI/CD',
+    love_also: 'Also like',
+    love_also_content: 'Mobile development, Functional programming',
     know_work: 'Knowledge',
     lang: 'Languages',
     learning: 'newbie learning for self study',
@@ -45,7 +47,7 @@ export const languages = {
     first_intro:
       'Tenho experiência desde React, React Native, AngularJS até desenvolvimento no backend com NodeJS, Python, Java.',
     second_intro:
-      'Estou constantemente aprendendo/lendo sobre novas coisas como pessoas, ambientes de trabalho e tecnologia. Vamos aprender juntos.',
+      'Estou constantemente aprendendo/lendo sobre novas coisas como pessoas, ambientes de trabalho e tecnologia.',
     education: 'Educação',
     software: 'Engenharia de Software',
     computer: 'Engenharia da Computação',
@@ -53,7 +55,9 @@ export const languages = {
     city_state: 'Joinville/Brasil',
     love_work: 'Amo trabalhar com',
     love_content:
-      'Desenvolvimento Full Stack, Desenvolvimento mobile, Performance First, Princípos UX, Programação funcional e novos desafios',
+      'Desenvolvimento Full Stack, Performance First, Princípos UX, Tecnologias nativas da nuvem, CI/CD',
+    love_also: 'Também gosto',
+    love_also_content: 'Desenvolvimento mobile, Programação funcional',
     know_work: 'Conhecimento',
     lang: 'Linguagens',
     learning: 'estudando',

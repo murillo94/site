@@ -115,6 +115,10 @@ function Bio() {
         </div>
         <div className="break-page" />
         <div className="margin-print">
+          <h2>{content.love_also}</h2>
+          <p>{content.love_also_content}</p>
+        </div>
+        <div>
           <h2>{content.know_work}</h2>
           <p>
             {content.lang}:
