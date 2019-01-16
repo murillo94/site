@@ -1,7 +1,9 @@
 # murillodmiranda.com
 
-My personal site. Here you can find my infos.
+This is the source for my personal website [murillodmiranda.com](murillodmiranda.com).
 
 I'm using [Next.js](https://nextjs.org/) and [Now](https://zeit.co/now).
 
-Feel free to fork this and use in your site.
+## License
+
+Licensed under the MIT License. Feel free to use parts of the code in your own projects with attribution!
