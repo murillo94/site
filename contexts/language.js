@@ -30,7 +30,7 @@ export const languages = {
     publication: 'Publications',
     exp: 'Experience',
     current: 'Current',
-    exp1_position: 'Founder & Developer',
+    exp1_position: 'Full Stack Developer',
     exp1_desc:
       'Helping companies to find out where target audience, explore new markets, control the team flow, and sell more',
     lng_speak: 'Language',
@@ -68,7 +68,7 @@ export const languages = {
     publication: 'Publicações',
     exp: 'Experiência',
     current: 'Atual',
-    exp1_position: 'Fundador & Desenvolvedor',
+    exp1_position: 'Desenvolvedor Full Stack',
     exp1_desc:
       'Ajudando as empresas a encontrar novos clientes, explorar novos mercados, controlar o fluxo de atividades do time, e vender mais',
     lng_speak: 'Língua',
