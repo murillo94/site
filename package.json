@@ -9,9 +9,9 @@
     "now-build": "next build && next export -o dist"
   },
   "dependencies": {
-    "dayjs": "^1.7.7",
-    "next": "latest",
-    "react": "16.7.0-alpha.0 - next",
-    "react-dom": "16.7.0-alpha.0 - next"
+    "dayjs": "^1.8.5",
+    "next": "next@latest",
+    "react": "react@latest",
+    "react-dom": "react-dom@latest"
   }
 }
