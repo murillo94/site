@@ -5,10 +5,10 @@ export default ({ children, center = false }) => (
     <Head>
       <title>Murillo de Miranda Pereira</title>
 
-      <meta content="Murillo de Miranda Pereira" itemprop="name" />
+      <meta content="Murillo de Miranda Pereira" itemProp="name" />
       <meta
         content="A cool guy that coding and loves UI design."
-        itemprop="description"
+        itemProp="description"
       />
 
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
