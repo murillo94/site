@@ -32,7 +32,7 @@ export const languages = {
     current: 'Current',
     exp1_position: 'Full Stack Developer',
     exp1_desc:
-      'Helping companies to find out where target audience, explore new markets, control the team flow, and sell more',
+      'Helping companies to find out where target audience, explore new markets, control the team flow and sell more',
     lng_speak: 'Language',
     native: 'Native',
     intermediate: 'Advanced (reading, speaking and writing)',
@@ -70,7 +70,7 @@ export const languages = {
     current: 'Atual',
     exp1_position: 'Desenvolvedor Full Stack',
     exp1_desc:
-      'Ajudando as empresas a encontrar novos clientes, explorar novos mercados, controlar o fluxo de atividades do time, e vender mais',
+      'Ajudando as empresas a encontrar novos clientes, explorar novos mercados, controlar o fluxo de atividades do time e vender mais',
     lng_speak: 'Língua',
     native: 'Nativo',
     intermediate: 'Avançado (ler, falar e escrever)',
