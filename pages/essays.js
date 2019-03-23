@@ -71,6 +71,10 @@ export default () => (
           margin-left: 5px;
         }
 
+        a {
+          border-radius: 6px;
+        }
+
         a:hover b {
           color: #000;
         }

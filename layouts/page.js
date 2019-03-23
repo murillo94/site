@@ -82,6 +82,13 @@ export default ({ children, center = false }) => (
         background: #ffe166;
       }
 
+      :focus {
+        outline: 0 !important;
+        border-color: #2684ff !important;
+        box-shadow: 0 0 0 2.2px #2684ff !important;
+        transition: box-shadow 0.12s;
+      }
+
       @media (min-width: 768px) {
         main {
           padding: 35px 45px;

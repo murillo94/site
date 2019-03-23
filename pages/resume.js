@@ -217,6 +217,7 @@ function Bio() {
           a {
             color: #aaa;
             text-decoration: underline;
+            border-radius: 6px;
             display: block;
             margin-bottom: 10px;
             width: max-content;
