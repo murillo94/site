@@ -11,6 +11,7 @@
   "dependencies": {
     "dayjs": "^1.8.5",
     "next": "next@latest",
+    "next-ga": "^2.3.4",
     "react": "react@latest",
     "react-dom": "react-dom@latest"
   }
