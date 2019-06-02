@@ -1,0 +1,84 @@
+{
+  "en": {
+    "name": "Murillo de Miranda Pereira",
+    "city": "Joinville, SC, Brazil",
+    "email": "murillomir0@gmail.com",
+    "links": [
+      {
+        "name": "Site",
+        "href": "murillodmiranda.com",
+        "description": null
+      },
+      {
+        "name": "Linkedin",
+        "href": "//linkedin.com/in/murillodmiranda",
+        "description": null
+      },
+      {
+        "name": "Github",
+        "href": "//github.com/murillo94",
+        "description": "codes and contributions"
+      },
+      {
+        "name": "Wikipedia",
+        "href": "//en.wikipedia.org/w/index.php?limit=50&title=Special%3AContributions&contribs=user&target=Murillodmiranda&namespace=&tagfilter=&start=&end=",
+        "description": "translations"
+      },
+      {
+        "name": "MDN",
+        "href": "//developer.mozilla.org/pt-BR/profiles/murillodmiranda",
+        "description": "translations"
+      },
+      {
+        "name": "Stack Overflow",
+        "href": "//stackoverflow.com/users/10746566/murillo-de-miranda-pereira",
+        "description": null
+      }
+    ],
+    "personalIntros": [
+      "I have a experience ranging React, React Native, AngularJS to doing stuffs in backend with NodeJS, Python, Java.",
+      "I'm constanting learning/reading about things like folks, enviroments and tech."
+    ]
+  },
+  "ptbr": {
+    "name": "Murillo de Miranda Pereira",
+    "city": "Joinville, SC, Brasil",
+    "email": "murillomir0@gmail.com",
+    "links": [
+      {
+        "name": "Site",
+        "href": "murillodmiranda.com",
+        "description": null
+      },
+      {
+        "name": "Linkedin",
+        "href": "//linkedin.com/in/murillodmiranda",
+        "description": null
+      },
+      {
+        "name": "Github",
+        "href": "//github.com/murillo94",
+        "description": "códigos e contribuições"
+      },
+      {
+        "name": "Wikipedia",
+        "href": "//en.wikipedia.org/w/index.php?limit=50&title=Special%3AContributions&contribs=user&target=Murillodmiranda&namespace=&tagfilter=&start=&end=",
+        "description": "traduções"
+      },
+      {
+        "name": "MDN",
+        "href": "//developer.mozilla.org/pt-BR/profiles/murillodmiranda",
+        "description": "traduções"
+      },
+      {
+        "name": "Stack Overflow",
+        "href": "//stackoverflow.com/users/10746566/murillo-de-miranda-pereira",
+        "description": null
+      }
+    ],
+    "personalIntros": [
+      "Tenho experiência desde React, React Native, AngularJS até desenvolvimento no backend com NodeJS, Python, Java.",
+      "Estou constantemente aprendendo/lendo sobre novas coisas como pessoas, ambientes de trabalho e tecnologia."
+    ]
+  }
+}

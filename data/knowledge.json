@@ -1,0 +1,54 @@
+{
+  "en": {
+    "loveContent": "Full Stack development, Performance First, UX principles, Cloud native technologies, CI/CD",
+    "loveAlsoContent": "Mobile development, Functional programming",
+    "knowledges": [
+      {
+        "name": "Languages",
+        "description": "Javascript, Python, C++, Java, Elixir (newbie learning for self study)"
+      },
+      {
+        "name": "Databases",
+        "description": "DynamoDB, MySQL, MongoDB"
+      },
+      {
+        "name": "Frameworks / Libs",
+        "description": "ReactJS, Nextjs, React Native, ReasonReact, NodeJS, AngularJS, Ionic"
+      },
+      {
+        "name": "Platforms and Tools",
+        "description": "AWS (Lambda, S3, DynamoDB and others services), Git, Heroku, Fabric"
+      },
+      {
+        "name": "Others",
+        "description": "CI/CD, TDD, SEO, APIs REST, RPC, XP, Scrum, Kanban"
+      }
+    ]
+  },
+  "ptbr": {
+    "loveContent": "Desenvolvimento Full Stack, Performance First, Princípos UX, Tecnologias nativas da nuvem, CI/CD",
+    "loveAlsoContent": "Desenvolvimento mobile, Programação funcional",
+    "knowledges": [
+      {
+        "name": "Linguagens",
+        "description": "Javascript, Python, C++, Java, Elixir (estudando)"
+      },
+      {
+        "name": "Banco de dados",
+        "description": "DynamoDB, MySQL, MongoDB"
+      },
+      {
+        "name": "Frameworks / Libs",
+        "description": "ReactJS, Nextjs, React Native, ReasonReact, NodeJS, AngularJS, Ionic"
+      },
+      {
+        "name": "Plataformas e ferramentas",
+        "description": "AWS (Lambda, S3, DynamoDB e outros serviços), Git, Heroku, Fabric"
+      },
+      {
+        "name": "Outros",
+        "description": "CI/CD, TDD, SEO, APIs REST, RPC, XP, Scrum, Kanban"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "en": {
+    "companies": [
+      {
+        "name": "Mercos",
+        "site": "https://mercos.com",
+        "time": "2019 / Current",
+        "city": "Joinville/Brazil",
+        "position": "Full Stack Developer",
+        "descriptionCompany": "Results and sales potentializer",
+        "descriptionTech": "Fullstack development with React, Django, MySQL"
+      },
+      {
+        "name": "SaleSpots",
+        "site": "http://salespots.co",
+        "time": "2016 / 2019",
+        "city": "Joinville/Brazil",
+        "position": "Full Stack Developer",
+        "descriptionCompany": "Market intelligence to find new customers",
+        "descriptionTech": "Fullstack development with AngularJS, Ionic, DynamoDB and other AWS services"
+      }
+    ]
+  },
+  "ptbr": {
+    "companies": [
+      {
+        "name": "Mercos",
+        "site": "https://mercos.com",
+        "time": "2019 / Atual",
+        "city": "Joinville/Brasil",
+        "position": "Desenvolvedor Full Stack",
+        "descriptionCompany": "Potencializador de resultados e vendas",
+        "descriptionTech": "Desenvolvimento Full Stack com React, Django, MySQL"
+      },
+      {
+        "name": "SaleSpots",
+        "site": "http://salespots.co",
+        "time": "2016 / 2019",
+        "city": "Joinville/Brasil",
+        "position": "Desenvolvedor Full Stack",
+        "descriptionCompany": "Inteligência de mercado para encontrar novos clientes",
+        "descriptionTech": "Desenvolvimento Full Stack com AngularJS, Ionic, DynamoDB e outros serviços AWS"
+      }
+    ]
+  }
+}
