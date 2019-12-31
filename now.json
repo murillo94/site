@@ -2,5 +2,5 @@
   "version": 2,
   "name": "murillodmiranda",
   "alias": ["murillodmiranda.com"],
-  "builds": [{ "src": "package.json", "use": "@now/static" }]
+  "builds": [{ "src": "package.json", "use": "@now/next" }]
 }
