@@ -1,6 +1,6 @@
 {
   "version": 2,
   "name": "murillodmiranda",
-  "alias": ["www.murillodmiranda.com", "murillodmiranda.com"],
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "alias": ["murillodmiranda.com"],
+  "builds": [{ "src": "package.json", "use": "@now/static" }]
 }
