@@ -17,7 +17,7 @@
         "city": "Joinville/Brazil",
         "position": "Full stack developer",
         "descriptionCompany": "SaleSpots is a market intelligence to find new customers",
-        "descriptionTech": "At Salespots we were a small team (4 people) and I was responsible for the front end architecture of whole application: ReactJS, (AngularJS and Ionic legacy), making sure the application is PWA, fully responsive, accessible and scalable. When not touching in front end I was helping back end with Lambda, DynamoDB and others AWS services"
+        "descriptionTech": "At Salespots I was responsible for the whole front end architecture of the application: ReactJS, (AngularJS and Ionic legacy), making sure the application is PWA, fully responsive, accessible and scalable. When not touching in front end I was helping back end with Lambda, DynamoDB and others AWS services"
       }
     ]
   },
@@ -39,7 +39,7 @@
         "city": "Joinville/Brasil",
         "position": "Desenvolvedor full stack",
         "descriptionCompany": "SaleSpots atua com inteligência de mercado para encontrar novos clientes",
-        "descriptionTech": "Na Salespots trabalhei com uma equipe pequena (4 pessoas) e fui responsável pela arquitetura front end de toda a aplicação: ReactJS, (AngularJS e Ionic legado), assegurando que a aplicação é PWA, totalmente responsiva, acessível e escalável. Quando necessário, em alguns momentos estava ajudando no back end com Lambda, DynamoDB e outros serviços da AWS"
+        "descriptionTech": "Na Salespots fui responsável por toda arquitetura front end da aplicação: ReactJS, (AngularJS e Ionic legado), assegurando que a aplicação é PWA, totalmente responsiva, acessível e escalável. Quando necessário, em alguns momentos estava ajudando no back end com Lambda, DynamoDB e outros serviços da AWS"
       }
     ]
   }
