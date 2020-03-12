@@ -6,18 +6,18 @@
         "site": "https://mercos.com",
         "time": "2019 / Current",
         "city": "Joinville/Brazil",
-        "position": "Full Stack Developer",
-        "descriptionCompany": "Results and sales potentializer",
-        "descriptionTech": "Fullstack development with React, Django, MySQL"
+        "position": "Full stack developer",
+        "descriptionCompany": "Mercos is a results and sales potentializer",
+        "descriptionTech": "At Mercos I'm managing time building a new design system, ui components, a11y and full stack development with ReactJS, Django, MySQL"
       },
       {
         "name": "SaleSpots",
         "site": "http://salespots.co",
         "time": "2016 / 2019",
         "city": "Joinville/Brazil",
-        "position": "Full Stack Developer",
-        "descriptionCompany": "Market intelligence to find new customers",
-        "descriptionTech": "Fullstack development with AngularJS, Ionic, DynamoDB and other AWS services"
+        "position": "Full stack developer",
+        "descriptionCompany": "SaleSpots is a market intelligence to find new customers",
+        "descriptionTech": "At Salespots we were a small team (4 people) and I was responsible for the front end architecture of whole application: ReactJS, (AngularJS and Ionic legacy), making sure the application is PWA, fully responsive, accessible and scalable. When not touching in front end I was helping back end with Lambda, DynamoDB and others AWS services"
       }
     ]
   },
@@ -28,18 +28,18 @@
         "site": "https://mercos.com",
         "time": "2019 / Atual",
         "city": "Joinville/Brasil",
-        "position": "Desenvolvedor Full Stack",
-        "descriptionCompany": "Potencializador de resultados e vendas",
-        "descriptionTech": "Desenvolvimento Full Stack com React, Django, MySQL"
+        "position": "Desenvolvedor full stack",
+        "descriptionCompany": "Mercos é um potencializador de resultados e vendas",
+        "descriptionTech": "Na Mercos eu estou gerenciando meu tempo em construir um novo design system, ui components, a11y e desenvolvimento full stack com ReactJS, Django, MySQL"
       },
       {
         "name": "SaleSpots",
         "site": "http://salespots.co",
         "time": "2016 / 2019",
         "city": "Joinville/Brasil",
-        "position": "Desenvolvedor Full Stack",
-        "descriptionCompany": "Inteligência de mercado para encontrar novos clientes",
-        "descriptionTech": "Desenvolvimento Full Stack com AngularJS, Ionic, DynamoDB e outros serviços AWS"
+        "position": "Desenvolvedor full stack",
+        "descriptionCompany": "SaleSpots atua com inteligência de mercado para encontrar novos clientes",
+        "descriptionTech": "Na Salespots trabalhei com uma equipe pequena (4 pessoas) e fui responsável pela arquitetura front end de toda a aplicação: ReactJS, (AngularJS e Ionic legado), assegurando que a aplicação é PWA, totalmente responsiva, acessível e escalável. Quando necessário, em alguns momentos estava ajudando no back end com Lambda, DynamoDB e outros serviços da AWS"
       }
     ]
   }
