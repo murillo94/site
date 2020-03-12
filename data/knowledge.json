@@ -1,7 +1,7 @@
 {
   "en": {
-    "loveContent": "Full Stack development, Performance First, UX principles, Cloud native technologies, CI/CD",
-    "loveAlsoContent": "Mobile development, Functional programming",
+    "loveContent": "Front end development, design systems, UI components, a11y, performance first, JAMstack, UX/DX principles, CI/CD",
+    "loveAlsoContent": "Full stack development, mobile development, functional programming",
     "knowledges": [
       {
         "name": "Languages",
@@ -12,7 +12,7 @@
         "description": "DynamoDB, MySQL, MongoDB"
       },
       {
-        "name": "Frameworks / Libs",
+        "name": "Libs / Frameworks",
         "description": "ReactJS, Nextjs, React Native, ReasonReact, NodeJS, AngularJS, Ionic"
       },
       {
@@ -26,8 +26,8 @@
     ]
   },
   "ptbr": {
-    "loveContent": "Desenvolvimento Full Stack, Performance First, Princípos UX, Tecnologias nativas da nuvem, CI/CD",
-    "loveAlsoContent": "Desenvolvimento mobile, Programação funcional",
+    "loveContent": "Desenvolvimento front end, design systems, UI components, a11y, performance first, JAMstack, princípos UX/DX, CI/CD",
+    "loveAlsoContent": "Desenvolvimento full stack, desenvolvimento mobile, programação funcional",
     "knowledges": [
       {
         "name": "Linguagens",
@@ -38,7 +38,7 @@
         "description": "DynamoDB, MySQL, MongoDB"
       },
       {
-        "name": "Frameworks / Libs",
+        "name": "Libs / Frameworks",
         "description": "ReactJS, Nextjs, React Native, ReasonReact, NodeJS, AngularJS, Ionic"
       },
       {
