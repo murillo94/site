@@ -1,20 +1,20 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext } from "react";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import Page from '../layouts/page';
-import Back from '../components/back';
-import Translate from '../components/translate';
+import Page from "../layouts/page";
+import Back from "../components/back";
+import Translate from "../components/translate";
 
-import publications from '../data/publications';
+import publications from "../data/publications";
 
-import { LanguageContext, languages } from '../contexts/language';
+import { LanguageContext, languages } from "../contexts/language";
 
 function Bio() {
   const context = useContext(LanguageContext)[0];
   const content = languages[context];
 
-  const cleanUrlPrint = url => url.replace('//', '');
+  const cleanUrlPrint = url => url.replace("//", "");
 
   return (
     <article>
@@ -25,7 +25,7 @@ function Bio() {
         <p>{content.email}</p>
         <div className="link-bio">
           {content.links.map(({ name, href, description }) => {
-            if (name == 'Site') {
+            if (name == "Site") {
               return (
                 <div className="show-print">
                   <Link href={href}>
@@ -36,7 +36,7 @@ function Bio() {
               );
             }
 
-            if (name === 'Linkedin') {
+            if (name === "Linkedin") {
               return (
                 <div>
                   <Link href={href}>
@@ -47,7 +47,7 @@ function Bio() {
               );
             }
 
-            if (name === 'Github') {
+            if (name === "Github") {
               return (
                 <div>
                   <Link href={href}>
@@ -59,7 +59,7 @@ function Bio() {
               );
             }
 
-            if (name === 'Stack Overflow') {
+            if (name === "Stack Overflow") {
               return (
                 <div className="hide-print">
                   <Link href={href}>
@@ -184,6 +184,7 @@ function Bio() {
         {`
           article {
             height: 100%;
+            max-width: 70%;
             line-height: 1.5;
           }
 
@@ -271,7 +272,17 @@ function Bio() {
             page-break-after: always;
           }
 
+          @media (max-width: 991px) {
+            article {
+              max-width: 100%;
+            }
+          }
+
           @media print {
+            article {
+              max-width: 100%;
+            }
+
             .show-print {
               display: inline-flex !important;
               opacity: 1;
@@ -293,7 +304,7 @@ function Bio() {
 }
 
 export default function() {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState("en");
 
   return (
     <Page>
