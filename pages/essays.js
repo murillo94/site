@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import dayjs from 'dayjs';
+import Link from "next/link";
+import dayjs from "dayjs";
 
-import Page from '../layouts/page';
-import Back from '../components/back';
+import Page from "../layouts/page";
+import Back from "../components/back";
 
-import posts from '../data/essays';
+import posts from "../data/essays";
 
 export default () => (
   <Page>
@@ -18,7 +18,7 @@ export default () => (
               <Link href={post.link}>
                 <a>
                   <b>{post.title}</b>
-                  <span>{dayjs(post.date).format('MMM DD, YYYY')}</span>
+                  <span>{dayjs(post.date).format("MMM DD, YYYY")}</span>
                 </a>
               </Link>
             </li>
@@ -31,7 +31,7 @@ export default () => (
       {`
         article {
           height: 100%;
-          line-height: 1.5;
+          line-height: 1.6;
         }
 
         div {
@@ -59,9 +59,9 @@ export default () => (
 
         b {
           font-size: 16px;
-          display: inline-block;
           font-weight: normal;
-          line-height: 24px;
+          line-height: 1.6;
+          display: inline-block;
         }
 
         span {

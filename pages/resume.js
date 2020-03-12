@@ -185,7 +185,7 @@ function Bio() {
           article {
             height: 100%;
             max-width: 70%;
-            line-height: 1.5;
+            line-height: 1.6;
           }
 
           div {
