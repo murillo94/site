@@ -66,6 +66,11 @@
         "description": "códigos e contribuições"
       },
       {
+        "name": "Dribbble",
+        "href": "//dribbble.com/murillodmiranda",
+        "description": "visual e design"
+      },
+      {
         "name": "Wikipedia",
         "href": "//en.wikipedia.org/w/index.php?limit=50&title=Special%3AContributions&contribs=user&target=Murillodmiranda&namespace=&tagfilter=&start=&end=",
         "description": "traduções"
@@ -83,7 +88,7 @@
     ],
     "personalIntros": [
       "Tenho experiência desde React, React Native, AngularJS até desenvolvimento no backend com NodeJS, Python.",
-      "Constante interesse sobre design systems, a11y, JAMstack, core engineering, UX/DX e bons ambientes de trabalho (pessoas)"
+      "Constante interesse sobre design systems, a11y, JAMstack, core engineering, UX/DX e bons ambientes de trabalho (pessoas)."
     ]
   }
 }
