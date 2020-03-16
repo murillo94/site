@@ -21,7 +21,7 @@ export default ({ children, center = false }) => (
       <meta property="og:url" content="https://murillodmiranda.com/" />
       <meta
         property="og:image"
-        content="https://murillodmiranda.com/static/icon.png"
+        content="https://murillodmiranda.com/images/icon.png"
       />
       <meta property="og:site_name" content="Murillo de Miranda Pereira" />
       <meta
@@ -39,8 +39,8 @@ export default ({ children, center = false }) => (
       <meta name="twitter:title" content="Murillo de Miranda Pereira" />
       <meta name="twitter:image" content="https://murillodmiranda.com/" />
 
-      <link rel="apple-touch-icon" href="../static/icon.png" />
-      <link rel="icon" href="../static/icon.png" type="image/png" />
+      <link rel="apple-touch-icon" href="images/icon.png" />
+      <link rel="icon" href="images/icon.png" type="image/png" />
     </Head>
 
     {children}

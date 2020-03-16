@@ -1,20 +1,20 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext } from 'react';
 
-import Link from "next/link";
+import Link from 'next/link';
 
-import Page from "../layouts/page";
-import Back from "../components/back";
-import Translate from "../components/translate";
+import Page from '../layouts/page';
+import Back from '../components/back';
+import Translate from '../components/translate';
 
-import publications from "../data/publications";
+import publications from '../data/publications';
 
-import { LanguageContext, languages } from "../contexts/language";
+import { LanguageContext, languages } from '../contexts/language';
 
 function Bio() {
   const context = useContext(LanguageContext)[0];
   const content = languages[context];
 
-  const cleanUrlPrint = url => url.replace("//", "");
+  const cleanUrlPrint = url => url.replace('//', '');
 
   return (
     <article>
@@ -25,9 +25,9 @@ function Bio() {
         <p>{content.email}</p>
         <div className="link-bio">
           {content.links.map(({ name, href, description }) => {
-            if (name == "Site") {
+            if (name == 'Site') {
               return (
-                <div className="show-print">
+                <div key={name} className="show-print">
                   <Link href={href}>
                     <a>{name}</a>
                   </Link>
@@ -36,9 +36,9 @@ function Bio() {
               );
             }
 
-            if (name === "Linkedin") {
+            if (name === 'Linkedin') {
               return (
-                <div>
+                <div key={name}>
                   <Link href={href}>
                     <a>{name}</a>
                   </Link>
@@ -47,9 +47,9 @@ function Bio() {
               );
             }
 
-            if (name === "Github") {
+            if (name === 'Github') {
               return (
-                <div>
+                <div key={name}>
                   <Link href={href}>
                     <a>{name}</a>
                   </Link>
@@ -59,9 +59,9 @@ function Bio() {
               );
             }
 
-            if (name === "Stack Overflow") {
+            if (name === 'Stack Overflow') {
               return (
-                <div className="hide-print">
+                <div key={name} className="hide-print">
                   <Link href={href}>
                     <a>{name}</a>
                   </Link>
@@ -70,7 +70,7 @@ function Bio() {
             }
 
             return (
-              <div className="hide-print">
+              <div key={name} className="hide-print">
                 <Link href={href}>
                   <a>{name}</a>
                 </Link>
@@ -82,8 +82,8 @@ function Bio() {
       </div>
 
       <div>
-        {content.personalIntros.map(item => (
-          <p>{item}</p>
+        {content.personalIntros.map((item, index) => (
+          <p key={index}>{item}</p>
         ))}
       </div>
 
@@ -91,7 +91,7 @@ function Bio() {
         <div>
           <h2>{content.educationTitle}</h2>
           {content.institutes.map(({ name, city, course, year }) => (
-            <div>
+            <div key={course}>
               <p>
                 {name}, {city}
               </p>
@@ -117,7 +117,7 @@ function Bio() {
         <div>
           <h2>{content.knowledgeTitle}</h2>
           {content.knowledges.map(({ name, description }) => (
-            <p>
+            <p key={name}>
               {name}:<span>{description}</span>
             </p>
           ))}
@@ -127,7 +127,7 @@ function Bio() {
           <h2>{content.publicationsTitle}</h2>
           <ol>
             {publications.map(({ me, others, title, publisher, year }) => (
-              <li>
+              <li key={title}>
                 <b>{me}</b>, {others}.<i> "{title}"</i>. {publisher}, {year}
               </li>
             ))}
@@ -146,7 +146,7 @@ function Bio() {
               descriptionTech,
               time
             }) => (
-              <>
+              <div key={time}>
                 <p>
                   {position}
                   <span>
@@ -162,7 +162,7 @@ function Bio() {
                   <li>{descriptionTech}</li>
                   <li>{time}</li>
                 </ul>
-              </>
+              </div>
             )
           )}
         </div>
@@ -170,12 +170,10 @@ function Bio() {
         <div>
           <h2>{content.languageTitle}</h2>
           {content.languages.map(({ name, level }) => (
-            <>
-              <p>
-                {name}
-                <span>- {level}</span>
-              </p>
-            </>
+            <p key={name}>
+              {name}
+              <span>- {level}</span>
+            </p>
           ))}
         </div>
       </div>
@@ -304,7 +302,7 @@ function Bio() {
 }
 
 export default function() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState('en');
 
   return (
     <Page>

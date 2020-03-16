@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from 'next/href';
 
-const LinkPage = ({ title, link, fetch = false }) => (
+const LinkPage = ({ title, href }) => (
   <div>
-    <Link prefetch={fetch} href={link}>
+    <Link href={href}>
       <a>{title}</a>
     </Link>
     <style jsx>{`
@@ -33,23 +33,23 @@ export default () => (
       <li>
         <LinkPage
           title={'Thoughts'}
-          link={'https://twitter.com/murillodmiranda'}
+          href={'https://twitter.com/murillodmiranda'}
         />
       </li>
       <li>
-        <LinkPage title={'Code'} link={'https://github.com/murillo94'} />
+        <LinkPage title={'Code'} href={'https://github.com/murillo94'} />
       </li>
       <li>
         <LinkPage
           title={'Visuals'}
-          link={'https://dribbble.com/murillodmiranda'}
+          href={'https://dribbble.com/murillodmiranda'}
         />
       </li>
       <li>
-        <LinkPage title={'Essays'} link={'/essays'} fetch={true} />
+        <LinkPage title={'Essays'} href={'/essays'} />
       </li>
       <li>
-        <LinkPage title={'Resume'} link={'/resume'} fetch={true} />
+        <LinkPage title={'Resume'} href={'/resume'} />
       </li>
     </ul>
 
