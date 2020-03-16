@@ -108,7 +108,6 @@ function Bio() {
           <p>{content.loveContent}</p>
         </div>
 
-        <div className="break-page" />
         <div className="margin-print">
           <h2>{content.loveAlsoTitle}</h2>
           <p>{content.loveAlsoContent}</p>
@@ -167,7 +166,8 @@ function Bio() {
           )}
         </div>
 
-        <div>
+        <div className="break-page" />
+        <div className="margin-print">
           <h2>{content.languageTitle}</h2>
           {content.languages.map(({ name, level }) => (
             <p key={name}>
