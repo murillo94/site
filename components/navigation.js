@@ -1,4 +1,4 @@
-import Link from 'next/href';
+import Link from 'next/link';
 
 const LinkPage = ({ title, href }) => (
   <div>
