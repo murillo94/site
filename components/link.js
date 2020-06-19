@@ -25,6 +25,12 @@ export const Link = ({ children, href, isExternal, isIcon, isSelected }) => (
           align-items: center;
         }
 
+        :active,
+        :focus,
+        :visited {
+          color: inherit;
+        }
+
         @media (min-width: 768px) {
            {
             padding: 6px 10px;
