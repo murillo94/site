@@ -66,8 +66,12 @@ export const Header = () => {
               max-width: 100%;
             }
 
+            nav {
+              margin: 0 -5px;
+            }
+
             header :global(a) {
-              margin-right: 24px;
+              margin-right: 20px;
             }
           }
         `}
