@@ -16,9 +16,6 @@ export const Button = ({ onClick, children }) => (
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        float: right;
-        clear: both;
-        will-change: auto;
       }
 
       :hover {

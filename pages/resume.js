@@ -16,10 +16,8 @@ function Bio() {
   const cleanUrlPrint = (url) => url.replace("//", "");
 
   return (
-    <article>
-      <div className="show-print">
-        <H1>{content.personalTitle}</H1>
-      </div>
+    <>
+      <H1>{content.personalTitle}</H1>
       <div>
         <p>{content.name}</p>
         <p>{content.city}</p>
@@ -179,18 +177,8 @@ function Bio() {
 
       <style jsx>
         {`
-          article {
-            height: 100%;
-            max-width: 70%;
-            line-height: 1.6;
-          }
-
           div {
             margin-bottom: 40px;
-          }
-
-          h1 {
-            margin: 0 0 40px;
           }
 
           h2 {
@@ -271,13 +259,13 @@ function Bio() {
           }
 
           @media (max-width: 991px) {
-            article {
+            section {
               max-width: 100%;
             }
           }
 
           @media print {
-            article {
+            section {
               max-width: 100%;
             }
 
@@ -297,7 +285,7 @@ function Bio() {
           }
         `}
       </style>
-    </article>
+    </>
   );
 }
 
@@ -310,6 +298,19 @@ export default function () {
         <Translate />
         <Bio />
       </LanguageContext.Provider>
+
+      <style jsx>
+        {`
+          :global(main) {
+            position: relative;
+          }
+
+          :global(main) :global(button) {
+            position: absolute;
+            right: 0;
+          }
+        `}
+      </style>
     </Page>
   );
 }

@@ -50,79 +50,83 @@ export default ({ children }) => (
     <main>{children}</main>
     <Footer />
 
-    <style jsx global>{`
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
-        -webkit-font-smoothing: antialiased;
-        font-size: 16px;
-        margin: 0;
-        height: 100%;
-        transition: background-color 0.3s ease;
-      }
-
-      body.light-mode {
-        background-color: #fff;
-        color: #1a202c;
-      }
-
-      body.dark-mode {
-        background-color: #1a1919;
-        color: #fdfdfd;
-      }
-
-      body.dark-mode a:hover,
-      body.dark-mode button:hover {
-        color: #1a1919 !important;
-      }
-
-      main {
-        padding: 32px 16px;
-        max-width: 720px;
-        margin: 0 auto;
-        box-sizing: border-box;
-      }
-
-      ::selection {
-        background-color: #ffe166;
-      }
-
-      :focus {
-        outline: 0;
-        border-color: #2684ff;
-        box-shadow: 0 0 0 2px #2684ff;
-      }
-
-      @media only screen and (max-width: 600px) {
-        main {
-          padding: 32px 20px 0;
-        }
-      }
-
-      @media print {
-        @page {
-          size: auto;
-          margin: 0;
-        }
-
+    <style jsx global>
+      {`
         body {
-          margin: 0.5cm;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            "Noto Color Emoji", sans-serif;
+          -webkit-font-smoothing: antialiased;
+          font-size: 16px;
+          line-height: 1.6;
+          margin: 0;
+          height: 100%;
+          transition: background-color 0.3s ease;
         }
 
-        header {
-          display: none;
+        body.light-mode {
+          background-color: #fff;
+          color: #1a202c;
+        }
+
+        body.dark-mode {
+          background-color: #1a202c;
+          color: #e2e8f0;
+        }
+
+        body.dark-mode a:hover,
+        body.dark-mode button:hover {
+          color: #1a1919 !important;
         }
 
         main {
-          padding: 10px 20px;
-          max-width: 100%;
+          padding: 32px 16px;
+          max-width: 720px;
+          margin: 0 auto;
+          box-sizing: border-box;
         }
 
-        footer {
-          display: none;
+        ::selection {
+          background-color: #ffe166;
         }
-      }
-    `}</style>
+
+        :focus {
+          outline: 0;
+          border-color: #2684ff;
+          box-shadow: 0 0 0 2px #2684ff;
+        }
+
+        @media only screen and (max-width: 600px) {
+          main {
+            padding: 32px 20px 0;
+          }
+        }
+
+        @media print {
+          @page {
+            size: auto;
+            margin: 0;
+          }
+
+          body {
+            margin: 0.5cm;
+          }
+
+          header {
+            display: none;
+          }
+
+          main {
+            padding: 10px 20px;
+            max-width: 100%;
+          }
+
+          footer {
+            display: none;
+          }
+        }
+      `}
+    </style>
   </>
 );
