@@ -25,15 +25,15 @@ export const Link = ({ children, href, isExternal, isIcon, isSelected }) => (
           align-items: center;
         }
 
-        :hover {
-          background-color: #efefef;
-          border-radius: 6px;
-          box-shadow: none;
-        }
-
         @media (min-width: 768px) {
            {
             padding: 6px 10px;
+          }
+
+          :hover {
+            background-color: #efefef;
+            border-radius: 6px;
+            box-shadow: none;
           }
         }
       `}
