@@ -56,6 +56,7 @@ export default ({ children, center = false }) => (
           "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
           "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
         -webkit-font-smoothing: antialiased;
+        font-size: 16px;
         height: 100%;
         margin: 0;
         color: #1a202c;
