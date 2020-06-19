@@ -227,7 +227,7 @@ function Bio() {
           }
 
           .link-bio div {
-            margin: 0;
+            margin: 0 -10px;
             display: flex;
             align-items: center;
           }
@@ -256,6 +256,12 @@ function Bio() {
 
           .break-page {
             page-break-after: always;
+          }
+
+          @media only screen and (max-width: 600px) {
+            .link-bio div {
+              margin: 0;
+            }
           }
 
           @media (max-width: 991px) {
@@ -308,6 +314,12 @@ export default function () {
           :global(main) :global(button) {
             position: absolute;
             right: 0;
+          }
+
+          @media only screen and (max-width: 600px) {
+            :global(main) :global(button) {
+              right: 20px;
+            }
           }
         `}
       </style>
