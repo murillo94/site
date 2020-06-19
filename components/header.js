@@ -62,7 +62,7 @@ export const Header = () => {
 
           @media only screen and (max-width: 600px) {
             header {
-              padding: 48px 20px 0;
+              padding: 20px 20px 0;
               max-width: 100%;
             }
 
