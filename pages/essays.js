@@ -69,14 +69,10 @@ export default () => (
           font-size: 13px;
           font-weight: 400;
           color: #aaa;
-          margin-left: 5px;
+          padding: 0 10px;
         }
 
         @media (min-width: 992px) {
-          span {
-            margin-left: 12px;
-          }
-
           li {
             margin: 22px 0;
           }
