@@ -15,6 +15,7 @@
     "next-ga": "^2.3.4",
     "next-react-svg": "^1.1.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "use-dark-mode": "^2.3.1"
   }
 }
