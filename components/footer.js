@@ -47,8 +47,8 @@ export const Footer = () => (
             padding: 20px;
           }
 
-          header :global(a) {
-            margin-right: 24px;
+          footer :global(a) {
+            margin-right: 28px;
           }
         }
       `}
