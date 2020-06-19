@@ -1,7 +1,7 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 export default ({ children, center = false }) => (
-  <main>
+  <>
     <Head>
       <title>Murillo de Miranda Pereira</title>
 
@@ -43,16 +43,17 @@ export default ({ children, center = false }) => (
       <link rel="icon" href="images/icon.png" type="image/png" />
     </Head>
 
-    {children}
+    <main>{children}</main>
 
     <style jsx global>{`
       body {
-        font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica Neue,
-          sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
         -webkit-font-smoothing: antialiased;
         height: 100%;
         margin: 0;
-        color: #454545;
+        color: #1a202c;
       }
 
       body > div:first-child,
@@ -63,8 +64,10 @@ export default ({ children, center = false }) => (
       }
 
       main {
-        padding: 30px;
-        height: ${center ? '100vh' : '100%'};
+        padding: 32px 16px;
+        height: ${center ? "100vh" : "100%"};
+        max-width: 672px;
+        margin: 0 auto;
         box-sizing: border-box;
       }
 
@@ -89,12 +92,6 @@ export default ({ children, center = false }) => (
         transition: box-shadow 0.12s;
       }
 
-      @media (min-width: 768px) {
-        main {
-          padding: 35px 45px;
-        }
-      }
-
       @media print {
         @page {
           size: auto;
@@ -106,5 +103,5 @@ export default ({ children, center = false }) => (
         }
       }
     `}</style>
-  </main>
+  </>
 );

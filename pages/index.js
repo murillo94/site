@@ -1,15 +1,19 @@
-import Page from '../layouts/page';
-import Navigation from '../components/navigation';
+import Page from "../layouts/page";
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 
 export default () => (
-  <Page center>
-    <section>
-      <div>
-        <span>Hi im</span>
-        <h1>Murillo de Miranda</h1>
-        <Navigation />
-      </div>
-    </section>
+  <>
+    <Header />
+    <Page>
+      <h1>Hi, I'm Murillo de Miranda</h1>
+      <p>I am a developer, writer and sometimes streamer from Brazil.</p>
+      <p>
+        This is where I write about the things I'm working on and share what
+        I've learned.
+      </p>
+    </Page>
+    <Footer />
 
     <style jsx>{`
       section {
@@ -33,11 +37,12 @@ export default () => (
       }
 
       h1 {
-        margin: 0.3em 0 0 0;
+        font-size: 48px;
+        font-weight: 700;
       }
 
-      h1::first-letter {
-        font-size: 45px;
+      p {
+        margin-bottom: 32px;
       }
 
       @media (min-width: 768px) {
@@ -45,12 +50,7 @@ export default () => (
           text-align: center;
           margin-bottom: 5.5em;
         }
-
-        h1 {
-          margin: 0;
-          display: inline;
-        }
       }
     `}</style>
-  </Page>
+  </>
 );
