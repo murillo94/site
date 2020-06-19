@@ -1,20 +1,19 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext } from "react";
 
-import Link from 'next/link';
+import Page from "../layouts/page";
+import Back from "../components/back";
+import Translate from "../components/translate";
+import { Link } from "../components/link";
 
-import Page from '../layouts/page';
-import Back from '../components/back';
-import Translate from '../components/translate';
+import publications from "../data/publications";
 
-import publications from '../data/publications';
-
-import { LanguageContext, languages } from '../contexts/language';
+import { LanguageContext, languages } from "../contexts/language";
 
 function Bio() {
   const context = useContext(LanguageContext)[0];
   const content = languages[context];
 
-  const cleanUrlPrint = url => url.replace('//', '');
+  const cleanUrlPrint = (url) => url.replace("//", "");
 
   return (
     <article>
@@ -25,33 +24,33 @@ function Bio() {
         <p>{content.email}</p>
         <div className="link-bio">
           {content.links.map(({ name, href, description }) => {
-            if (name == 'Site') {
+            if (name == "Site") {
               return (
                 <div key={name} className="show-print">
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                   <span>- {href}</span>
                 </div>
               );
             }
 
-            if (name === 'Linkedin') {
+            if (name === "Linkedin") {
               return (
                 <div key={name}>
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                   <span className="show-print">- {cleanUrlPrint(href)}</span>
                 </div>
               );
             }
 
-            if (name === 'Github') {
+            if (name === "Github") {
               return (
                 <div key={name}>
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                   <span className="hide-print">- {description}</span>
                   <span className="show-print">- {cleanUrlPrint(href)}</span>
@@ -59,11 +58,11 @@ function Bio() {
               );
             }
 
-            if (name === 'Stack Overflow') {
+            if (name === "Stack Overflow") {
               return (
                 <div key={name} className="hide-print">
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                 </div>
               );
@@ -71,9 +70,7 @@ function Bio() {
 
             return (
               <div key={name} className="hide-print">
-                <Link href={href}>
-                  <a>{name}</a>
-                </Link>
+                <Link href={href}>{name}</Link>
                 <span>- {description}</span>
               </div>
             );
@@ -143,15 +140,15 @@ function Bio() {
               city,
               descriptionCompany,
               descriptionTech,
-              time
+              time,
             }) => (
               <div key={time}>
                 <p>
                   {position}
                   <span>
                     -
-                    <Link href={site}>
-                      <a>{name}</a>
+                    <Link href={site} isExternal>
+                      {name}
                     </Link>
                     , {city}
                   </span>
@@ -301,8 +298,8 @@ function Bio() {
   );
 }
 
-export default function() {
-  const [language, setLanguage] = useState('en');
+export default function () {
+  const [language, setLanguage] = useState("en");
 
   return (
     <Page>

@@ -1,55 +1,28 @@
-import Link from 'next/link';
-
-const LinkPage = ({ title, href }) => (
-  <div>
-    <Link href={href}>
-      <a>{title}</a>
-    </Link>
-    <style jsx>{`
-      a {
-        font-size: 16px;
-        padding: 5px 0;
-        border-radius: 6px;
-        transition: all 0.2s;
-      }
-
-      @media (min-width: 768px) {
-        a {
-          font-size: 15px;
-          margin: 0 5px;
-          padding: 6px 10px;
-        }
-        a:hover {
-          background: #efefef;
-        }
-      }
-    `}</style>
-  </div>
-);
+import { Link } from "./link";
 
 export default () => (
   <nav>
     <ul>
       <li>
-        <LinkPage
-          title={'Thoughts'}
-          href={'https://twitter.com/murillodmiranda'}
-        />
+        <Link href="https://twitter.com/murillodmiranda" isExternal>
+          Thoughts
+        </Link>
       </li>
       <li>
-        <LinkPage title={'Code'} href={'https://github.com/murillo94'} />
+        <Link href="https://github.com/murillo94" isExternal>
+          Code
+        </Link>
       </li>
       <li>
-        <LinkPage
-          title={'Visuals'}
-          href={'https://dribbble.com/murillodmiranda'}
-        />
+        <Link href="https://dribbble.com/murillodmiranda" isExternal>
+          Visuals
+        </Link>
       </li>
       <li>
-        <LinkPage title={'Essays'} href={'/essays'} />
+        <Link href="/essays">Essays</Link>
       </li>
       <li>
-        <LinkPage title={'Resume'} href={'/resume'} />
+        <Link href="/resume">Resume</Link>
       </li>
     </ul>
 

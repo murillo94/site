@@ -1,8 +1,8 @@
-import Link from "next/link";
 import dayjs from "dayjs";
 
 import Page from "../layouts/page";
 import Back from "../components/back";
+import { Link } from "../components/link";
 
 import posts from "../data/essays";
 
@@ -13,9 +13,9 @@ export default () => (
       <h1>Murillo's Essays</h1>
       <div>
         <ul>
-          {posts.map(post => (
+          {posts.map((post) => (
             <li key={post.id}>
-              <Link href={post.link}>
+              <Link href={post.link} isExternal>
                 <a>
                   <b>{post.title}</b>
                   <span>{dayjs(post.date).format("MMM DD, YYYY")}</span>
