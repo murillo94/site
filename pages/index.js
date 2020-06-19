@@ -1,19 +1,19 @@
 import Page from "../layouts/page";
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
+import { Heading } from "../components/heading";
+import { Paragraph } from "../components/paragraph";
 
 export default () => (
   <>
-    <Header />
     <Page>
-      <h1>Hi, I'm Murillo de Miranda</h1>
-      <p>I am a developer, writer and sometimes streamer from Brazil.</p>
-      <p>
+      <Heading>Hi, I'm Murillo de Miranda</Heading>
+      <Paragraph>
+        I am a developer, writer and sometimes streamer from Brazil.
+      </Paragraph>
+      <Paragraph>
         This is where I write about the things I'm working on and share what
         I've learned.
-      </p>
+      </Paragraph>
     </Page>
-    <Footer />
 
     <style jsx>{`
       section {
@@ -34,15 +34,6 @@ export default () => (
         margin-right: 5px;
         font-size: 25px;
         font-weight: 200;
-      }
-
-      h1 {
-        font-size: 48px;
-        font-weight: 700;
-      }
-
-      p {
-        margin-bottom: 32px;
       }
 
       @media (min-width: 768px) {

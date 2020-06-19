@@ -1,5 +1,8 @@
 import Head from "next/head";
 
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
+
 export default ({ children, center = false }) => (
   <>
     <Head>
@@ -43,7 +46,9 @@ export default ({ children, center = false }) => (
       <link rel="icon" href="images/icon.png" type="image/png" />
     </Head>
 
+    <Header />
     <main>{children}</main>
+    <Footer />
 
     <style jsx global>{`
       body {
