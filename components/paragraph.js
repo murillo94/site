@@ -4,7 +4,7 @@ export const Paragraph = ({ children }) => (
 
     <style jsx>
       {`
-        p {
+         {
           margin-bottom: 32px;
         }
       `}
