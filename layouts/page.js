@@ -111,6 +111,11 @@ export default ({ children, center = false }) => (
           display: none;
         }
 
+        main {
+          padding: 10px 20px;
+          max-width: 100%;
+        }
+
         footer {
           display: none;
         }
