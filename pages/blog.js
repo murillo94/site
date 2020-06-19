@@ -5,7 +5,7 @@ import { H1, H3 } from "../components/heading";
 import { Paragraph } from "../components/paragraph";
 import { Link } from "../components/link";
 
-import posts from "../data/essays";
+import posts from "../data/posts";
 
 export default () => (
   <Page>
