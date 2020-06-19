@@ -57,16 +57,24 @@ export default ({ children, center = false }) => (
           "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 16px;
-        height: 100%;
         margin: 0;
+        height: 100%;
+        transition: background-color 0.3s ease;
+      }
+
+      body.light-mode {
+        background-color: #fff;
         color: #1a202c;
       }
 
-      body > div:first-child,
-      #__next,
-      #__next > div,
-      #__next > div > div {
-        height: 100%;
+      body.dark-mode {
+        background-color: #1a1919;
+        color: #fdfdfd;
+      }
+
+      body.dark-mode a:hover,
+      body.dark-mode button:hover {
+        color: #1a1919 !important;
       }
 
       main {
@@ -75,16 +83,6 @@ export default ({ children, center = false }) => (
         max-width: 672px;
         margin: 0 auto;
         box-sizing: border-box;
-      }
-
-      h1 {
-        font-size: 31px;
-        font-weight: 400;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
       }
 
       ::selection {
