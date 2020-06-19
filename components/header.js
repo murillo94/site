@@ -1,12 +1,15 @@
 import { useRouter } from "next/router";
+import useDarkMode from "use-dark-mode";
 
 import { Link } from "./link";
+import { Button } from "./button";
 
 import Twitter from "../public/images/twitter.svg";
 import Circle from "../public/images/circle.svg";
 
 export const Header = () => {
   const { pathname } = useRouter();
+  const darkMode = useDarkMode(false);
 
   return (
     <header>
@@ -26,9 +29,9 @@ export const Header = () => {
           <Link href="https://twitter.com/murillodmiranda" isExternal isIcon>
             <Twitter />
           </Link>
-          <Link href="" isIcon>
+          <Button type="button" onClick={darkMode.toggle}>
             <Circle />
-          </Link>
+          </Button>
         </div>
       </nav>
 
