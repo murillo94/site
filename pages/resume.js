@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import Page from "../layouts/page";
-import { Heading } from "../components/heading";
+import { H1 } from "../components/heading";
 import Translate from "../components/translate";
 import { Link } from "../components/link";
 
@@ -18,7 +18,7 @@ function Bio() {
   return (
     <article>
       <div className="show-print">
-        <Heading>{content.personalTitle}</Heading>
+        <H1>{content.personalTitle}</H1>
       </div>
       <div>
         <p>{content.name}</p>

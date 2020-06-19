@@ -1,11 +1,11 @@
 import Page from "../layouts/page";
-import { Heading } from "../components/heading";
+import { H1 } from "../components/heading";
 import { Paragraph } from "../components/paragraph";
 
 export default () => (
   <>
     <Page>
-      <Heading>Hi, I'm Murillo de Miranda</Heading>
+      <H1>Hi, I'm Murillo de Miranda</H1>
       <Paragraph>
         I am a developer, writer and sometimes streamer from Brazil.
       </Paragraph>

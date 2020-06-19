@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 
 import Page from "../layouts/page";
-import { Heading } from "../components/heading";
+import { H1, H3 } from "../components/heading";
 import { Paragraph } from "../components/paragraph";
 import { Link } from "../components/link";
 
@@ -9,7 +9,7 @@ import posts from "../data/essays";
 
 export default () => (
   <Page>
-    <Heading>Articles</Heading>
+    <H1>Articles</H1>
     <Paragraph>
       I write about all the tech, most of the time JavaScript, Node.js, React,
       design system and a11y.
@@ -19,12 +19,12 @@ export default () => (
         <ul>
           {posts.map((post) => (
             <li key={post.id}>
-              <Link href={post.link} isExternal>
-                <a>
-                  <b>{post.title}</b>
-                  <span>{dayjs(post.date).format("MMM DD, YYYY")}</span>
-                </a>
-              </Link>
+              <H3>
+                <Link href={post.link} isExternal>
+                  {post.title}
+                </Link>
+              </H3>
+              <span>{dayjs(post.date).format("MMM DD, YYYY")}</span>
             </li>
           ))}
         </ul>
@@ -36,6 +36,7 @@ export default () => (
         article {
           height: 100%;
           line-height: 1.6;
+          margin: 0 -10px;
         }
 
         div {
@@ -71,22 +72,13 @@ export default () => (
           margin-left: 5px;
         }
 
-        a {
-          border-radius: 6px;
-        }
-
         @media (min-width: 992px) {
           span {
-            opacity: 0;
             margin-left: 12px;
           }
 
           li {
             margin: 22px 0;
-          }
-
-          a:hover span {
-            opacity: 1;
           }
         }
       `}
