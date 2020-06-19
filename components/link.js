@@ -3,7 +3,9 @@ import { default as LinkNext } from "next/link";
 export const Link = ({ children, href, isExternal }) => (
   <>
     {isExternal ? (
-      <a href={href}>{children}</a>
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
     ) : (
       <LinkNext href={href}>
         <a>{children}</a>
