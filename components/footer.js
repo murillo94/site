@@ -37,6 +37,12 @@ export const Footer = () => (
           align-items: center;
           justify-content: center;
         }
+
+        @media print {
+          footer {
+            display: none;
+          }
+        }
       `}
     </style>
   </footer>
