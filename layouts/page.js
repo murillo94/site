@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 
-export default ({ children, center = false }) => (
+export default ({ children }) => (
   <>
     <Head>
       <title>Murillo de Miranda Pereira</title>
@@ -79,8 +79,7 @@ export default ({ children, center = false }) => (
 
       main {
         padding: 32px 16px;
-        height: ${center ? "100vh" : "100%"};
-        max-width: 672px;
+        max-width: 720px;
         margin: 0 auto;
         box-sizing: border-box;
       }
@@ -90,10 +89,9 @@ export default ({ children, center = false }) => (
       }
 
       :focus {
-        outline: 0 !important;
-        border-color: #2684ff !important;
-        box-shadow: 0 0 0 2.2px #2684ff !important;
-        transition: box-shadow 0.12s;
+        outline: 0;
+        border-color: #2684ff;
+        box-shadow: 0 0 0 2px #2684ff;
       }
 
       @media print {
