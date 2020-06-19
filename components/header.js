@@ -11,11 +11,11 @@ export const Header = () => (
         <Link href="/essays">Blog</Link>
         <Link href="/resume">Resume</Link>
       </div>
-      <div>
-        <Link href="https://twitter.com/murillodmiranda" isExternal>
+      <div className="right-menu">
+        <Link href="https://twitter.com/murillodmiranda" isExternal isIcon>
           <Twitter />
         </Link>
-        <Link href="">
+        <Link href="" isIcon>
           <Circle />
         </Link>
       </div>
@@ -25,15 +25,21 @@ export const Header = () => (
       {`
         header {
           padding: 48px 8px 0;
-          max-width: 768px;
           margin: 0 auto;
+          max-width: 768px;
         }
 
         nav {
           display: flex;
-          justify-content: space-between;
           align-items: center;
+          justify-content: space-between;
           flex-direction: row;
+        }
+
+        .right-menu {
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       `}
     </style>
