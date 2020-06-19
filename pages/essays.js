@@ -1,16 +1,20 @@
 import dayjs from "dayjs";
 
 import Page from "../layouts/page";
-import Back from "../components/back";
+import { Heading } from "../components/heading";
+import { Paragraph } from "../components/paragraph";
 import { Link } from "../components/link";
 
 import posts from "../data/essays";
 
 export default () => (
   <Page>
-    <Back />
+    <Heading>Articles</Heading>
+    <Paragraph>
+      I write about all the tech, most of the time JavaScript, Node.js, React,
+      design system and a11y.
+    </Paragraph>
     <article>
-      <h1>Murillo's Essays</h1>
       <div>
         <ul>
           {posts.map((post) => (
@@ -36,10 +40,6 @@ export default () => (
 
         div {
           margin-bottom: 40px;
-        }
-
-        h1 {
-          margin: 0 0 40px;
         }
 
         ul {
