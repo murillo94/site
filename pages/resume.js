@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import Page from "../layouts/page";
-import Back from "../components/back";
+import { Heading } from "../components/heading";
 import Translate from "../components/translate";
 import { Link } from "../components/link";
 
@@ -17,7 +17,9 @@ function Bio() {
 
   return (
     <article>
-      <h1>{content.personalTitle}</h1>
+      <div className="show-print">
+        <Heading>{content.personalTitle}</Heading>
+      </div>
       <div>
         <p>{content.name}</p>
         <p>{content.city}</p>
@@ -239,6 +241,7 @@ function Bio() {
           .link-bio div {
             margin: 0;
             display: flex;
+            align-items: center;
           }
 
           .link-bio span {
@@ -304,7 +307,6 @@ export default function () {
   return (
     <Page>
       <LanguageContext.Provider value={[language, setLanguage]}>
-        <Back />
         <Translate />
         <Bio />
       </LanguageContext.Provider>

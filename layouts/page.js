@@ -87,7 +87,7 @@ export default ({ children, center = false }) => (
       }
 
       ::selection {
-        background: #ffe166;
+        background-color: #ffe166;
       }
 
       :focus {
@@ -105,6 +105,14 @@ export default ({ children, center = false }) => (
 
         body {
           margin: 0.5cm;
+        }
+
+        header {
+          display: none;
+        }
+
+        footer {
+          display: none;
         }
       }
     `}</style>

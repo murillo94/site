@@ -52,12 +52,6 @@ export const Header = () => {
             align-items: center;
             justify-content: center;
           }
-
-          @media print {
-            header {
-              display: none;
-            }
-          }
         `}
       </style>
     </header>

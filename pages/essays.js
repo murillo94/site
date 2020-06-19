@@ -75,10 +75,6 @@ export default () => (
           border-radius: 6px;
         }
 
-        a:hover b {
-          color: #000;
-        }
-
         @media (min-width: 992px) {
           span {
             opacity: 0;
