@@ -1,18 +1,19 @@
 {
   "name": "site",
-  "version": "1.0.2",
-  "description": "Find me on the web",
+  "version": "2.0.0",
+  "description": "It's me",
   "author": "Murillo de Miranda Pereira",
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "dayjs": "^1.8.22",
-    "next": "^9.3.2",
+    "dayjs": "^1.8.28",
+    "next": "^9.4.4",
     "next-ga": "^2.3.4",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
