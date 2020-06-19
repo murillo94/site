@@ -94,6 +94,12 @@ export default ({ children }) => (
         box-shadow: 0 0 0 2px #2684ff;
       }
 
+      @media only screen and (max-width: 600px) {
+        main {
+          padding: 32px 20px 0;
+        }
+      }
+
       @media print {
         @page {
           size: auto;

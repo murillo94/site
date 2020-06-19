@@ -72,7 +72,17 @@ export default () => (
           padding: 0 10px;
         }
 
-        @media (min-width: 992px) {
+        @media only screen and (max-width: 600px) {
+          article {
+            margin: 0;
+          }
+
+          span {
+            padding: 0;
+          }
+        }
+
+        @media only screen and (min-width: 992px) {
           li {
             margin: 22px 0;
           }

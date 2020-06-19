@@ -59,6 +59,17 @@ export const Header = () => {
             align-items: center;
             justify-content: center;
           }
+
+          @media only screen and (max-width: 600px) {
+            header {
+              padding: 48px 20px 0;
+              max-width: 100%;
+            }
+
+            header :global(a) {
+              margin-right: 24px;
+            }
+          }
         `}
       </style>
     </header>

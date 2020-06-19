@@ -41,6 +41,16 @@ export const Footer = () => (
           align-items: center;
           justify-content: center;
         }
+
+        @media only screen and (max-width: 600px) {
+          footer {
+            padding: 20px;
+          }
+
+          header :global(a) {
+            margin-right: 24px;
+          }
+        }
       `}
     </style>
   </footer>
