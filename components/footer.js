@@ -32,6 +32,10 @@ export const Footer = () => (
           padding: 16px;
         }
 
+        footer :global(a) {
+          margin-right: 16px;
+        }
+
         nav {
           display: flex;
           align-items: center;

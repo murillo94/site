@@ -43,6 +43,10 @@ export const Header = () => {
             max-width: 768px;
           }
 
+          header :global(a) {
+            margin-right: 16px;
+          }
+
           nav {
             display: flex;
             align-items: center;
