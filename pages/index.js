@@ -6,7 +6,12 @@ export default () => (
   <Page>
     <H1>Hi, I'm Murillo de Miranda</H1>
     <Paragraph>
-      I am a developer, writer and sometimes streamer from Brazil.
+      I am a developer, writer and sometimes streamer from Joinville, Brazil. I
+      studied Software Engineering at PUC - SC.
+    </Paragraph>
+    <Paragraph>
+      Always building something (one day it will be a company). I like to code,
+      biking and running. Interested in design systems, a11y and JAMstack.
     </Paragraph>
     <Paragraph>
       This is where I write about the things I'm working on and share what I've
