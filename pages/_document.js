@@ -86,13 +86,13 @@ class MyDocument extends Document {
                 }
         
                 ::selection {
-                  background-color: #ffe166;
+                  background-color: #ffe166 !important;
                 }
         
                 :focus {
-                  outline: 0;
-                  border-color: #2684ff;
-                  box-shadow: 0 0 0 0.125rem #2684ff;
+                  outline: 0 !important;
+                  border-color: #2684ff !important;
+                  box-shadow: 0 0 0 0.125rem #2684ff !important;
                 }
         
                 @media only screen and (max-width: 37.5rem) {
@@ -112,7 +112,7 @@ class MyDocument extends Document {
                   }
         
                   header {
-                    display: none;
+                    display: none !important;
                   }
         
                   main {
@@ -121,7 +121,7 @@ class MyDocument extends Document {
                   }
         
                   footer {
-                    display: none;
+                    display: none !important;
                   }
                 }
               `,
