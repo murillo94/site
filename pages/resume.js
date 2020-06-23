@@ -1,10 +1,9 @@
 import React, { useState, useContext } from 'react';
 
-import Link from 'next/link';
-
-import Page from '../layouts/page';
-import Back from '../components/back';
-import Translate from '../components/translate';
+import { Page } from '../layouts/page';
+import { H1 } from '../components/heading';
+import { Translate } from '../components/translate';
+import { Link } from '../components/link';
 
 import publications from '../data/publications';
 
@@ -17,19 +16,19 @@ function Bio() {
   const cleanUrlPrint = url => url.replace('//', '');
 
   return (
-    <article>
-      <h1>{content.personalTitle}</h1>
+    <>
+      <H1>{content.personalTitle}</H1>
       <div>
         <p>{content.name}</p>
         <p>{content.city}</p>
         <p>{content.email}</p>
         <div className="link-bio">
           {content.links.map(({ name, href, description }) => {
-            if (name == 'Site') {
+            if (name === 'Site') {
               return (
                 <div key={name} className="show-print">
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                   <span>- {href}</span>
                 </div>
@@ -39,8 +38,8 @@ function Bio() {
             if (name === 'Linkedin') {
               return (
                 <div key={name}>
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                   <span className="show-print">- {cleanUrlPrint(href)}</span>
                 </div>
@@ -50,8 +49,8 @@ function Bio() {
             if (name === 'Github') {
               return (
                 <div key={name}>
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                   <span className="hide-print">- {description}</span>
                   <span className="show-print">- {cleanUrlPrint(href)}</span>
@@ -62,8 +61,8 @@ function Bio() {
             if (name === 'Stack Overflow') {
               return (
                 <div key={name} className="hide-print">
-                  <Link href={href}>
-                    <a>{name}</a>
+                  <Link href={href} isExternal>
+                    {name}
                   </Link>
                 </div>
               );
@@ -71,9 +70,7 @@ function Bio() {
 
             return (
               <div key={name} className="hide-print">
-                <Link href={href}>
-                  <a>{name}</a>
-                </Link>
+                <Link href={href}>{name}</Link>
                 <span>- {description}</span>
               </div>
             );
@@ -127,7 +124,8 @@ function Bio() {
           <ol>
             {publications.map(({ me, others, title, publisher, year }) => (
               <li key={title}>
-                <b>{me}</b>, {others}.<i> "{title}"</i>. {publisher}, {year}
+                <b>{me}</b>, {others}.<i> &quot;{title}&quot;</i>. {publisher},{' '}
+                {year}
               </li>
             ))}
           </ol>
@@ -150,8 +148,8 @@ function Bio() {
                   {position}
                   <span>
                     -
-                    <Link href={site}>
-                      <a>{name}</a>
+                    <Link href={site} isExternal>
+                      {name}
                     </Link>
                     , {city}
                   </span>
@@ -180,49 +178,39 @@ function Bio() {
 
       <style jsx>
         {`
-          article {
-            height: 100%;
-            max-width: 70%;
-            line-height: 1.6;
-          }
-
           div {
-            margin-bottom: 40px;
-          }
-
-          h1 {
-            margin: 0 0 40px;
+            margin-bottom: 2.5rem;
           }
 
           h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 500;
             font-style: italic;
           }
 
           p {
-            font-size: 16px;
-            margin: 0 0 10px;
+            font-size: 1rem;
+            margin: 0 0 0.625rem;
           }
 
           a {
             color: #aaa;
             text-decoration: underline;
-            border-radius: 6px;
+            border-radius: 0.375rem;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
             width: max-content;
           }
 
           span {
             font-weight: 400;
             color: #aaa;
-            margin-left: 5px;
+            margin-left: 0.3125rem;
           }
 
           span a {
             display: inline-block;
-            margin-left: 5px;
+            margin-left: 0.3125rem;
             margin-bottom: 0;
           }
 
@@ -232,16 +220,17 @@ function Bio() {
           }
 
           ul {
-            margin: 12px 0;
+            margin: 0.75rem 0;
           }
 
           li {
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
           }
 
           .link-bio div {
-            margin: 0;
+            margin: 0 -0.625rem;
             display: flex;
+            align-items: center;
           }
 
           .link-bio span {
@@ -258,7 +247,7 @@ function Bio() {
           }
 
           .infos div > div {
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
           }
 
           .show-print {
@@ -270,14 +259,20 @@ function Bio() {
             page-break-after: always;
           }
 
-          @media (max-width: 991px) {
-            article {
+          @media only screen and (max-width: 37.5rem) {
+            .link-bio div {
+              margin: 0;
+            }
+          }
+
+          @media (max-width: 62rem) {
+            section {
               max-width: 100%;
             }
           }
 
           @media print {
-            article {
+            section {
               max-width: 100%;
             }
 
@@ -294,23 +289,47 @@ function Bio() {
             .margin-print {
               margin-top: 1.3cm;
             }
+
+            i {
+              font-style: initial;
+            }
           }
         `}
       </style>
-    </article>
+    </>
   );
 }
 
-export default function() {
+const Resume = () => {
   const [language, setLanguage] = useState('en');
 
   return (
     <Page>
       <LanguageContext.Provider value={[language, setLanguage]}>
-        <Back />
         <Translate />
         <Bio />
       </LanguageContext.Provider>
+
+      <style jsx>
+        {`
+          :global(main) {
+            position: relative;
+          }
+
+          :global(main) :global(button) {
+            position: absolute;
+            right: 0;
+          }
+
+          @media only screen and (max-width: 37.5rem) {
+            :global(main) :global(button) {
+              right: 1.25rem;
+            }
+          }
+        `}
+      </style>
     </Page>
   );
-}
+};
+
+export default Resume;

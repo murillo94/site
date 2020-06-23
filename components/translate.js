@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 
-import ButtonOption from './buttonOption';
+import { Button } from './button';
 
 import { LanguageContext } from '../contexts/language';
 
-export default function() {
+export const Translate = () => {
   const [language, setLanguage] = useContext(LanguageContext);
 
   const handleClick = () => {
@@ -12,8 +12,8 @@ export default function() {
   };
 
   return (
-    <ButtonOption onClick={handleClick}>
+    <Button onClick={handleClick}>
       {language === 'en' ? <>&#x1F1FA;&#x1F1F8;</> : <>&#x1F1E7;&#x1F1F7;</>}
-    </ButtonOption>
+    </Button>
   );
-}
+};

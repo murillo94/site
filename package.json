@@ -1,18 +1,44 @@
 {
   "name": "site",
-  "version": "1.0.2",
-  "description": "Find me on the web",
+  "version": "2.0.0",
+  "description": "It's me",
   "author": "Murillo de Miranda Pereira",
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "dayjs": "^1.8.22",
-    "next": "^9.3.2",
+    "dayjs": "^1.8.28",
+    "next": "^9.4.4",
     "next-ga": "^2.3.4",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "next-react-svg": "^1.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "use-dark-mode": "^2.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
   }
 }
