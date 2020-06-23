@@ -11,7 +11,7 @@ export default () => (
   <Page>
     <H1>Articles</H1>
     <Paragraph>
-      I write about all the tech, most of the time JavaScript, Node.js, React,
+      I write about tech, most of the time JavaScript, Node.js, React,
       design system and a11y.
     </Paragraph>
     <article>
