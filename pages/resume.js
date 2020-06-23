@@ -178,38 +178,38 @@ function Bio() {
       <style jsx>
         {`
           div {
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
           }
 
           h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 500;
             font-style: italic;
           }
 
           p {
-            font-size: 16px;
-            margin: 0 0 10px;
+            font-size: 1rem;
+            margin: 0 0 0.625rem;
           }
 
           a {
             color: #aaa;
             text-decoration: underline;
-            border-radius: 6px;
+            border-radius: 0.375rem;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
             width: max-content;
           }
 
           span {
             font-weight: 400;
             color: #aaa;
-            margin-left: 5px;
+            margin-left: 0.3125rem;
           }
 
           span a {
             display: inline-block;
-            margin-left: 5px;
+            margin-left: 0.3125rem;
             margin-bottom: 0;
           }
 
@@ -219,15 +219,15 @@ function Bio() {
           }
 
           ul {
-            margin: 12px 0;
+            margin: 0.75rem 0;
           }
 
           li {
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
           }
 
           .link-bio div {
-            margin: 0 -10px;
+            margin: 0 -0.625rem;
             display: flex;
             align-items: center;
           }
@@ -246,7 +246,7 @@ function Bio() {
           }
 
           .infos div > div {
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
           }
 
           .show-print {
@@ -258,13 +258,13 @@ function Bio() {
             page-break-after: always;
           }
 
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 37.5rem) {
             .link-bio div {
               margin: 0;
             }
           }
 
-          @media (max-width: 991px) {
+          @media (max-width: 62rem) {
             section {
               max-width: 100%;
             }
@@ -316,9 +316,9 @@ export default function () {
             right: 0;
           }
 
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 37.5rem) {
             :global(main) :global(button) {
-              right: 20px;
+              right: 1.25rem;
             }
           }
         `}

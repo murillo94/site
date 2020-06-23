@@ -5,7 +5,7 @@ export const H1 = ({ children }) => (
     <style jsx>
       {`
          {
-          font-size: 48px;
+          font-size: 3rem;
           font-weight: 700;
         }
       `}
@@ -20,7 +20,7 @@ export const H3 = ({ children }) => (
     <style jsx>
       {`
          {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 700;
           margin-bottom: 0;
         }

@@ -15,48 +15,56 @@ export const Header = () => {
   return (
     <header>
       <nav>
-        <div className="left-menu">
+        <div className="logo">
           <Link href="/">
             <Logo />
           </Link>
-          <Link href="/" isSelected={pathname === "/"}>
-            Me
-          </Link>
-          <Link href="/blog" isSelected={pathname === "/blog"}>
-            Blog
-          </Link>
-          <Link href="/resume" isSelected={pathname === "/resume"}>
-            Resume
-          </Link>
         </div>
         <div className="right-menu">
-          <Link href="https://twitter.com/murillodmiranda" isExternal isIcon>
-            <Twitter />
-          </Link>
-          <Button type="button" onClick={darkMode.toggle}>
-            <Circle />
-          </Button>
+          <div className="links-internal">
+            <Link href="/" isSelected={pathname === "/"}>
+              Me
+            </Link>
+            <Link href="/blog" isSelected={pathname === "/blog"}>
+              Blog
+            </Link>
+            <Link href="/resume" isSelected={pathname === "/resume"}>
+              Resume
+            </Link>
+          </div>
+          <div>
+            <Link href="https://twitter.com/murillodmiranda" isExternal isIcon>
+              <Twitter />
+            </Link>
+            <Button type="button" onClick={darkMode.toggle}>
+              <Circle />
+            </Button>
+          </div>
         </div>
       </nav>
 
       <style jsx>
         {`
           header {
-            padding: 48px 8px 0;
+            padding: 3rem 0.5rem 0;
             margin: 0 auto;
-            max-width: 768px;
+            max-width: 48rem;
           }
 
           header :global(a) {
-            margin-right: 16px;
+            margin-right: 1rem;
           }
 
-          .left-menu :global(a:first-child) {
+          .logo :global(a) {
             background-color: transparent;
             padding: 0;
             border: none;
-            width: 3rem;
-            height: 3rem;
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+
+          .logo :global(a:hover) {
+            color: currentcolor !important;
           }
 
           nav,
@@ -70,21 +78,24 @@ export const Header = () => {
           .right-menu {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            width: 100%;
           }
 
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 37.5rem) {
             header {
-              padding: 20px 20px 0;
+              padding: 1.25rem 1.25rem 0;
               max-width: 100%;
             }
 
             nav {
-              margin: 0 -5px;
+              margin: 0 -0.3125rem;
+              flex-direction: column;
+              align-items: flex-start;
             }
 
             header :global(a) {
-              margin-right: 20px;
+              margin-right: 1.25rem;
             }
           }
         `}

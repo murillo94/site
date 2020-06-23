@@ -4,11 +4,11 @@ export const Button = ({ onClick, children }) => (
 
     <style jsx>{`
        {
-        font-size: 18px;
+        font-size: 1.125rem;
         color: inherit;
         background-color: transparent;
-        border-radius: 6px;
-        padding: 5px 10px;
+        border-radius: 0.375rem;
+        padding: 0.3125rem 0.625rem;
         box-shadow: none;
         border: none;
         transition: background-color 0.1s;

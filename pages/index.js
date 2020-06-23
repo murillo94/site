@@ -26,19 +26,19 @@ export default () => (
         section div {
           width: 100%;
           text-align: left;
-          margin-bottom: 8em;
+          margin-bottom: 8rem;
         }
 
         span {
-          margin-right: 5px;
-          font-size: 25px;
+          margin-right: 0.3125rem;
+          font-size: 1.5625rem;
           font-weight: 200;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 48rem) {
           section div {
             text-align: center;
-            margin-bottom: 5.5em;
+            margin-bottom: 5.5rem;
           }
         }
       `}

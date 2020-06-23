@@ -36,21 +36,21 @@ export default () => (
         article {
           height: 100%;
           line-height: 1.6;
-          margin: 0 -10px;
+          margin: 0 -0.625rem;
         }
 
         div {
-          margin-bottom: 40px;
+          margin-bottom: 2.5rem;
         }
 
         ul {
           margin: 0;
-          padding: 0 0 10px 0;
+          padding: 0 0 0.625rem 0;
           list-style: none;
         }
 
         li {
-          margin: 10px 0;
+          margin: 0.625rem 0;
           text-decoration: none;
         }
 
@@ -59,20 +59,20 @@ export default () => (
         }
 
         b {
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: normal;
           line-height: 1.6;
           display: inline-block;
         }
 
         span {
-          font-size: 13px;
+          font-size: 0.8125rem;
           font-weight: 400;
           color: #aaa;
-          padding: 0 10px;
+          padding: 0 0.625rem;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 37.5rem) {
           article {
             margin: 0;
           }
@@ -82,9 +82,9 @@ export default () => (
           }
         }
 
-        @media only screen and (min-width: 992px) {
+        @media only screen and (min-width: 62rem) {
           li {
-            margin: 22px 0;
+            margin: 1.375rem 0;
           }
         }
       `}

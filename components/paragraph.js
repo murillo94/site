@@ -5,7 +5,7 @@ export const Paragraph = ({ children }) => (
     <style jsx>
       {`
          {
-          margin-bottom: 32px;
+          margin-bottom: 2rem;
         }
       `}
     </style>

@@ -29,11 +29,11 @@ export const Footer = () => (
     <style jsx>
       {`
         footer {
-          padding: 16px;
+          padding: 1rem;
         }
 
         footer :global(a) {
-          margin-right: 16px;
+          margin-right: 1rem;
         }
 
         nav {
@@ -42,17 +42,17 @@ export const Footer = () => (
           justify-content: center;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 37.5rem) {
           footer {
-            padding: 20px;
+            padding: 1.25rem;
           }
 
           nav {
-            margin: 0 -5px;
+            margin: 0 -0.3125rem;
           }
 
           footer :global(a) {
-            margin-right: 24px;
+            margin-right: 1.5rem;
           }
         }
       `}

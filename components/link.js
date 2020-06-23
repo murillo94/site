@@ -17,9 +17,9 @@ export const Link = ({ children, href, isExternal, isIcon, isSelected }) => (
          {
           color: inherit;
           text-decoration: none;
-          border-radius: ${isSelected ? "6px 6px 0 0" : "6px"};
-          box-shadow: ${isSelected ? "0 1px 0 0 currentColor" : "none"};
-          padding: 5px;
+          border-radius: ${isSelected ? "0.375rem 0.375rem 0 0" : "0.375rem"};
+          box-shadow: ${isSelected ? "0 0.0625rem 0 0 currentColor" : "none"};
+          padding: 0.3125rem;
           transition: background-color 0.1s;
           display: ${isIcon ? "flex" : "initial"};
           align-items: center;
@@ -33,13 +33,13 @@ export const Link = ({ children, href, isExternal, isIcon, isSelected }) => (
 
         :hover {
           background-color: #efefef;
-          border-radius: 6px;
+          border-radius: 0.375rem;
           box-shadow: none;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 48rem) {
            {
-            padding: 6px 10px;
+            padding: 0.375rem 0.625rem;
           }
         }
       `}
