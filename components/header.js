@@ -4,6 +4,7 @@ import useDarkMode from "use-dark-mode";
 import { Link } from "./link";
 import { Button } from "./button";
 
+import Logo from "../public/images/logo.svg";
 import Twitter from "../public/images/twitter.svg";
 import Circle from "../public/images/circle.svg";
 
@@ -14,7 +15,10 @@ export const Header = () => {
   return (
     <header>
       <nav>
-        <div>
+        <div className="left-menu">
+          <Link href="/">
+            <Logo />
+          </Link>
           <Link href="/" isSelected={pathname === "/"}>
             Me
           </Link>
@@ -47,7 +51,16 @@ export const Header = () => {
             margin-right: 16px;
           }
 
-          nav {
+          .left-menu :global(a:first-child) {
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            width: 3rem;
+            height: 3rem;
+          }
+
+          nav,
+          nav div {
             display: flex;
             align-items: center;
             justify-content: space-between;
