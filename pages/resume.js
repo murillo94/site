@@ -288,6 +288,10 @@ function Bio() {
             .margin-print {
               margin-top: 1.3cm;
             }
+
+            i {
+              font-style: initial;
+            }
           }
         `}
       </style>
