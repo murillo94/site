@@ -1,10 +1,10 @@
-import { Link } from "./link";
+import { Link } from './link';
 
-import Twitter from "../public/images/twitter.svg";
-import Github from "../public/images/github.svg";
-import Dribbble from "../public/images/dribbble.svg";
-import Twitch from "../public/images/twitch.svg";
-import Linkedin from "../public/images/linkedin.svg";
+import Twitter from '../public/images/twitter.svg';
+import Github from '../public/images/github.svg';
+import Dribbble from '../public/images/dribbble.svg';
+import Twitch from '../public/images/twitch.svg';
+import Linkedin from '../public/images/linkedin.svg';
 
 export const Footer = () => (
   <footer>

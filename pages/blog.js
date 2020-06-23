@@ -1,30 +1,30 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
-import Page from "../layouts/page";
-import { H1, H3 } from "../components/heading";
-import { Paragraph } from "../components/paragraph";
-import { Link } from "../components/link";
+import { Page } from '../layouts/page';
+import { H1, H3 } from '../components/heading';
+import { Paragraph } from '../components/paragraph';
+import { Link } from '../components/link';
 
-import posts from "../data/posts";
+import posts from '../data/posts';
 
-export default () => (
+const Blog = () => (
   <Page>
     <H1>Articles</H1>
     <Paragraph>
-      I write about tech, most of the time JavaScript, Node.js, React,
-      design system and a11y.
+      I write about tech, most of the time JavaScript, Node.js, React, design
+      system and a11y.
     </Paragraph>
     <article>
       <div>
         <ul>
-          {posts.map((post) => (
+          {posts.map(post => (
             <li key={post.id}>
               <H3>
                 <Link href={post.link} isExternal>
                   {post.title}
                 </Link>
               </H3>
-              <span>{dayjs(post.date).format("MMM DD, YYYY")}</span>
+              <span>{dayjs(post.date).format('MMM DD, YYYY')}</span>
             </li>
           ))}
         </ul>
@@ -91,3 +91,5 @@ export default () => (
     </style>
   </Page>
 );
+
+export default Blog;

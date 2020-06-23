@@ -1,4 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+/* eslint-disable react/no-danger */
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
@@ -125,7 +126,7 @@ class MyDocument extends Document {
                     display: none !important;
                   }
                 }
-              `,
+              `
             }}
           />
         </Head>

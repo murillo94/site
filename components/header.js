@@ -1,12 +1,12 @@
-import { useRouter } from "next/router";
-import useDarkMode from "use-dark-mode";
+import { useRouter } from 'next/router';
+import useDarkMode from 'use-dark-mode';
 
-import { Link } from "./link";
-import { Button } from "./button";
+import { Link } from './link';
+import { Button } from './button';
 
-import Logo from "../public/images/logo.svg";
-import Twitter from "../public/images/twitter.svg";
-import Circle from "../public/images/circle.svg";
+import Logo from '../public/images/logo.svg';
+import Twitter from '../public/images/twitter.svg';
+import Circle from '../public/images/circle.svg';
 
 export const Header = () => {
   const { pathname } = useRouter();
@@ -22,13 +22,13 @@ export const Header = () => {
         </div>
         <div className="right-menu">
           <div className="links-internal">
-            <Link href="/" isSelected={pathname === "/"}>
+            <Link href="/" isSelected={pathname === '/'}>
               Me
             </Link>
-            <Link href="/blog" isSelected={pathname === "/blog"}>
+            <Link href="/blog" isSelected={pathname === '/blog'}>
               Blog
             </Link>
-            <Link href="/resume" isSelected={pathname === "/resume"}>
+            <Link href="/resume" isSelected={pathname === '/resume'}>
               Resume
             </Link>
           </div>

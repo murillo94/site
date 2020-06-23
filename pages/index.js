@@ -1,10 +1,10 @@
-import Page from "../layouts/page";
-import { H1 } from "../components/heading";
-import { Paragraph } from "../components/paragraph";
+import { Page } from '../layouts/page';
+import { H1 } from '../components/heading';
+import { Paragraph } from '../components/paragraph';
 
-export default () => (
+const Index = () => (
   <Page>
-    <H1>Hi, I'm Murillo de Miranda</H1>
+    <H1>Hi, I&apos;m Murillo de Miranda</H1>
     <Paragraph>
       I am a developer, writer and sometimes streamer from Joinville, Brazil. I
       studied Software Engineering at PUC - SC.
@@ -14,8 +14,8 @@ export default () => (
       biking and running. Interested in design systems, a11y and JAMstack.
     </Paragraph>
     <Paragraph>
-      This is where I write about the things I'm working on and share what I've
-      learned.
+      This is where I write about the things I&apos;m working on and share what
+      I&apos;ve learned.
     </Paragraph>
 
     <style jsx>
@@ -50,3 +50,5 @@ export default () => (
     </style>
   </Page>
 );
+
+export default Index;

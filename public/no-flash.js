@@ -1,21 +1,23 @@
 (function () {
-  var storageKey = "darkMode";
-  var classNameDark = "dark-mode";
-  var classNameLight = "light-mode";
+  const storageKey = 'darkMode';
+  const classNameDark = 'dark-mode';
+  const classNameLight = 'light-mode';
 
   function setClassOnDocumentBody(darkMode) {
     document.body.classList.add(darkMode ? classNameDark : classNameLight);
     document.body.classList.remove(darkMode ? classNameLight : classNameDark);
   }
 
-  var preferDarkQuery = "(prefers-color-scheme: dark)";
-  var mql = window.matchMedia(preferDarkQuery);
-  var supportsColorSchemeQuery = mql.media === preferDarkQuery;
-  var localStorageTheme = null;
+  const preferDarkQuery = '(prefers-color-scheme: dark)';
+  const mql = window.matchMedia(preferDarkQuery);
+  const supportsColorSchemeQuery = mql.media === preferDarkQuery;
+  let localStorageTheme = null;
   try {
     localStorageTheme = localStorage.getItem(storageKey);
-  } catch (err) {}
-  var localStorageExists = localStorageTheme !== null;
+  } catch (err) {
+    console.log(err);
+  }
+  const localStorageExists = localStorageTheme !== null;
   if (localStorageExists) {
     localStorageTheme = JSON.parse(localStorageTheme);
   }
@@ -26,7 +28,7 @@
     setClassOnDocumentBody(mql.matches);
     localStorage.setItem(storageKey, mql.matches);
   } else {
-    var isDarkMode = document.body.classList.contains(classNameDark);
+    const isDarkMode = document.body.classList.contains(classNameDark);
     localStorage.setItem(storageKey, JSON.stringify(isDarkMode));
   }
 })();

@@ -1,19 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 
-import { Button } from "./button";
+import { Button } from './button';
 
-import { LanguageContext } from "../contexts/language";
+import { LanguageContext } from '../contexts/language';
 
-export default function () {
+export const Translate = () => {
   const [language, setLanguage] = useContext(LanguageContext);
 
   const handleClick = () => {
-    setLanguage(language === "en" ? "ptbr" : "en");
+    setLanguage(language === 'en' ? 'ptbr' : 'en');
   };
 
   return (
     <Button onClick={handleClick}>
-      {language === "en" ? <>&#x1F1FA;&#x1F1F8;</> : <>&#x1F1E7;&#x1F1F7;</>}
+      {language === 'en' ? <>&#x1F1FA;&#x1F1F8;</> : <>&#x1F1E7;&#x1F1F7;</>}
     </Button>
   );
-}
+};

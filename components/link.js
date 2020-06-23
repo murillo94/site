@@ -1,4 +1,4 @@
-import { default as LinkNext } from "next/link";
+import { default as LinkNext } from 'next/link';
 
 export const Link = ({ children, href, isExternal, isIcon, isSelected }) => (
   <>
@@ -17,11 +17,11 @@ export const Link = ({ children, href, isExternal, isIcon, isSelected }) => (
          {
           color: inherit;
           text-decoration: none;
-          border-radius: ${isSelected ? "0.375rem 0.375rem 0 0" : "0.375rem"};
-          box-shadow: ${isSelected ? "0 0.0625rem 0 0 currentColor" : "none"};
+          border-radius: ${isSelected ? '0.375rem 0.375rem 0 0' : '0.375rem'};
+          box-shadow: ${isSelected ? '0 0.0625rem 0 0 currentColor' : 'none'};
           padding: 0.3125rem;
           transition: background-color 0.1s;
-          display: ${isIcon ? "flex" : "initial"};
+          display: ${isIcon ? 'flex' : 'initial'};
           align-items: center;
         }
 
