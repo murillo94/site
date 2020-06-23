@@ -1,5 +1,5 @@
-export const Button = ({ onClick, children }) => (
-  <button onClick={onClick}>
+export const Button = ({ children, onClick, ariaLabel }) => (
+  <button onClick={onClick} aria-label={ariaLabel}>
     {children}
 
     <style jsx>

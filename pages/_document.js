@@ -4,10 +4,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          <title>Murillo de Miranda Pereira</title>
-
           <meta content="Murillo de Miranda Pereira" itemProp="name" />
           <meta
             content="A cool guy that coding and loves UI design."

@@ -16,7 +16,7 @@ export const Header = () => {
     <header>
       <nav>
         <div className="logo">
-          <Link href="/">
+          <Link href="/" ariaLabel="Home">
             <Logo />
           </Link>
         </div>
@@ -33,10 +33,19 @@ export const Header = () => {
             </Link>
           </div>
           <div>
-            <Link href="https://twitter.com/murillodmiranda" isExternal isIcon>
+            <Link
+              href="https://twitter.com/murillodmiranda"
+              ariaLabel="Twitter"
+              isExternal
+              isIcon
+            >
               <Twitter />
             </Link>
-            <Button type="button" onClick={darkMode.toggle}>
+            <Button
+              type="button"
+              onClick={darkMode.toggle}
+              ariaLabel="Dark/light mode"
+            >
               <Circle />
             </Button>
           </div>

@@ -1,14 +1,26 @@
 import { default as LinkNext } from 'next/link';
 
-export const Link = ({ children, href, isExternal, isIcon, isSelected }) => (
+export const Link = ({
+  children,
+  href,
+  ariaLabel,
+  isExternal,
+  isIcon,
+  isSelected
+}) => (
   <>
     {isExternal ? (
-      <a href={href} target="_blank" rel="noopener noreferrer">
+      <a
+        href={href}
+        aria-label={ariaLabel}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     ) : (
       <LinkNext href={href}>
-        <a>{children}</a>
+        <a aria-label={ariaLabel}>{children}</a>
       </LinkNext>
     )}
 

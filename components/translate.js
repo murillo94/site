@@ -12,7 +12,7 @@ export const Translate = () => {
   };
 
   return (
-    <Button onClick={handleClick}>
+    <Button onClick={handleClick} ariaLabel="Translate">
       {language === 'en' ? <>&#x1F1FA;&#x1F1F8;</> : <>&#x1F1E7;&#x1F1F7;</>}
     </Button>
   );

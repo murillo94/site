@@ -9,19 +9,44 @@ import Linkedin from '../public/images/linkedin.svg';
 export const Footer = () => (
   <footer>
     <nav>
-      <Link href="https://twitter.com/murillodmiranda" isExternal isIcon>
+      <Link
+        href="https://twitter.com/murillodmiranda"
+        ariaLabel="Twitter"
+        isExternal
+        isIcon
+      >
         <Twitter />
       </Link>
-      <Link href="https://github.com/murillo94" isExternal isIcon>
+      <Link
+        href="https://github.com/murillo94"
+        ariaLabel="Github"
+        isExternal
+        isIcon
+      >
         <Github />
       </Link>
-      <Link href="https://dribbble.com/murillodmiranda" isExternal isIcon>
+      <Link
+        href="https://dribbble.com/murillodmiranda"
+        ariaLabel="Dribbble"
+        isExternal
+        isIcon
+      >
         <Dribbble />
       </Link>
-      <Link href="https://twitch.tv/murillodmiranda" isExternal isIcon>
+      <Link
+        href="https://twitch.tv/murillodmiranda"
+        ariaLabel="Twitch"
+        isExternal
+        isIcon
+      >
         <Twitch />
       </Link>
-      <Link href="https://linkedin.com/in/murillodmiranda" isExternal isIcon>
+      <Link
+        href="https://linkedin.com/in/murillodmiranda"
+        ariaLabel="Linkedin"
+        isExternal
+        isIcon
+      >
         <Linkedin />
       </Link>
     </nav>
