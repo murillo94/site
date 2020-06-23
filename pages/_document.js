@@ -44,8 +44,9 @@ class MyDocument extends Document {
           <meta name="twitter:title" content="Murillo de Miranda Pereira" />
           <meta name="twitter:image" content="https://murillodmiranda.com/" />
 
-          <link rel="apple-touch-icon" href="images/logo.svg" />
-          <link rel="icon" href="images/logo.svg" type="image/svg" />
+          <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+          <link rel="alternate icon" href="images/logo.png" />
+          <link rel="mask-icon" href="images/logo.png" />
 
           <style
             dangerouslySetInnerHTML={{
