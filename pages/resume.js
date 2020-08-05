@@ -156,7 +156,7 @@ function Bio() {
                 </p>
                 <ul>
                   <li>{descriptionCompany}</li>
-                  <li>{descriptionTech}</li>
+                  {descriptionTech && <li>{descriptionTech}</li>}
                   <li>{time}</li>
                 </ul>
               </div>
