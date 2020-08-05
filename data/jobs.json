@@ -2,20 +2,29 @@
   "en": {
     "companies": [
       {
+        "name": "Magnetis",
+        "site": "https://magnetis.com.br",
+        "time": "2020 / Current",
+        "city": "São Paulo, Brazil",
+        "position": "Front End Engineer",
+        "descriptionCompany": "Magnetis is a digital investment manager",
+        "descriptionTech": ""
+      },
+      {
         "name": "Mercos",
         "site": "https://mercos.com",
-        "time": "2019 / Current",
-        "city": "Joinville/Brazil",
-        "position": "Full stack developer",
+        "time": "2019 / 2020",
+        "city": "Joinville, Brazil",
+        "position": "Full Stack Developer",
         "descriptionCompany": "Mercos is a results and sales potentializer",
-        "descriptionTech": "At Mercos I'm managing time building a new design system, ui components, a11y and full stack development with ReactJS, Django, MySQL"
+        "descriptionTech": "At Mercos I was managing time building a new design system, ui components, a11y and full stack development with ReactJS, Django, MySQL"
       },
       {
         "name": "SaleSpots",
         "site": "http://salespots.co",
         "time": "2016 / 2019",
-        "city": "Joinville/Brazil",
-        "position": "Full stack developer",
+        "city": "Joinville, Brazil",
+        "position": "Full Stack Developer",
         "descriptionCompany": "SaleSpots is a market intelligence to find new customers",
         "descriptionTech": "At Salespots I was responsible for the whole front end architecture of the application: ReactJS, (AngularJS and Ionic legacy), making sure the application is PWA, fully responsive, accessible and scalable. When not touching in front end I was helping back end with Lambda, DynamoDB and others AWS services"
       }
@@ -24,20 +33,29 @@
   "ptbr": {
     "companies": [
       {
+        "name": "Magnetis",
+        "site": "https://magnetis.com.br",
+        "time": "2020 / Atualmente",
+        "city": "São Paulo, Brasil",
+        "position": "Engenheiro Front End",
+        "descriptionCompany": "Magnetis é uma gestora de investimentos digital",
+        "descriptionTech": ""
+      },
+      {
         "name": "Mercos",
         "site": "https://mercos.com",
-        "time": "2019 / Atual",
-        "city": "Joinville/Brasil",
-        "position": "Desenvolvedor full stack",
+        "time": "2019 / 2020",
+        "city": "Joinville, Brasil",
+        "position": "Desenvolvedor Full Stack",
         "descriptionCompany": "Mercos é um potencializador de resultados e vendas",
-        "descriptionTech": "Na Mercos eu estou gerenciando meu tempo em construir um novo design system, ui components, a11y e desenvolvimento full stack com ReactJS, Django, MySQL"
+        "descriptionTech": "Na Mercos eu gerenciava meu tempo em construir um novo design system, ui components, a11y e desenvolvimento full stack com ReactJS, Django, MySQL"
       },
       {
         "name": "SaleSpots",
         "site": "http://salespots.co",
         "time": "2016 / 2019",
-        "city": "Joinville/Brasil",
-        "position": "Desenvolvedor full stack",
+        "city": "Joinville, Brasil",
+        "position": "Desenvolvedor Full Stack",
         "descriptionCompany": "SaleSpots atua com inteligência de mercado para encontrar novos clientes",
         "descriptionTech": "Na Salespots fui responsável por toda arquitetura front end da aplicação: ReactJS, (AngularJS e Ionic legado), assegurando que a aplicação é PWA, totalmente responsiva, acessível e escalável. Quando necessário, em alguns momentos estava ajudando no back end com Lambda, DynamoDB e outros serviços da AWS"
       }
