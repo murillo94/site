@@ -51,7 +51,7 @@ export const Link = ({
 
         @media (min-width: 48rem) {
            {
-            padding: 0.375rem 0.625rem;
+            padding: 0.375rem 0.425rem;
           }
         }
       `}

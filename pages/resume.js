@@ -151,7 +151,7 @@ function Bio() {
                     <Link href={site} isExternal>
                       {name}
                     </Link>
-                    , {city}
+                    / {city}
                   </span>
                 </p>
                 <ul>
@@ -235,6 +235,7 @@ function Bio() {
 
           .link-bio span {
             color: inherit;
+            margin: 0;
           }
 
           .infos,
@@ -274,6 +275,10 @@ function Bio() {
           @media print {
             section {
               max-width: 100%;
+            }
+
+            .link-bio {
+              margin: 0 0.3125em;
             }
 
             .show-print {
