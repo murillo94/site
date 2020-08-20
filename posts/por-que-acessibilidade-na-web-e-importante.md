@@ -1,0 +1,152 @@
+---
+slug: 'por-que-acessibilidade-na-web-e-importante'
+title: 'Por que acessibilidade na web é importante?'
+date: '2020-08-20'
+---
+
+# Por que acessibilidade na web é importante?
+
+Imagine um mundo onde cada pessoa possui um tipo de dificuldade seja ela cognitiva, física, entre outras. Agora pense que ela, a pessoa, não alcance seus objetivos ou se fruste durante o processo pelo simples fato de que o mundo no qual está inserido não atende as suas necessidades.
+
+Saiba que o mundo citado acima ele existe e é verdadeiro. Em um cenário no qual a web é e pode ser fundamental para o trabalho de todos, não devemos criar ainda mais barreiras para a comunicação e interação das pessoas. Quando desenhamos ou criamos uma tecnologia, sendo ela web ou não, e que se comporta de um jeito indevido estamos criando barreiras e assim excluindo pessoas do coletivo.
+
+Visando ajudar e dar chance para todas as pessoas na web, temos alguns pontos a serem discutidos abaixo.
+
+## A web acessível
+
+O corpo governamental da web é a W3C (World Wide Web Consortium), principal organização de padronização. A finalidade da organização é estabelecer padrões para a criação e a interpretação de conteúdos para a Web, todas as discussões são apresentadas para um comitê internacional constituído por 450 membros no qual agrega empresas, órgãos governamentais e organizações independente.
+
+A W3C tem como missão conduzir a WWW (World Wide Web) para que atinja todo seu potencial, desenvolvendo protocolos e diretrizes que garantam seu crescimento de longo prazo.
+
+### Componentes que devem trabalhar em conjunto
+
+Segundo os documentos da Iniciativa para a Acessibilidade na Web (W3C-WAI), acessibilidade na web significa que “pessoas com deficiência podem perceber, compreender, navegar e interagir com a web e podem também contribuir com a web”. Sendo assim, se a acessibilidade for aplicada de um modo geral na web, podemos permitir o entendimento, interação, participação e contribuição para todos com condições de alcance sem desigualdade.
+
+Para que a acessibilidade na web seja possível, precisamos antes considerar alguns aspectos específicos e importantes para a construção dos documentos. A W3C-WAI identifica e menciona sete componentes que devem estar trabalhando em conjunto:
+
+1. O **conteúdo** deve ser toda a informação contida numa página, sendo isso:
+
+- a informação natural, tal como texto, imagem e áudio.
+- código ou marcação, que define a estrutura, a forma de apresentação, etc.
+
+2. **Navegadores** ou **outros agentes** do usuário são o meio acessível para os documentos.
+
+3. **Tecnologia assistiva** é o caso dos programas leitores de tela, dos ampliadores de tela, dos teclados alternativos, entre outros que são usados por pessoas com deficiência e mobilidade reduzida.
+
+4. Devemos **conhecer** o usuário, sua experiência e suas estratégias adaptativas para a utilização da web.
+
+5. Todos os envolvidos no processo, podendo eles serem: desenvolvedores, designers, codificadores ou todos que contribuam com o conteúdo.
+
+6. **Ferramentas de autoria** são aquelas que são usados para a criação do documento.
+
+7. **Ferramentas de avaliação** são aquelas que avaliam a acessibilidade, validam HTML bem como CSS, entre outros.
+
+### Diretrizes de acessibilidade
+
+De forma a definir uma sistematização para a criação e conhecimento dos documentos foram criados algumas diretrizes, regras. Estas que por sua vez foram desenvolvidas pela Iniciativa de Acessibilidade na Web (WAI - Web Accessibility Initiative), criada pelo W3C. A WAI mantém quatro conjuntos de diretrizes de acessibilidade:
+
+1. **WCAG** (Web Content Accessibility Guidelines ou Diretrizes de Acessibilidade para Conteúdo Web) são diretrizes para estrutura, conteúdo e apresentação das páginas Web.
+
+2. **WAI-ARIA** (Accessible Rich Internet Applications Suite ou Aplicações Web Ricas Acessíveis) servem para conteúdo ou páginas que exijam grande interação com o usuário.
+
+3. **ATAG** (Authoring Tool Accessibility Guidelines ou Diretrizes de Acessibilidade para Ferramentas de Autoria) dão suporte a ferramentas, como editores HTML, CMS (Content Management Systems), blogs, wikis e etc.
+
+4. **UAAG** (User Agent Accessibility Guidelines ou Diretrizes de Acessibilidade para Agentes do Usuário) regulamentam os navegadores Web, media players, dentre outros.
+
+A correlação entre todos os componentes pode ser melhor vista em [componentes interdependentes para acessibilidade na Web](https://www.w3.org/WAI/fundamentals/components/).
+
+## Acessibilidade na prática
+
+Agora iremos entender na prática como podemos fornecer uma boa experiência de usuário e acessível a todos Para isso algumas diretrizes já citadas anteriormente serão detalhadas nessa seção, dentre elas: WCAG e WAI-ARIA.
+
+### WCAG
+
+Os documentos das Diretrizes de acessibilidade ao conteúdo da Web (WCAG) deferem sobre uma série de critérios de sucesso, técnicas e recomendações para a criação de documentos acessíveis que são guiados por quatro princípios:
+
+#### Princípio 1: Perceptível
+
+Todas as informações e os componentes da interface devem estar visíveis de maneira perceptível.
+
+##### Exemplo
+
+Nesse princípio [diretriz 1.1 Alternativas de texto](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html): “Fornecer alternativas de texto para qualquer conteúdo não textual para que possa ser alterado para outras formas que as pessoas precisem, tais como letras grandes, braille, fala, símbolos ou linguagem mais simples.”
+
+Para cumprir essa diretriz, existem quatro critérios de sucesso, como esse por exemplo:
+
+- Controle, Entrada (Control, Input): se o conteúdo não textual for um controle ou campo de entrada, então deve ter um [nome que descreve a sua finalidade](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html#namedef).
+
+#### Princípio 2: Operável
+
+A navegação e os componentes da interface devem ser operáveis.
+
+##### Exemplo
+
+Nesse princípio [diretriz 2.1 Teclado Acessível](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html): “Tornar todas as funcionalidades disponíveis a partir de um teclado.”
+
+Para cumprir essa diretriz, existem três critérios de sucesso, como esse por exemplo:
+
+- Teclado (Keyboard): toda a funcionalidade do conteúdo deve ser [operável através de uma interface de teclado](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html) sem requerer tempos específicos para toques individuais nas teclas, exceto quando a função requer entrada que depende do caminho do movimento do usuário e não apenas dos pontos finais.
+
+#### Princípio 3: Compreensível
+
+Toda operação deve ser legível e compreensível.
+
+##### Exemplo
+
+Nesse princípio [diretriz 3.1 Legível](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html): “Tornar o conteúdo do texto legível e compreensível.”
+
+Para cumprir essa diretriz, existem seis critérios de sucesso, como esse por exemplo:
+
+- Abreviações (Abbreviations): usar um [mecanismo para identificar](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) a forma ampliada ou o significado das abreviações.
+
+#### Princípio 4: Robusto
+
+O documento deve ser o mais robusto possível para que assim seja possível ser interpretado de forma concisa por diversos agentes do usuário, incluindo recursos de tecnologia assistiva.
+
+##### Exemplo
+
+Nesse princípio [diretriz 4.1 Compatibilidade](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html): “Maximizar a compatibilidade com os agentes usuários atuais e futuros, incluindo tecnologias de assistência.
+
+Para cumprir essa diretriz, existem dois critérios de sucesso, como esse por exemplo:
+
+- Nome, Função, Valor (Name, Role, Value): Para todos os componentes da interface do usuário o [nome, função e valor](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) podem ser determinados programaticamente e a notificação de mudanças nestes itens está disponível para os agentes do usuário, incluindo tecnologias de assistência. Importante ressaltar que este critério de sucesso é principalmente para autores da web que escrevem seus próprios componentes de interface. Por exemplo, os controles HTML padrão já atendem a este critério de sucesso quando usados de acordo com a especificação.
+
+### WAI-ARIA
+
+A WAI-ARIA ou apenas ARIA define maneiras de tornar mais acessíveis os conteúdos dinâmicos e aplicativos. Assim como outros padrões do W3C, a implementação de WAI-ARIA não interfere na renderização do conteúdo em navegadores antigos, os quais não têm suporte à recomendação.
+
+Tudo aquilo que pode causar frustração ao usuário, como: conteúdos escondidos, alterações de elementos visíveis e navegação precária, podem ser facilitados por alguns atributos de WAI-ARIA.
+
+Com apenas o uso dos atributos do HTML, a WAI-ARIA identifica esses recursos e faz correlação entre seus estados e relacionamento. Sendo assim, é possível alterar a semântica dos elementos ou criar regiões e estruturas nos documentos de maneira correta, como menus, conteúdo primário e secundário e outros tipos de estruturas, para tornar o conteúdo acessível.
+
+A semântica possui duas partes:
+
+- Papéis (Roles): é o tipo de elemento o usuário está interagindo. Temos como exemplo um botão no qual possui `role=button` para indicar que o elemento é um botão. Para saber todo os papéis, encontre a lista em [possíveis de interação dos elementos](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles).
+- Estados e Propriedades (States and Properties): Os estados definem a configuração atual do elemento, por exemplo: `aria-disabled="true”`, informa ao usuário que o campo está desativado. Já as propriedades dão um sentido extra ao elemento, por exemplo: `aria-required="true”` informa ao usuário que o campo é obrigatório.
+
+Como dito antes, com ARIA podemos alterar a semântica do elemento e assim dar o contexto correto e esperado ao elemento, por exemplo:
+
+`<div role=“button”>Alterar usuário</div>`
+
+É importante se atentar que pelo fato de que é possível fazer a alteração, isso não significa que devemos sempre alterar a semântica dos elementos (exceto somente quando for extremamente necessário). O HTML possui uma vasta [lista de elementos semânticos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) e devemos usar eles sempre que possível.
+
+## Como começar
+
+Neste artigo entendemos o motivo pelo qual devemos pensar em cada linha de código escrita para a web, não queremos criar barreiras que impeçam a contribuição delas para o meio inserido.
+
+A adoção dessas práticas deve ser considerada sempre mas pode levar tempo, às vezes por vontade própria ou por força maior de terceiros, no caso a sua empresa. Para que essa adoção seja leve e constante, é importante a gente seguir alguns pontos:
+
+1. Sempre tente pensar e construir o seu HTML o mais semântico possível, isso significa que para cada informação inserida na tela o seu elemento `(tag)` deve ser o correto, de acordo com o seu papel. Um bom link para aprender e se atentar nesses tipos de informação é o [conteúdo da Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element).
+
+2. Para elementos modificados semanticamente, tente sempre usar `role` para definir o seu [papel no documento](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA/ARIA_Techniques).
+
+3. Caso o seu elemento tenha características ou configurações, do tipo `disabled` dentre outros, use propriedades adequados para o contexto. Se aprofunde mais sobre estados e propriedades [nesse link](https://www.w3.org/WAI/PF/aria-1.1/states_and_properties) pois há uma gama de possibilidades para cada `role`.
+
+4. Use ferramentas de acessibilidade para ajudar na triagem dos erros. Alguns deles são:
+
+- [Wave](https://wave.webaim.org/)
+- [tota11y](https://github.com/Khan/tota11y)
+- [axe-mode](https://github.com/raunofreiberg/axe-mode)
+- Screenreaders em geral, [JAWS](https://www.freedomscientific.com/Products/software/JAWS/) (Windows), [VoiceOve](https://www.apple.com/accessibility/mac/vision/) (Mac OS X and iOS), [ChromeVox](http://www.chromevox.com/)
+
+Por fim, um bom guia para se orientar nesse mundo de acessibilidade é o [guia sobre ARIA](https://www.w3.org/TR/wai-aria-practices-1.2/), nele é contido uma introdução sobre os pontos da WAI-ARIA e nesse. Outro documento importante é o [guia sobre diretrizes de acessibilidade](https://www.w3.org/TR/2020/WD-WCAG22-20200811/) todos criados pelo time das W3C.
