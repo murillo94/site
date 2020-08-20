@@ -6,7 +6,8 @@ export const Link = ({
   ariaLabel,
   isExternal,
   isIcon,
-  isSelected
+  isSelected,
+  as
 }) => (
   <>
     {isExternal ? (
@@ -19,7 +20,7 @@ export const Link = ({
         {children}
       </a>
     ) : (
-      <LinkNext href={href}>
+      <LinkNext href={href} as={as}>
         <a aria-label={ariaLabel}>{children}</a>
       </LinkNext>
     )}
