@@ -9,7 +9,7 @@ import publications from '../data/publications';
 
 import { LanguageContext, languages } from '../contexts/language';
 
-function Bio() {
+const Bio = () => {
   const context = useContext(LanguageContext)[0];
   const content = languages[context];
 
@@ -303,7 +303,7 @@ function Bio() {
       </style>
     </>
   );
-}
+};
 
 const Resume = () => {
   const [language, setLanguage] = useState('en');
