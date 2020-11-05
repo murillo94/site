@@ -7,12 +7,16 @@ import path from 'path';
 import Post from '../../layouts/post';
 import { Link } from '../../components/link';
 import { H1, H3 } from '../../components/heading';
+import { Paragraph } from '../../components/paragraph';
+import { Button } from '../../components/button';
 
 const root = process.cwd();
 const components = {
   a: props => <Link {...props} isExternal />,
   h1: H1,
-  h3: H3
+  h3: H3,
+  p: Paragraph,
+  button: Button
 };
 
 export default function BlogPost({ mdxSource }) {
