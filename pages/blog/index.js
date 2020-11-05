@@ -1,18 +1,25 @@
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+
 import { Page } from '../../layouts/page';
 import { H1, H3 } from '../../components/heading';
 import { Paragraph } from '../../components/paragraph';
 import { Link } from '../../components/link';
 
-import { getSortedPosts } from '../../utils/posts';
+const root = process.cwd();
 
 export async function getStaticProps() {
-  const posts = getSortedPosts();
-
-  return {
-    props: {
-      posts
-    }
-  };
+  const contentRoot = path.join(root, 'posts');
+  const posts = fs.readdirSync(contentRoot).map(p => {
+    const content = fs.readFileSync(path.join(contentRoot, p), 'utf8');
+    return {
+      slug: p.replace(/\.mdx/, ''),
+      content,
+      frontMatter: matter(content).data
+    };
+  });
+  return { props: { posts } };
 }
 
 const Blog = ({ posts }) => (
@@ -25,14 +32,14 @@ const Blog = ({ posts }) => (
     <article>
       <div>
         <ul>
-          {posts.map(({ frontmatter: { title, date }, slug }) => (
-            <li key={slug}>
+          {posts.map(data => (
+            <li key={data.slug}>
               <H3>
-                <Link href="/blog/[slug]" as={`blog/${slug}`}>
-                  {title}
+                <Link href="/blog/[slug]" as={`blog/${data.slug}`}>
+                  {data.frontMatter.title}
                 </Link>
               </H3>
-              <span>{date}</span>
+              <span>{data.frontMatter.date}</span>
             </li>
           ))}
         </ul>
