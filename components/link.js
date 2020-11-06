@@ -7,6 +7,7 @@ export const Link = ({
   isExternal,
   isIcon,
   isSelected,
+  isNormal,
   as
 }) => (
   <>
@@ -29,10 +30,10 @@ export const Link = ({
       {`
          {
           color: inherit;
-          text-decoration: none;
+          text-decoration: ${isNormal ? 'underline' : 'none'};
           border-radius: ${isSelected ? '0.375rem 0.375rem 0 0' : '0.375rem'};
           box-shadow: ${isSelected ? '0 0.0625rem 0 0 currentColor' : 'none'};
-          padding: 0.3125rem;
+          padding: ${isNormal ? '0' : '0.3125rem'};
           transition: background-color 0.1s;
           display: ${isIcon ? 'flex' : 'initial'};
           align-items: center;
@@ -52,7 +53,7 @@ export const Link = ({
 
         @media (min-width: 48rem) {
            {
-            padding: 0.375rem 0.425rem;
+            padding: ${isNormal ? '0' : '0.375rem 0.425rem'};
           }
         }
       `}

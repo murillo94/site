@@ -12,7 +12,7 @@ import { Button } from '../../components/button';
 
 const root = process.cwd();
 const components = {
-  a: props => <Link {...props} isExternal />,
+  a: props => <Link {...props} isExternal isNormal />,
   h1: H1,
   h3: H3,
   p: Paragraph,
