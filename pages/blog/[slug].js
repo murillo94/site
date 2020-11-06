@@ -6,23 +6,33 @@ import path from 'path';
 
 import Post from '../../layouts/post';
 import { Link } from '../../components/link';
-import { H1, H3 } from '../../components/heading';
+import { H1, H2, H3, H4, H5 } from '../../components/heading';
 import { Paragraph } from '../../components/paragraph';
 import { Button } from '../../components/button';
+import { Ol, Ul } from '../../components/list';
 
 const root = process.cwd();
 const components = {
   a: props => <Link {...props} isExternal isNormal />,
   h1: H1,
+  h2: H2,
   h3: H3,
+  h4: H4,
+  h5: H5,
   p: Paragraph,
-  button: Button
+  button: Button,
+  ol: Ol,
+  ul: Ul
 };
 
 export default function BlogPost({ mdxSource }) {
   const content = hydrate(mdxSource, { components });
 
-  return <Post>{content}</Post>;
+  return (
+    <>
+      <Post>{content}</Post>
+    </>
+  );
 }
 
 export async function getStaticPaths() {
