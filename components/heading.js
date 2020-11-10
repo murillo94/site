@@ -8,7 +8,7 @@ export const H1 = ({ children }) => (
           font-size: 2.8rem;
           font-weight: 700;
           line-height: 3.6rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
       `}
     </style>
@@ -25,7 +25,7 @@ export const H2 = ({ children }) => (
           font-size: 2.4rem;
           font-weight: 600;
           line-height: 3.2rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
       `}
     </style>
@@ -42,7 +42,7 @@ export const H3 = ({ children }) => (
           font-size: 1.5rem;
           font-weight: 600;
           line-height: 2.3rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
       `}
     </style>
@@ -59,7 +59,7 @@ export const H4 = ({ children }) => (
           font-size: 1.2rem;
           font-weight: 600;
           line-height: 2rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
       `}
     </style>
@@ -76,7 +76,7 @@ export const H5 = ({ children }) => (
           font-size: 1rem;
           font-weight: 600;
           line-height: 1.8rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
       `}
     </style>
