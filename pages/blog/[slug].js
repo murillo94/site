@@ -25,12 +25,18 @@ const components = {
   ul: Ul
 };
 
-export default function BlogPost({ mdxSource }) {
+export default function BlogPost({ mdxSource, frontMatter }) {
   const content = hydrate(mdxSource, { components });
 
   return (
     <>
-      <Post>{content}</Post>
+      <Post
+        title={frontMatter.title}
+        description={frontMatter.description}
+        slug={frontMatter.slug}
+      >
+        {content}
+      </Post>
     </>
   );
 }

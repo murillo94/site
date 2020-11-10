@@ -1,0 +1,26 @@
+{
+  "title": "Murillo de Miranda Pereira",
+  "titleTemplate": "%s - Interested in design systems, a11y and JAMstack.",
+  "description": "Code, biking and running. Interested in design systems, a11y and JAMstack.",
+  "openGraph": {
+    "type": "website",
+    "locale": "en_IE",
+    "url": "http://murillodmiranda.com/",
+    "site_name": "Murillo de Miranda Pereira",
+    "title": "Murillo de Miranda Pereira",
+    "titleTemplate": "Code, biking and running. Interested in design systems, a11y and JAMstack.",
+    "images": [
+      {
+        "url": "https://murillodmiranda.com/images/logo.png",
+        "width": 512,
+        "height": 512,
+        "alt": "Murillo de Miranda Pereira Logo"
+      }
+    ]
+  },
+  "twitter": {
+    "handle": "@murillodmiranda",
+    "site": "@murillodmiranda",
+    "cardType": "summary_large_image"
+  }
+}

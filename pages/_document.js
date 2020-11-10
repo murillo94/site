@@ -6,42 +6,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta content="Murillo de Miranda Pereira" itemProp="name" />
-          <meta
-            content="A cool guy that coding and loves UI design."
-            itemProp="description"
-          />
-
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-          <meta
-            name="description"
-            content="A cool guy that coding and loves UI design."
-          />
-
-          <meta property="og:title" content="Murillo de Miranda Pereira" />
-          <meta property="og:url" content="https://murillodmiranda.com/" />
-          <meta
-            property="og:image"
-            content="https://murillodmiranda.com/images/logo.svg"
-          />
-          <meta property="og:site_name" content="Murillo de Miranda Pereira" />
-          <meta
-            property="og:description"
-            content="A cool guy that coding and loves UI design."
-          />
-
-          <meta name="twitter:site" content="@murillodmiranda" />
-          <meta name="twitter:creator" content="@murillodmiranda" />
-          <meta name="twitter:card" content="summary" />
-          <meta
-            name="twitter:description"
-            content="A cool guy that coding and loves UI design."
-          />
-          <meta name="twitter:title" content="Murillo de Miranda Pereira" />
-          <meta name="twitter:image" content="https://murillodmiranda.com/" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <link rel="icon" href="images/logo.svg" />
           <link rel="alternate icon" href="images/logo.png" />
