@@ -25,10 +25,7 @@ Segundo os documentos da Iniciativa para a Acessibilidade na Web (W3C-WAI), aces
 
 Para que a acessibilidade na web seja possível, precisamos antes considerar alguns aspectos específicos e importantes para a construção dos documentos. A W3C-WAI identifica e menciona sete componentes que devem estar trabalhando em conjunto:
 
-1. O **conteúdo** deve ser toda a informação contida numa página, sendo isso:
-
-- a informação natural, tal como texto, imagem e áudio.
-- código ou marcação, que define a estrutura, a forma de apresentação, etc.
+1. O **conteúdo** deve ser toda a informação contida numa página, sendo isso: a informação natural, tal como texto, imagem e áudio ou até código/marcação, que define a estrutura, a forma de apresentação, etc.
 
 2. **Navegadores** ou **outros agentes** do usuário são o meio acessível para os documentos.
 
@@ -122,8 +119,8 @@ Com apenas o uso dos atributos do HTML, a WAI-ARIA identifica esses recursos e f
 
 A semântica possui duas partes:
 
-- Papéis (Roles): é o tipo de elemento o usuário está interagindo. Temos como exemplo um botão no qual possui `role=button` para indicar que o elemento é um botão. Para saber todo os papéis, encontre a lista em [possíveis de interação dos elementos](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles).
-- Estados e Propriedades (States and Properties): Os estados definem a configuração atual do elemento, por exemplo: `aria-disabled="true”`, informa ao usuário que o campo está desativado. Já as propriedades dão um sentido extra ao elemento, por exemplo: `aria-required="true”` informa ao usuário que o campo é obrigatório.
+- Papéis (Roles): é o tipo de elemento o usuário está interagindo. Temos como exemplo um botão no qual possui `role="button"` para indicar que o elemento é um botão. Para saber todo os papéis, encontre a lista em [possíveis de interação dos elementos](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles).
+- Estados e Propriedades (States and Properties): Os estados definem a configuração atual do elemento, por exemplo: `aria-disabled="true"`, informa ao usuário que o campo está desativado. Já as propriedades dão um sentido extra ao elemento, por exemplo: `aria-required="true”` informa ao usuário que o campo é obrigatório.
 
 Como dito antes, com ARIA podemos alterar a semântica do elemento e assim dar o contexto correto e esperado ao elemento, por exemplo:
 
