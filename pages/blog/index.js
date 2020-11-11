@@ -5,6 +5,7 @@ import matter from 'gray-matter';
 import { Page } from '../../layouts/page';
 import { H1, H3 } from '../../components/heading';
 import { Paragraph } from '../../components/paragraph';
+import { Span } from '../../components/span';
 import { Link } from '../../components/link';
 
 const root = process.cwd();
@@ -39,7 +40,7 @@ const Blog = ({ posts }) => (
                   {data.frontMatter.title}
                 </Link>
               </H3>
-              <span>{data.frontMatter.date}</span>
+              <Span>{data.frontMatter.date}</Span>
             </li>
           ))}
         </ul>
@@ -80,11 +81,12 @@ const Blog = ({ posts }) => (
           display: inline-block;
         }
 
-        span {
-          font-size: 0.8125rem;
-          font-weight: 400;
-          color: #aaa;
-          padding: 0 0.625rem;
+        :global(span) {
+          padding: 0 0.5rem !important;
+        }
+
+        :global(h3) {
+          margin-bottom: 0 !important;
         }
 
         @media only screen and (max-width: 37.5rem) {
@@ -92,7 +94,7 @@ const Blog = ({ posts }) => (
             margin: 0;
           }
 
-          span {
+          :global(span) {
             padding: 0;
           }
         }

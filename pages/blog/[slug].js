@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import renderToString from 'next-mdx-remote/render-to-string';
 import hydrate from 'next-mdx-remote/hydrate';
 import matter from 'gray-matter';
@@ -5,11 +6,14 @@ import fs from 'fs';
 import path from 'path';
 
 import Post from '../../layouts/post';
+
 import { Link } from '../../components/link';
 import { H1, H2, H3, H4, H5 } from '../../components/heading';
 import { Paragraph } from '../../components/paragraph';
 import { Button } from '../../components/button';
 import { Ol, Ul } from '../../components/list';
+
+import useReadingTime from '../../utils/use-reading-time';
 
 const root = process.cwd();
 const components = {
@@ -26,14 +30,17 @@ const components = {
 };
 
 export default function BlogPost({ mdxSource, frontMatter }) {
+  const post = useRef();
   const content = hydrate(mdxSource, { components });
+  const { readingTime } = useReadingTime(post);
+  const { title, description, slug, author, site, date } = frontMatter;
 
   return (
     <>
       <Post
-        title={frontMatter.title}
-        description={frontMatter.description}
-        slug={frontMatter.slug}
+        ref={post}
+        post={{ title, description, slug, readingTime }}
+        author={{ name: author, site, date }}
       >
         {content}
       </Post>
