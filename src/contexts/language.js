@@ -1,17 +1,17 @@
 import { createContext } from 'react';
 
-import personalData from '../data/personal';
-import educationData from '../data/education';
-import knowledgeData from '../data/knowledge';
-import jobsData from '../data/jobs';
-import languagesData from '../data/languages';
+import personalData from '@data/personal';
+import educationData from '@data/education';
+import knowledgeData from '@data/knowledge';
+import jobsData from '@data/jobs';
+import languagesData from '@data/languages';
 
-import personalTranslations from '../translations/personal';
-import educationTranslations from '../translations/education';
-import knowledgeTranslations from '../translations/knowledge';
-import publicationsTranslations from '../translations/publications';
-import jobsTranslations from '../translations/jobs';
-import languageTranslations from '../translations/languages';
+import personalTranslations from '@translations/personal';
+import educationTranslations from '@translations/education';
+import knowledgeTranslations from '@translations/knowledge';
+import publicationsTranslations from '@translations/publications';
+import jobsTranslations from '@translations/jobs';
+import languageTranslations from '@translations/languages';
 
 const getTexts = language => ({
   ...personalData[language],

@@ -1,13 +1,13 @@
 import React, { useState, useContext } from 'react';
 
-import { Page } from '../layouts/page';
-import { H1 } from '../components/heading';
-import { Translate } from '../components/translate';
-import { Link } from '../components/link';
+import { Page } from '@layouts/page';
+import { H1 } from '@components/heading';
+import { Translate } from '@components/translate';
+import { Link } from '@components/link';
 
-import publications from '../data/publications';
+import publications from '@data/publications';
 
-import { LanguageContext, languages } from '../contexts/language';
+import { LanguageContext, languages } from '@contexts/language';
 
 const Bio = () => {
   const context = useContext(LanguageContext)[0];

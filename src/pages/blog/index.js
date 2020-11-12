@@ -2,16 +2,16 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-import { Page } from '../../layouts/page';
-import { H1, H3 } from '../../components/heading';
-import { Paragraph } from '../../components/paragraph';
-import { Span } from '../../components/span';
-import { Link } from '../../components/link';
+import { Page } from '@layouts/page';
+import { H1, H3 } from '@components/heading';
+import { Paragraph } from '@components/paragraph';
+import { Span } from '@components/span';
+import { Link } from '@components/link';
 
 const root = process.cwd();
 
 export async function getStaticProps() {
-  const contentRoot = path.join(root, 'posts');
+  const contentRoot = path.join(root, 'src/posts');
   const posts = fs.readdirSync(contentRoot).map(p => {
     const content = fs.readFileSync(path.join(contentRoot, p), 'utf8');
     return {
