@@ -4,6 +4,7 @@ import { Page } from '@layouts/page';
 import { H1 } from '@components/heading';
 import { Translate } from '@components/translate';
 import { Link } from '@components/link';
+import { Span } from '@components/span';
 
 import publications from '@data/publications';
 
@@ -30,7 +31,7 @@ const Bio = () => {
                   <Link href={href} isExternal>
                     {name}
                   </Link>
-                  <span>- {href}</span>
+                  <Span>- {href}</Span>
                 </div>
               );
             }
@@ -41,7 +42,7 @@ const Bio = () => {
                   <Link href={href} isExternal>
                     {name}
                   </Link>
-                  <span className="show-print">- {cleanUrlPrint(href)}</span>
+                  <Span className="show-print">- {cleanUrlPrint(href)}</Span>
                 </div>
               );
             }
@@ -52,8 +53,8 @@ const Bio = () => {
                   <Link href={href} isExternal>
                     {name}
                   </Link>
-                  <span className="hide-print">- {description}</span>
-                  <span className="show-print">- {cleanUrlPrint(href)}</span>
+                  <Span className="hide-print">- {description}</Span>
+                  <Span className="show-print">- {cleanUrlPrint(href)}</Span>
                 </div>
               );
             }
@@ -71,7 +72,7 @@ const Bio = () => {
             return (
               <div key={name} className="hide-print">
                 <Link href={href}>{name}</Link>
-                <span>- {description}</span>
+                <Span>- {description}</Span>
               </div>
             );
           })}
@@ -114,7 +115,7 @@ const Bio = () => {
           <h2>{content.knowledgeTitle}</h2>
           {content.knowledges.map(({ name, description }) => (
             <p key={name}>
-              {name}:<span>{description}</span>
+              {name}:&nbsp;<Span>{description}</Span>
             </p>
           ))}
         </div>
@@ -146,13 +147,13 @@ const Bio = () => {
               <div key={time}>
                 <p>
                   {position}
-                  <span>
-                    -
+                  <Span>
+                  &nbsp;-
                     <Link href={site} isExternal>
                       {name}
                     </Link>
                     / {city}
-                  </span>
+                  </Span>
                 </p>
                 <ul>
                   <li>{descriptionCompany}</li>
@@ -170,7 +171,7 @@ const Bio = () => {
           {content.languages.map(({ name, level }) => (
             <p key={name}>
               {name}
-              <span>- {level}</span>
+              <Span>&nbsp;- {level}</Span>
             </p>
           ))}
         </div>
@@ -191,27 +192,6 @@ const Bio = () => {
           p {
             font-size: 1rem;
             margin: 0 0 0.625rem;
-          }
-
-          a {
-            color: #aaa;
-            text-decoration: underline;
-            border-radius: 0.375rem;
-            display: block;
-            margin-bottom: 0.625rem;
-            width: max-content;
-          }
-
-          span {
-            font-weight: 400;
-            color: #aaa;
-            margin-left: 0.3125rem;
-          }
-
-          span a {
-            display: inline-block;
-            margin-left: 0.3125rem;
-            margin-bottom: 0;
           }
 
           b {
@@ -251,7 +231,7 @@ const Bio = () => {
             margin-bottom: 1.25rem;
           }
 
-          .show-print {
+          :global(.show-print) {
             display: none !important;
             opacity: 0;
           }
@@ -281,12 +261,12 @@ const Bio = () => {
               margin: 0 0.3125em;
             }
 
-            .show-print {
+            :global(.show-print) {
               display: inline-flex !important;
               opacity: 1;
             }
 
-            .hide-print {
+            :global(.hide-print) {
               display: none !important;
               opacity: 0;
             }

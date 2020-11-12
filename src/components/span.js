@@ -1,5 +1,5 @@
-export const Span = ({ children }) => (
-  <span>
+export const Span = ({ children, className }) => (
+  <span className={className}>
     {children}
 
     <style jsx>
@@ -7,7 +7,7 @@ export const Span = ({ children }) => (
         span {
           font-size: 0.875rem;
           font-weight: 400;
-          color: #aaa;
+          color: #757575;
         }
       `}
     </style>

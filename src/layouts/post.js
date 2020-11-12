@@ -47,7 +47,7 @@ const Post = forwardRef(({ children, post, author }, ref) => {
           .infos {
             font-size: 0.875rem;
             font-weight: 400;
-            color: #aaa;
+            color: #757575;
           }
         `}
       </style>
