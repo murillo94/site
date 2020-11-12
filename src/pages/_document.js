@@ -6,8 +6,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-
           <link rel="icon" href="images/logo.svg" />
           <link rel="alternate icon" href="images/logo.png" />
           <link rel="mask-icon" href="images/logo.svg" color="#1a202c" />
@@ -105,7 +103,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <script src="no-flash.js" />
+          <script src="src/public/no-flash.js" />
           <Main />
           <NextScript />
         </body>

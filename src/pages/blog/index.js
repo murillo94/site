@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 import { Page } from '@layouts/page';
-import { H1, H3 } from '@components/heading';
+import { H1, H2 } from '@components/heading';
 import { Paragraph } from '@components/paragraph';
 import { Span } from '@components/span';
 import { Link } from '@components/link';
@@ -35,11 +35,11 @@ const Blog = ({ posts }) => (
         <ul>
           {posts.map(data => (
             <li key={data.slug}>
-              <H3>
+              <H2>
                 <Link href="/blog/[slug]" as={`blog/${data.slug}`}>
                   {data.frontMatter.title}
                 </Link>
-              </H3>
+              </H2>
               <Span>{data.frontMatter.date}</Span>
             </li>
           ))}
@@ -85,7 +85,10 @@ const Blog = ({ posts }) => (
           padding: 0 0.5rem !important;
         }
 
-        :global(h3) {
+        :global(h2) {
+          font-size: 1.5rem !important;
+          font-weight: 600 !important;
+          line-height: 2.3rem !important;
           margin-bottom: 0 !important;
         }
 

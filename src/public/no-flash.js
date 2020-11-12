@@ -14,6 +14,7 @@
   let localStorageTheme = null;
   try {
     localStorageTheme = localStorage.getItem(storageKey);
+    // eslint-disable-next-line no-empty
   } catch (err) {}
 
   const localStorageExists = localStorageTheme !== null;
