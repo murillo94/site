@@ -25,7 +25,10 @@ export const Header = () => {
             <Link href="/" isSelected={pathname === '/'}>
               Me
             </Link>
-            <Link href="/blog" isSelected={pathname === '/blog'}>
+            <Link
+              href="/blog"
+              isSelected={pathname === '/blog' || pathname === '/blog/[slug]'}
+            >
               Blog
             </Link>
             <Link href="/resume" isSelected={pathname === '/resume'}>
