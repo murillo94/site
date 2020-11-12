@@ -65,5 +65,19 @@
         }
       }
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@components/*", "./src/components"],
+          ["@contexts/*", "./src/contexts"],
+          ["@data/*", "./src/data"],
+          ["@layouts/*", "./src/layouts"],
+          ["@translations/*", "./src/translations"],
+          ["@utils/*", "./src/utils"]
+        ]
+      }
+    }
   }
 }
