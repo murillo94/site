@@ -6,9 +6,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="images/logo.svg" />
-          <link rel="alternate icon" href="images/logo.png" />
-          <link rel="mask-icon" href="images/logo.svg" color="#1a202c" />
+          <link rel="icon" href="../../images/logo.svg" />
+          <link rel="alternate icon" href="../../images/logo.png" />
+          <link rel="mask-icon" href="../../images/logo.svg" color="#1a202c" />
 
           <style
             dangerouslySetInnerHTML={{
@@ -103,7 +103,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <script src="src/public/no-flash.js" />
+          <script src="../../no-flash.js" />
           <Main />
           <NextScript />
         </body>
