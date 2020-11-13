@@ -103,7 +103,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <script src="../../no-flash.js" />
+          <script src="../../no-flash.js" async />
           <Main />
           <NextScript />
         </body>
