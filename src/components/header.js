@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import useDarkMode from 'use-dark-mode';
+import { useTheme } from 'next-themes';
 
 import { Link } from './link';
 import { Button } from './button';
@@ -10,7 +10,11 @@ import Circle from 'public/images/circle.svg';
 
 export const Header = () => {
   const { pathname } = useRouter();
-  const darkMode = useDarkMode(false);
+  const { setTheme, theme } = useTheme();
+
+  const handleChangeTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
 
   return (
     <header>
@@ -46,7 +50,7 @@ export const Header = () => {
             </Link>
             <Button
               type="button"
-              onClick={darkMode.toggle}
+              onClick={handleChangeTheme}
               ariaLabel="Dark/light mode"
             >
               <Circle />

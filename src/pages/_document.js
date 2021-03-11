@@ -26,18 +26,18 @@ class MyDocument extends Document {
                   transition: background-color 0.3s ease;
                 }
 
-                body.light-mode {
+                :root {
                   background-color: #fff;
                   color: #1a202c;
                 }
 
-                body.dark-mode {
+                [data-theme='dark'] {
                   background-color: #1a202c;
                   color: #e2e8f0;
                 }
 
-                body.dark-mode a:hover,
-                body.dark-mode button:hover {
+                [data-theme='dark'] a:hover,
+                [data-theme='dark'] button:hover {
                   color: #1a1919 !important;
                 }
 
@@ -55,9 +55,13 @@ class MyDocument extends Document {
                   padding: 0 5px;
                 }
 
-                body.dark-mode code {
+                [data-theme='dark'] code {
                   background-color: #000;
-                 }
+                }
+
+                [data-theme='dark'] span {
+                  color: #9ca3af !important;
+                }
 
                 ::selection {
                   background-color: #ffe166 !important;
@@ -103,7 +107,6 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <script src="../../no-flash.js" async />
           <Main />
           <NextScript />
         </body>
