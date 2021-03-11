@@ -4,9 +4,9 @@ import { useTheme } from 'next-themes';
 import { Link } from './link';
 import { Button } from './button';
 
-import Logo from 'public/images/logo.svg';
-import Twitter from 'public/images/twitter.svg';
-import Circle from 'public/images/circle.svg';
+import Logo from '@/public/images/logo.svg';
+import Twitter from '@/public/images/twitter.svg';
+import Circle from '@/public/images/circle.svg';
 
 export const Header = () => {
   const { pathname } = useRouter();

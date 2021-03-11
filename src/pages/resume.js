@@ -1,14 +1,14 @@
 import React, { useState, useContext } from 'react';
 
-import { Page } from '@layouts/page';
-import { H1 } from '@components/heading';
-import { Translate } from '@components/translate';
-import { Link } from '@components/link';
-import { Span } from '@components/span';
+import { Page } from '@/layouts/page';
+import { H1 } from '@/components/heading';
+import { Translate } from '@/components/translate';
+import { Link } from '@/components/link';
+import { Span } from '@/components/span';
 
-import publications from '@data/publications';
+import publications from '@/data/publications';
 
-import { LanguageContext, languages } from '@contexts/language';
+import { LanguageContext, languages } from '@/contexts/language';
 
 const Bio = () => {
   const context = useContext(LanguageContext)[0];
@@ -148,7 +148,7 @@ const Bio = () => {
                 <p>
                   {position}
                   <Span>
-                  &nbsp;-
+                    &nbsp;-
                     <Link href={site} isExternal>
                       {name}
                     </Link>

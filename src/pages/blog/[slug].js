@@ -5,15 +5,15 @@ import matter from 'gray-matter';
 import fs from 'fs';
 import path from 'path';
 
-import Post from '@layouts/post';
+import Post from '@/layouts/post';
 
-import { Link } from '@components/link';
-import { H1, H2, H3, H4, H5 } from '@components/heading';
-import { Paragraph } from '@components/paragraph';
-import { Button } from '@components/button';
-import { Ol, Ul } from '@components/list';
+import { Link } from '@/components/link';
+import { H1, H2, H3, H4, H5 } from '@/components/heading';
+import { Paragraph } from '@/components/paragraph';
+import { Button } from '@/components/button';
+import { Ol, Ul } from '@/components/list';
 
-import useReadingTime from '@utils/use-reading-time';
+import useReadingTime from '@/utils/use-reading-time';
 
 const root = process.cwd();
 const components = {

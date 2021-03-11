@@ -2,11 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-import { Page } from '@layouts/page';
-import { H1, H2 } from '@components/heading';
-import { Paragraph } from '@components/paragraph';
-import { Span } from '@components/span';
-import { Link } from '@components/link';
+import { Page } from '@/layouts/page';
+import { H1, H2 } from '@/components/heading';
+import { Paragraph } from '@/components/paragraph';
+import { Span } from '@/components/span';
+import { Link } from '@/components/link';
 
 const root = process.cwd();
 

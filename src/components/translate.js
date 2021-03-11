@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import { Button } from './button';
 
-import { LanguageContext } from '@contexts/language';
+import { LanguageContext } from '@/contexts/language';
 
 export const Translate = () => {
   const [language, setLanguage] = useContext(LanguageContext);

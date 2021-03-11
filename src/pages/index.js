@@ -1,6 +1,6 @@
-import { Page } from '@layouts/page';
-import { H1 } from '@components/heading';
-import { Paragraph } from '@components/paragraph';
+import { Page } from '@/layouts/page';
+import { H1 } from '@/components/heading';
+import { Paragraph } from '@/components/paragraph';
 
 const Index = () => (
   <Page>

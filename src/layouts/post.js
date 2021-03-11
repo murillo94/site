@@ -3,10 +3,10 @@ import { NextSeo } from 'next-seo';
 
 import { Page } from './page';
 
-import { H1 } from '@components/heading';
-import { Paragraph } from '@components/paragraph';
-import { Link } from '@components/link';
-import { Span } from '@components/span';
+import { H1 } from '@/components/heading';
+import { Paragraph } from '@/components/paragraph';
+import { Link } from '@/components/link';
+import { Span } from '@/components/span';
 
 const Post = forwardRef(({ children, post, author }, ref) => {
   const { title, description, slug, readingTime } = post;
