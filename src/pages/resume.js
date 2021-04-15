@@ -140,11 +140,12 @@ const Bio = () => {
               site,
               name,
               city,
-              descriptionCompany,
-              descriptionTech,
-              time
+              info,
+              description,
+              curiosity,
+              date
             }) => (
-              <div key={time}>
+              <div key={date}>
                 <p>
                   {position}
                   <Span>
@@ -156,9 +157,10 @@ const Bio = () => {
                   </Span>
                 </p>
                 <ul>
-                  <li>{descriptionCompany}</li>
-                  {descriptionTech && <li>{descriptionTech}</li>}
-                  <li>{time}</li>
+                  <li>{info}</li>
+                  {description && <li>{description}</li>}
+                  {curiosity && <li>{curiosity}</li>}
+                  <li>{date}</li>
                 </ul>
               </div>
             )

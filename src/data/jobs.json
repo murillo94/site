@@ -4,29 +4,35 @@
       {
         "name": "Magnetis",
         "site": "https://magnetis.com.br",
-        "time": "Aug. 2020 / Current",
-        "city": "São Paulo, Brazil",
+        "date": "Aug. 2020 / Current",
+        "time": "",
+        "city": "São Paulo, Brazil (remote)",
         "position": "Front End Engineer",
-        "descriptionCompany": "Magnetis is a digital investment manager",
-        "descriptionTech": ""
+        "info": "Magnetis is a digital investment manager",
+        "description": "",
+        "curiosity": ""
       },
       {
         "name": "Mercos",
         "site": "https://mercos.com",
-        "time": "Apr. 2019 / Aug. 2020",
+        "date": "Apr. 2019 / Aug. 2020",
+        "time": "1 year and 5 months",
         "city": "Joinville, Brazil",
-        "position": "Full Stack Developer",
-        "descriptionCompany": "Mercos is a results and sales potentializer",
-        "descriptionTech": "At Mercos I was managing time building a new design system, ui components, a11y and full stack development with ReactJS, Django, MySQL"
+        "position": "Front End Engineer",
+        "info": "Mercos is a results and sales potentializer",
+        "description": "At Mercos I was managing time building a new design system, ui components, a11y with ReactJS and Django templates",
+        "curiosity": "Sometimes I also worked on tasks with Django, Python and MySQL"
       },
       {
         "name": "SaleSpots",
         "site": "http://salespots.co",
-        "time": "Jan. 2016 / Mar. 2019",
+        "date": "Jan. 2016 / Mar. 2019",
+        "time": "3 years and 3 months",
         "city": "Joinville, Brazil",
-        "position": "Full Stack Developer",
-        "descriptionCompany": "SaleSpots is a market intelligence to find new customers",
-        "descriptionTech": "At Salespots I was responsible for the whole front end architecture of the application: ReactJS, (AngularJS and Ionic legacy), making sure the application is PWA, fully responsive, accessible and scalable. When not touching in front end I was helping back end with Lambda, DynamoDB and others AWS services"
+        "position": "Front End Engineer",
+        "info": "SaleSpots is a market intelligence to find new customers",
+        "description": "At Salespots I was responsible for the whole front end architecture of the application: ReactJS, (AngularJS and Ionic legacy), making sure the application is PWA, fully responsive, accessible and scalable",
+        "curiosity": "When needed, at times I helped the backend team with Lambda, DynamoDB and other AWS services"
       }
     ]
   },
@@ -35,29 +41,35 @@
       {
         "name": "Magnetis",
         "site": "https://magnetis.com.br",
-        "time": "Ago. 2020 / Atualmente",
-        "city": "São Paulo, Brasil",
+        "date": "Ago. 2020 / Atualmente",
+        "time": "",
+        "city": "São Paulo, Brasil (Remoto)",
         "position": "Engenheiro Front End",
-        "descriptionCompany": "Magnetis é uma gestora de investimentos digital",
-        "descriptionTech": ""
+        "info": "Magnetis é uma gestora digital de investimentos",
+        "description": "",
+        "curiosity": ""
       },
       {
         "name": "Mercos",
         "site": "https://mercos.com",
-        "time": "Abr. 2019 / Ago. 2020",
+        "date": "Abr. 2019 / Ago. 2020",
+        "time": "1 ano e 5 meses",
         "city": "Joinville, Brasil",
-        "position": "Desenvolvedor Full Stack",
-        "descriptionCompany": "Mercos é um potencializador de resultados e vendas",
-        "descriptionTech": "Na Mercos eu gerenciava meu tempo em construir um novo design system, ui components, a11y e desenvolvimento full stack com ReactJS, Django, MySQL"
+        "position": "Engenheiro Front End",
+        "info": "Mercos é um potencializador de resultados e vendas",
+        "description": "Na Mercos eu gerenciava meu tempo em construir um novo design system, ui components, a11y com ReactJS e Django templates",
+        "curiosity": "Algumas vezes também atuei em tarefas com Django, Python e MySQL"
       },
       {
         "name": "SaleSpots",
         "site": "http://salespots.co",
-        "time": "Jan. 2016 / Mar. 2019",
+        "date": "Jan. 2016 / Mar. 2019",
+        "time": "3 anos e 3 meses",
         "city": "Joinville, Brasil",
-        "position": "Desenvolvedor Full Stack",
-        "descriptionCompany": "SaleSpots atua com inteligência de mercado para encontrar novos clientes",
-        "descriptionTech": "Na Salespots fui responsável por toda arquitetura front end da aplicação: ReactJS, (AngularJS e Ionic legado), assegurando que a aplicação é PWA, totalmente responsiva, acessível e escalável. Quando necessário, em alguns momentos estava ajudando no back end com Lambda, DynamoDB e outros serviços da AWS"
+        "position": "Engenheiro Front End",
+        "info": "SaleSpots atua com inteligência de mercado para encontrar novos clientes",
+        "description": "Na Salespots fui responsável por toda arquitetura front end da aplicação: ReactJS, (AngularJS e Ionic legado), assegurando que a aplicação é PWA, totalmente responsiva, acessível e escalável",
+        "curiosity": "Quando necessário, em alguns momentos, ajudei o time de back end com Lambda, DynamoDB e outros serviços da AWS"
       }
     ]
   }
