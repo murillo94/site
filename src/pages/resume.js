@@ -167,7 +167,6 @@ const Bio = () => {
           )}
         </div>
 
-        <div className="break-page" />
         <div className="margin-print">
           <h2>{content.languageTitle}</h2>
           {content.languages.map(({ name, level }) => (
@@ -236,10 +235,6 @@ const Bio = () => {
           :global(.show-print) {
             display: none !important;
             opacity: 0;
-          }
-
-          .break-page {
-            page-break-after: always;
           }
 
           @media only screen and (max-width: 37.5rem) {
