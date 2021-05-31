@@ -20,8 +20,8 @@
         "city": "Joinville, Brazil",
         "position": "Front End Engineer",
         "info": "Mercos is a results and sales potentializer",
-        "description": "At Mercos I was managing time building a new design system, ui components, a11y with ReactJS and Django templates",
-        "curiosity": "Sometimes I also worked on tasks with Django, Python and MySQL"
+        "description": "Responsible for leading the e-commerce front end using ReactJS to restructure the project and keeping the product functionalities in parallel",
+        "curiosity": "I was also responsible for building the new design system with focus on creating accessible components using ReactJS and for a period I also had contact with Python, Django, MySQL"
       },
       {
         "name": "SaleSpots",
@@ -31,8 +31,8 @@
         "city": "Joinville, Brazil",
         "position": "Front End Engineer",
         "info": "SaleSpots is a market intelligence to find new customers",
-        "description": "At Salespots I was responsible for the whole front end architecture of the application: ReactJS, (AngularJS and Ionic legacy), making sure the application is PWA, fully responsive, accessible and scalable",
-        "curiosity": "When needed, at times I helped the backend team with Lambda, DynamoDB and other AWS services"
+        "description": "Responsible for the front end architecture of the application: ReactJS, (AngularJS and legacy Ionic), ensuring a responsive, accessible and scalable PWA application",
+        "curiosity": "For a period, I also had contact with Node.js, Lambda, DynamoDB, S3 and other AWS services"
       }
     ]
   },
@@ -57,8 +57,8 @@
         "city": "Joinville, Brasil",
         "position": "Engenheiro Front End",
         "info": "Mercos é um potencializador de resultados e vendas",
-        "description": "Na Mercos eu gerenciava meu tempo em construir um novo design system, ui components, a11y com ReactJS e Django templates",
-        "curiosity": "Algumas vezes também atuei em tarefas com Django, Python e MySQL"
+        "description": "Responsável por liderar o front end do e-commerce utilizando ReactJS para reestruturação do projeto e mantendo as funcionalidades do produto em paralelo",
+        "curiosity": "Também fui responsável pela construção do novo design system com foco na criação de componentes acessíveis utilizando ReactJS e por um período também tive contato com Python, Django, MySQL"
       },
       {
         "name": "SaleSpots",
@@ -68,8 +68,8 @@
         "city": "Joinville, Brasil",
         "position": "Engenheiro Front End",
         "info": "SaleSpots atua com inteligência de mercado para encontrar novos clientes",
-        "description": "Na Salespots fui responsável por toda arquitetura front end da aplicação: ReactJS, (AngularJS e Ionic legado), assegurando que a aplicação é PWA, totalmente responsiva, acessível e escalável",
-        "curiosity": "Quando necessário, em alguns momentos, ajudei o time de back end com Lambda, DynamoDB e outros serviços da AWS"
+        "description": "Responsável pela arquitetura front end da aplicação: ReactJS, (AngularJS e Ionic legado), assegurando uma aplicação PWA responsiva, acessível e escalável",
+        "curiosity": "Durante um período, também tive contato com Node.js, Lambda, DynamoDB, S3 e outros serviços da AWS"
       }
     ]
   }
