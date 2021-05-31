@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import renderToString from 'next-mdx-remote/render-to-string';
-import hydrate from 'next-mdx-remote/hydrate';
+import { serialize } from 'next-mdx-remote/serialize';
+import { MDXRemote } from 'next-mdx-remote';
 import matter from 'gray-matter';
 import fs from 'fs';
 import path from 'path';
@@ -29,9 +29,8 @@ const components = {
   ul: Ul
 };
 
-export default function BlogPost({ mdxSource, frontMatter }) {
+export default function BlogPost({ source, frontMatter }) {
   const post = useRef();
-  const content = hydrate(mdxSource, { components });
   const { readingTime } = useReadingTime(post);
   const { title, description, slug, author, site, date } = frontMatter;
 
@@ -42,7 +41,7 @@ export default function BlogPost({ mdxSource, frontMatter }) {
         post={{ title, description, slug, readingTime }}
         author={{ name: author, site, date }}
       >
-        {content}
+        <MDXRemote {...source} components={components} />
       </Post>
     </>
   );
@@ -62,7 +61,7 @@ export async function getStaticProps({ params }) {
     path.join(root, 'src/posts', `${params.slug}.mdx`),
     'utf8'
   );
-  const { data, content } = matter(source);
-  const mdxSource = await renderToString(content);
-  return { props: { mdxSource, frontMatter: data } };
+  const { content, data } = matter(source);
+  const mdxSource = await serialize(content, { scope: data });
+  return { props: { source: mdxSource, frontMatter: data } };
 }
