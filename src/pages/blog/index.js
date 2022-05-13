@@ -52,7 +52,7 @@ const Blog = ({ posts }) => (
         article {
           height: 100%;
           line-height: 1.6;
-          margin: 0 -0.625rem;
+          margin: 0 -0.2rem;
         }
 
         div {

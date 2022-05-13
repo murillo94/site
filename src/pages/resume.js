@@ -209,7 +209,7 @@ const Bio = () => {
           }
 
           .link-bio div {
-            margin: 0 -0.625rem;
+            margin: 0 -0.2rem;
             display: flex;
             align-items: center;
           }

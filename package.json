@@ -1,6 +1,6 @@
 {
   "name": "site",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "It's me",
   "author": "Murillo de Miranda Pereira",
   "license": "MIT",
@@ -11,16 +11,16 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "dayjs": "^1.10.5",
+    "dayjs": "^1.11.2",
     "gray-matter": "^4.0.3",
-    "next": "^11.1.3",
+    "next": "^12.1.6",
     "next-ga": "^2.3.4",
-    "next-mdx-remote": "^3.0.2",
-    "next-react-svg": "^1.1.2",
-    "next-seo": "^4.24.0",
-    "next-themes": "^0.0.14",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "next-mdx-remote": "^4.0.3",
+    "next-react-svg": "^1.1.3",
+    "next-seo": "^5.4.0",
+    "next-themes": "^0.2.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {

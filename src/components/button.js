@@ -4,7 +4,7 @@ export const Button = ({ children, onClick, ariaLabel }) => (
 
     <style jsx>
       {`
-         {
+        button {
           font-size: 1.125rem;
           color: inherit;
           background-color: transparent;

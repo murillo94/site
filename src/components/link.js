@@ -28,7 +28,7 @@ export const Link = ({
 
     <style jsx>
       {`
-         {
+        a {
           color: inherit;
           text-decoration: ${isNormal ? 'underline' : 'none'};
           border-radius: ${isSelected ? '0.375rem 0.375rem 0 0' : '0.375rem'};
