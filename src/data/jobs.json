@@ -2,10 +2,21 @@
   "en": {
     "companies": [
       {
+        "name": "Origin",
+        "site": "https://useorigin.com",
+        "date": "Nov. 2021 / Current",
+        "time": "",
+        "city": "San Francisco, California (remote)",
+        "position": "Front End Engineer",
+        "info": "Origin is a holistic financial benefits platform.",
+        "description": "",
+        "curiosity": ""
+      },
+      {
         "name": "Magnetis",
         "site": "https://magnetis.com.br",
-        "date": "Aug. 2020 / Current",
-        "time": "",
+        "date": "Aug. 2020 / Nov. 2021",
+        "time": "1 year and 4 months",
         "city": "São Paulo, Brazil (remote)",
         "position": "Senior Front End Engineer",
         "info": "Magnetis is a digital investment manager",
@@ -39,10 +50,21 @@
   "ptbr": {
     "companies": [
       {
+        "name": "Origin",
+        "site": "https://useorigin.com",
+        "date": "Nov. 2021 / Current",
+        "time": "",
+        "city": "São Francisco, Califórnia (remoto)",
+        "position": "Engenheiro Front End",
+        "info": "Origin é uma plataforma holística de benefícios financeiros.",
+        "description": "",
+        "curiosity": ""
+      },
+      {
         "name": "Magnetis",
         "site": "https://magnetis.com.br",
-        "date": "Ago. 2020 / Atualmente",
-        "time": "",
+        "date": "Ago. 2020 / Nov. 2021",
+        "time": "1 ano e 4 meses",
         "city": "São Paulo, Brasil (remoto)",
         "position": "Engenheiro Front End Sênior",
         "info": "Magnetis é uma gestora digital de investimentos",
