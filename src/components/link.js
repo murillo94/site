@@ -1,62 +1,64 @@
-import { default as LinkNext } from 'next/link';
+import NextLink from 'next/link';
+import css from 'styled-jsx/css';
+
+function getLinkStyles(isIcon, isSelected, isNormal) {
+  return css.resolve`
+    a {
+      color: inherit;
+      text-decoration: ${isNormal ? 'underline' : 'none'};
+      border-radius: ${isSelected ? '0.375rem 0.375rem 0 0' : '0.375rem'};
+      box-shadow: ${isSelected ? '0 0.0625rem 0 0 currentColor' : 'none'};
+      padding: ${isNormal ? '0' : '0.3125rem'};
+      transition: background-color 0.1s;
+      display: ${isIcon ? 'flex' : 'initial'};
+      align-items: center;
+    }
+
+    a:active,
+    a:focus,
+    a:visited {
+      color: inherit;
+    }
+
+    a:hover {
+      background-color: #efefef;
+      border-radius: 0.375rem;
+      box-shadow: none;
+    }
+
+    @media (min-width: 48rem) {
+      a {
+        padding: ${isNormal ? '0' : '0.375rem 0.425rem'};
+      }
+    }
+  `;
+}
 
 export const Link = ({
   children,
   href,
   ariaLabel,
-  isExternal,
   isIcon,
   isSelected,
   isNormal,
-  as
-}) => (
-  <>
-    {isExternal ? (
-      <a
+  as,
+  ...props
+}) => {
+  const { className, styles } = getLinkStyles(isIcon, isSelected, isNormal);
+
+  return (
+    <>
+      <NextLink
         href={href}
+        as={as}
         aria-label={ariaLabel}
-        target="_blank"
-        rel="noopener noreferrer"
+        className={className}
+        {...props}
       >
         {children}
-      </a>
-    ) : (
-      <LinkNext href={href} as={as}>
-        <a aria-label={ariaLabel}>{children}</a>
-      </LinkNext>
-    )}
+      </NextLink>
 
-    <style jsx>
-      {`
-        a {
-          color: inherit;
-          text-decoration: ${isNormal ? 'underline' : 'none'};
-          border-radius: ${isSelected ? '0.375rem 0.375rem 0 0' : '0.375rem'};
-          box-shadow: ${isSelected ? '0 0.0625rem 0 0 currentColor' : 'none'};
-          padding: ${isNormal ? '0' : '0.3125rem'};
-          transition: background-color 0.1s;
-          display: ${isIcon ? 'flex' : 'initial'};
-          align-items: center;
-        }
-
-        :active,
-        :focus,
-        :visited {
-          color: inherit;
-        }
-
-        :hover {
-          background-color: #efefef;
-          border-radius: 0.375rem;
-          box-shadow: none;
-        }
-
-        @media (min-width: 48rem) {
-           {
-            padding: ${isNormal ? '0' : '0.375rem 0.425rem'};
-          }
-        }
-      `}
-    </style>
-  </>
-);
+      {styles}
+    </>
+  );
+};

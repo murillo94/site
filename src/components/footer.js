@@ -12,7 +12,8 @@ export const Footer = () => (
       <Link
         href="https://twitter.com/murillodmiranda"
         ariaLabel="Twitter"
-        isExternal
+        target="_blank"
+        rel="noopener noreferrer"
         isIcon
       >
         <Twitter />
@@ -20,7 +21,8 @@ export const Footer = () => (
       <Link
         href="https://github.com/murillo94"
         ariaLabel="Github"
-        isExternal
+        target="_blank"
+        rel="noopener noreferrer"
         isIcon
       >
         <Github />
@@ -28,7 +30,8 @@ export const Footer = () => (
       <Link
         href="https://dribbble.com/murillodmiranda"
         ariaLabel="Dribbble"
-        isExternal
+        target="_blank"
+        rel="noopener noreferrer"
         isIcon
       >
         <Dribbble />
@@ -36,7 +39,8 @@ export const Footer = () => (
       <Link
         href="https://twitch.tv/murillodmiranda"
         ariaLabel="Twitch"
-        isExternal
+        target="_blank"
+        rel="noopener noreferrer"
         isIcon
       >
         <Twitch />
@@ -44,7 +48,8 @@ export const Footer = () => (
       <Link
         href="https://linkedin.com/in/murillodmiranda"
         ariaLabel="Linkedin"
-        isExternal
+        target="_blank"
+        rel="noopener noreferrer"
         isIcon
       >
         <Linkedin />

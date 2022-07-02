@@ -29,7 +29,12 @@ const Post = forwardRef(({ children, post, author }, ref) => {
           <H1>{title}</H1>
           <div className="infos">
             <Paragraph>
-              <Link href={site} isExternal isNormal>
+              <Link
+                href={site}
+                target="_blank"
+                rel="noopener noreferrer"
+                isNormal
+              >
                 {name}
               </Link>
               &nbsp;•&nbsp;

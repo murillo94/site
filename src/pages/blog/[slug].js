@@ -17,7 +17,9 @@ import useReadingTime from '@/utils/use-reading-time';
 
 const root = process.cwd();
 const components = {
-  a: props => <Link {...props} isExternal isNormal />,
+  a: props => (
+    <Link {...props} target="_blank" rel="noopener noreferrer" isNormal />
+  ),
   h1: H1,
   h2: H2,
   h3: H3,

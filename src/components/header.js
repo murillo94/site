@@ -43,7 +43,8 @@ export const Header = () => {
             <Link
               href="https://twitter.com/murillodmiranda"
               ariaLabel="Twitter"
-              isExternal
+              target="_blank"
+              rel="noopener noreferrer"
               isIcon
             >
               <Twitter />

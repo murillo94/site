@@ -28,7 +28,7 @@ const Bio = () => {
             if (name === 'Site') {
               return (
                 <div key={name} className="show-print">
-                  <Link href={href} isExternal>
+                  <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
                   <Span>- {href}</Span>
@@ -39,7 +39,7 @@ const Bio = () => {
             if (name === 'Linkedin') {
               return (
                 <div key={name}>
-                  <Link href={href} isExternal>
+                  <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
                   <Span className="show-print">- {cleanUrlPrint(href)}</Span>
@@ -50,7 +50,7 @@ const Bio = () => {
             if (name === 'Github') {
               return (
                 <div key={name}>
-                  <Link href={href} isExternal>
+                  <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
                   <Span className="hide-print">- {description}</Span>
@@ -62,7 +62,7 @@ const Bio = () => {
             if (name === 'Stack Overflow') {
               return (
                 <div key={name} className="hide-print">
-                  <Link href={href} isExternal>
+                  <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
                 </div>
@@ -150,7 +150,7 @@ const Bio = () => {
                   {position}
                   <Span>
                     &nbsp;-
-                    <Link href={site} isExternal>
+                    <Link href={site} target="_blank" rel="noopener noreferrer">
                       {name}
                     </Link>
                     / {city}
