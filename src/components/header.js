@@ -25,7 +25,7 @@ export const Header = () => {
           </Link>
         </div>
         <div className="right-menu">
-          <div className="links-internal">
+          <div>
             <Link href="/" isSelected={pathname === '/'}>
               Me
             </Link>
@@ -68,12 +68,8 @@ export const Header = () => {
             max-width: 48rem;
           }
 
-          header :global(a) {
-            margin-right: 1rem;
-          }
-
           .logo :global(a) {
-            background-color: transparent;
+            background-color: transparent !important;
             padding: 0;
             border: none;
             width: 3.2rem;
@@ -90,6 +86,7 @@ export const Header = () => {
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
+            gap: 1rem;
           }
 
           .right-menu {
@@ -111,8 +108,8 @@ export const Header = () => {
               align-items: flex-start;
             }
 
-            header :global(a) {
-              margin-right: 1.25rem;
+            nav div {
+              gap: 1.25rem;
             }
           }
         `}

@@ -47,7 +47,7 @@ const Bio = () => {
               );
             }
 
-            if (name === 'Github') {
+            if (name === 'Github' || name === 'Dribbble') {
               return (
                 <div key={name}>
                   <Link href={href} target="_blank" rel="noopener noreferrer">

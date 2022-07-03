@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 import css from 'styled-jsx/css';
 
-function getLinkStyles(isIcon, isSelected, isNormal) {
+function getLinkStyles({ isIcon, isSelected, isNormal }) {
   return css.resolve`
     a {
       color: inherit;
@@ -44,7 +44,7 @@ export const Link = ({
   as,
   ...props
 }) => {
-  const { className, styles } = getLinkStyles(isIcon, isSelected, isNormal);
+  const { className, styles } = getLinkStyles({ isIcon, isSelected, isNormal });
 
   return (
     <>

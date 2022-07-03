@@ -62,14 +62,11 @@ export const Footer = () => (
           padding: 1rem;
         }
 
-        footer :global(a) {
-          margin-right: 1rem;
-        }
-
         nav {
           display: flex;
           align-items: center;
           justify-content: center;
+          gap: 1rem;
         }
 
         @media only screen and (max-width: 37.5rem) {
@@ -79,10 +76,7 @@ export const Footer = () => (
 
           nav {
             margin: 0 -0.3125rem;
-          }
-
-          footer :global(a) {
-            margin-right: 1.5rem;
+            gap: 1.5rem;
           }
         }
       `}

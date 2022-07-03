@@ -51,8 +51,8 @@ class MyDocument extends Document {
                 code {
                   font-size: 1.1rem;
                   background-color: #efefef;
-                  border-radius: 3px;
-                  padding: 0 5px;
+                  border-radius: 0.25rem;
+                  padding: 0.03rem 0.25rem;
                 }
 
                 [data-theme='dark'] code {
