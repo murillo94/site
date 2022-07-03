@@ -10,6 +10,10 @@ const App = ({ Component, pageProps }) => (
     <ThemeProvider>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="google-site-verification"
+          content="0O22KoukhDNTYGhVOkCyTr6nUeald0sUkQkQ6-oyq48"
+        />
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>
