@@ -6,22 +6,22 @@
         "site": "https://useorigin.com",
         "date": "Nov. 2021 / Current",
         "time": "",
-        "city": "San Francisco, California (remote)",
+        "city": "San Francisco, California - remote",
         "position": "Front End Engineer",
-        "info": "Origin is a holistic financial benefits platform.",
-        "description": "",
-        "curiosity": ""
+        "info": "Origin helps people manage their compensation, benefits and personal finances",
+        "description": "I work on the Spending team using ReactJS to help users to have an overview of their spending, such as: general transactions, personal cash flow, limits for spending control, spending analysis by category and etc",
+        "curiosity": "Responsible by creation/maintenance of the Coin Design System (internal DS) using ReactJS, Radix UI, and React Aria. I help from the creation of the components with the Design Ops team to the code with a focus on accessibility and performance"
       },
       {
         "name": "Magnetis",
         "site": "https://magnetis.com.br",
         "date": "Aug. 2020 / Nov. 2021",
         "time": "1 year and 4 months",
-        "city": "São Paulo, Brazil (remote)",
+        "city": "São Paulo, Brazil - remote",
         "position": "Senior Front End Engineer",
-        "info": "Magnetis is a digital investment manager",
-        "description": "",
-        "curiosity": ""
+        "info": "Magnetis is the first digital investment manager in Brazil",
+        "description": "Responsible for the front end of the authentication flow and automated account creation regulated by the responsible bodies using ReactJS and React Native, we were able to make users ready to invest in minutes in a scenario where before it could take months",
+        "curiosity": "I could also lead the creation of the institutional website + CMS (ReactJS, Next.js, Hygraph, Radix UI) so that the marketing team could test new hypothesis daily and for a period I also had contact with Elixir, Phoenix, MySQL"
       },
       {
         "name": "Mercos",
@@ -54,22 +54,22 @@
         "site": "https://useorigin.com",
         "date": "Nov. 2021 / Current",
         "time": "",
-        "city": "São Francisco, Califórnia (remoto)",
+        "city": "São Francisco, Califórnia - remoto",
         "position": "Engenheiro Front End",
-        "info": "Origin é uma plataforma holística de benefícios financeiros.",
-        "description": "",
-        "curiosity": ""
+        "info": "Origin é uma plataforma que ajuda pessoas a administrar a remuneração, benefícios e finanças pessoais",
+        "description": "Atuo no time de Spending (Gastos) utilizando ReactJS para ajudar os usuários a terem uma visão geral dos seus gastos como: transações em geral, fluxo de caixa pessoal, limites para controle dos gastos, análise de gastos por categoria e etc",
+        "curiosity": "Responsável pela criação/manutenção do Coin Design System (DS interno) utilizando ReactJS, Radix UI, React Aria. Auxílio desde a criação dos componentes com o time de Design Ops até o código com foco em acessibilidade e perfomance"
       },
       {
         "name": "Magnetis",
         "site": "https://magnetis.com.br",
         "date": "Ago. 2020 / Nov. 2021",
         "time": "1 ano e 4 meses",
-        "city": "São Paulo, Brasil (remoto)",
+        "city": "São Paulo, Brasil - remoto",
         "position": "Engenheiro Front End Sênior",
-        "info": "Magnetis é uma gestora digital de investimentos",
-        "description": "",
-        "curiosity": ""
+        "info": "Magnetis é a primeira gestora digital de investimentos do Brasil",
+        "description": "Responsável pelo front end do fluxo de autenticação e criação de conta automatizada regulamentada pelo órgãos responsáveis utilizando ReactJS e React Native, conseguimos fazer com que os usuários estivessem prontos pra investir em minutos num cenário onde antes poderia levar meses",
+        "curiosity": "Também pude liderar a criação do site institucional + CMS (ReactJS, Next.js, Hygraph, Radix UI) para que o time de marketing conseguisse testar novas hipótesis diariamente e e por um período também tive contato com Elixir, Phoenix, MySQL"
       },
       {
         "name": "Mercos",

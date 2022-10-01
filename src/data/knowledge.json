@@ -9,7 +9,7 @@
       },
       {
         "name": "Databases",
-        "description": "DynamoDB, MySQL, MongoDB"
+        "description": "DynamoDB, MySQL, PostgreSQL, MongoDB"
       },
       {
         "name": "Libs / Frameworks",
@@ -35,7 +35,7 @@
       },
       {
         "name": "Banco de dados",
-        "description": "DynamoDB, MySQL, MongoDB"
+        "description": "DynamoDB, MySQL, PostgreSQL, MongoDB"
       },
       {
         "name": "Libs / Frameworks",
