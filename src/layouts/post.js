@@ -60,4 +60,6 @@ const Post = forwardRef(({ children, post, author }, ref) => {
   );
 });
 
+Post.displayName = 'Post';
+
 export default Post;

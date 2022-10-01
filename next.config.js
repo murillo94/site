@@ -1,14 +1,17 @@
-const { withPlugins } = require('next-compose-plugins');
-const { withPlausibleProxy } = require('next-plausible');
+/**
+ * @type {import('next').NextConfig}
+ */
+
 const withReactSvg = require('next-react-svg');
 const path = require('path');
 
-module.exports = withPlugins([withReactSvg, withPlausibleProxy], {
+module.exports = withReactSvg({
   include: path.resolve(__dirname, 'public/images'),
   webpack(config) {
     return config;
   },
   experimental: {
     newNextLinkBehavior: true
-  }
+  },
+  swcMinify: true
 });
