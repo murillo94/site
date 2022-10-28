@@ -8,7 +8,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="../../images/logo.svg" />
           <link rel="alternate icon" href="../../images/logo.png" />
-          <link rel="mask-icon" href="../../images/logo.svg" color="#1a202c" />
+          <link rel="mask-icon" href="../../images/logo.svg" />
 
           <style
             dangerouslySetInnerHTML={{

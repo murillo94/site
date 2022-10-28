@@ -21,7 +21,13 @@ const Post = forwardRef(({ children, post, author }, ref) => {
           type: 'website',
           title,
           description,
-          url: `http://murillodmiranda.com/${slug}`
+          url: `http://murillodmiranda.com/${slug}`,
+          images: [
+            {
+              url: `https://murillodmiranda.com/api/og?title=${title}`,
+              alt: 'Murillo de Miranda Pereira Logo'
+            }
+          ]
         }}
       />
       <Page defaultSeo={false}>
