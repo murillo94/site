@@ -1,8 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
-import withGA from 'next-ga';
 import { ThemeProvider } from 'next-themes';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = ({ Component, pageProps }) => (
   <ThemeProvider>
@@ -14,7 +13,8 @@ const App = ({ Component, pageProps }) => (
       />
     </Head>
     <Component {...pageProps} />
+    <Analytics />
   </ThemeProvider>
 );
 
-export default withGA('UA-136781679-1', Router)(App);
+export default App;
