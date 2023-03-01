@@ -27,12 +27,11 @@ const Bio = () => {
           {content.links.map(({ name, href, description }) => {
             if (name === 'Site') {
               return (
-                <div key={name}>
+                <div key={name} className="show-on-print">
                   <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
-                  <Span className="hide-print">- {href}</Span>
-                  <Span className="show-print">- {cleanUrlPrint(href)}</Span>
+                  <Span>- {cleanUrlPrint(href)}</Span>
                 </div>
               );
             }
@@ -43,7 +42,7 @@ const Bio = () => {
                   <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
-                  <Span className="show-print">- {cleanUrlPrint(href)}</Span>
+                  <Span className="show-on-print">- {cleanUrlPrint(href)}</Span>
                 </div>
               );
             }
@@ -54,15 +53,15 @@ const Bio = () => {
                   <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
-                  <Span className="hide-print">- {description}</Span>
-                  <Span className="show-print">- {cleanUrlPrint(href)}</Span>
+                  <Span className="hide-on-print">- {description}</Span>
+                  <Span className="show-on-print">- {cleanUrlPrint(href)}</Span>
                 </div>
               );
             }
 
             if (name === 'Stack Overflow') {
               return (
-                <div key={name} className="hide-print">
+                <div key={name} className="hide-on-print">
                   <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
@@ -71,7 +70,7 @@ const Bio = () => {
             }
 
             return (
-              <div key={name} className="hide-print">
+              <div key={name} className="hide-on-print">
                 <Link href={href}>{name}</Link>
                 <Span>- {description}</Span>
               </div>
@@ -107,7 +106,7 @@ const Bio = () => {
           <p>{content.loveContent}</p>
         </div>
 
-        <div className="margin-print">
+        <div className="margin-on-print">
           <h2>{content.loveAlsoTitle}</h2>
           <p>{content.loveAlsoContent}</p>
         </div>
@@ -168,7 +167,7 @@ const Bio = () => {
           )}
         </div>
 
-        <div className="margin-print">
+        <div className="margin-on-print">
           <h2>{content.languageTitle}</h2>
           {content.languages.map(({ name, level }) => (
             <p key={name}>
@@ -233,7 +232,7 @@ const Bio = () => {
             margin-bottom: 1.25rem;
           }
 
-          :global(.show-print) {
+          :global(.show-on-print) {
             display: none !important;
             opacity: 0;
           }
@@ -259,17 +258,17 @@ const Bio = () => {
               margin: 0 0.3125em;
             }
 
-            :global(.show-print) {
+            :global(.show-on-print) {
               display: inline-flex !important;
               opacity: 1;
             }
 
-            :global(.hide-print) {
+            :global(.hide-on-print) {
               display: none !important;
               opacity: 0;
             }
 
-            .margin-print {
+            .margin-on-print {
               margin-top: 1.3cm;
             }
 
