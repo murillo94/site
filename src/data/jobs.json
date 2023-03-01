@@ -8,9 +8,9 @@
         "time": "",
         "city": "San Francisco, California - remote",
         "position": "Senior Front End Engineer",
-        "info": "Origin helps people manage their compensation, benefits and personal finances",
+        "info": "Origin helps people manage their compensation, benefits, and personal finances",
         "description": "I work on the Spending team using ReactJS to help users to have an overview of their spending, such as general transactions, personal cash flow, limits for spending control, spending analysis by category and etc",
-        "curiosity": "Responsible by creation/maintenance of the Coin Design System (internal DS) using ReactJS, Radix UI, and React Aria. I help from the creation of the components with the Design Ops team to the code with a focus on accessibility and performance"
+        "curiosity": "Responsible for the creation/maintenance of the Coin Design System (internal DS) using ReactJS, Radix UI, and React Aria. I help from the creation of the components with the Design Ops team to the code with a focus on accessibility and performance"
       },
       {
         "name": "Magnetis",
@@ -21,7 +21,7 @@
         "position": "Senior Front End Engineer",
         "info": "Magnetis is the first digital investment manager in Brazil",
         "description": "Responsible for the front end of the authentication flow and automated account creation regulated by the responsible bodies using ReactJS and React Native, we were able to make users ready to invest in minutes in a scenario where before it could take months",
-        "curiosity": "I could also lead the creation of the institutional website + CMS (ReactJS, Next.js, Hygraph, Radix UI) so that the marketing team could test new hypothesis daily and for a period I also had contact with Elixir, Phoenix, MySQL"
+        "curiosity": "I could also lead the creation of the institutional website + CMS (ReactJS, Next.js, Hygraph, Radix UI) so that the marketing team could test new hypotheses daily and for a period I also had contact with Elixir, Phoenix, MySQL"
       },
       {
         "name": "Mercos",
@@ -30,9 +30,9 @@
         "time": "1 year and 5 months",
         "city": "Joinville, Brazil",
         "position": "Front End Engineer",
-        "info": "Mercos is a results and sales potentializer",
-        "description": "Responsible for leading the e-commerce front end using ReactJS to restructure the project and keeping the product functionalities in parallel",
-        "curiosity": "I was also responsible for building the new design system with focus on creating accessible components using ReactJS and for a period I also had contact with Python, Django, MySQL"
+        "info": "Mercos is a results and sales potentialize",
+        "description": "Responsible for leading the e-commerce front end using ReactJS to restructure the project and keep the product functionalities in parallel",
+        "curiosity": "I was also responsible for building the new design system with a focus on creating accessible components using ReactJS and for a period I also had contact with Python, Django, MySQL"
       },
       {
         "name": "SaleSpots",
@@ -42,8 +42,8 @@
         "city": "Joinville, Brazil",
         "position": "Front End Engineer",
         "info": "SaleSpots is a market intelligence to find new customers",
-        "description": "Responsible for the front end architecture of the application: ReactJS, (AngularJS and legacy Ionic), ensuring a responsive, accessible and scalable PWA application",
-        "curiosity": "For a period, I also had contact with Node.js, Lambda, DynamoDB, S3 and other AWS services"
+        "description": "Responsible for the front end architecture of the application: ReactJS, (AngularJS and legacy Ionic), ensuring a responsive, accessible, and scalable PWA application",
+        "curiosity": "For a period, I also had contact with Node.js, Lambda, DynamoDB, S3, and other AWS services"
       }
     ]
   },
