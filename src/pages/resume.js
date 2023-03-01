@@ -14,7 +14,7 @@ const Bio = () => {
   const context = useContext(LanguageContext)[0];
   const content = languages[context];
 
-  const cleanUrlPrint = url => url.replace('//', '');
+  const cleanUrlPrint = url => url.replace('https://', '');
 
   return (
     <>
@@ -27,11 +27,12 @@ const Bio = () => {
           {content.links.map(({ name, href, description }) => {
             if (name === 'Site') {
               return (
-                <div key={name} className="show-print">
+                <div key={name}>
                   <Link href={href} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
-                  <Span>- {href}</Span>
+                  <Span className="hide-print">- {href}</Span>
+                  <Span className="show-print">- {cleanUrlPrint(href)}</Span>
                 </div>
               );
             }
