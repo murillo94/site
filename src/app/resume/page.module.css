@@ -1,0 +1,37 @@
+.experiencesGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.experienceTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.date {
+  font-weight: 400;
+  color: var(--secondary-hex);
+}
+
+.experienceSubTitle {
+  color: var(--secondary-hex);
+}
+
+.experienceLibs {
+  color: var(--secondary-hex);
+  margin: 1rem 0;
+}
+
+.list {
+  margin-top: 1.5rem;
+  width: 50%;
+}
+
+@media (max-width: 64rem) {
+  .list {
+    width: 100%;
+  }
+}

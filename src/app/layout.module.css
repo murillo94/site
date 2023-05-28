@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  gap: 3rem;
+}
+
+@media (max-width: 64rem) {
+  .main {
+    padding: 2rem;
+  }
+}
