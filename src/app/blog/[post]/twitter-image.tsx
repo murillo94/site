@@ -7,9 +7,12 @@ export const size = {
 };
 export const contentType = 'image/png';
 
-export default async function og() {
+export default async function og({ params }: { params: { post: string } }) {
   try {
-    const title = 'Making a better web';
+    const title = params.post
+      .replace(/-/g, ' ')
+      .replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())
+      .slice(0, 100);
 
     return new ImageResponse(
       (
