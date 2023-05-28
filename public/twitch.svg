@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" stroke-width="1.5" width="1rem" height="1rem" aria-hidden="true">
+    <style>
+         .svg {
+            fill: #333;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .svg { 
+                fill: #e2e8f0; 
+            }
+        }
+    </style>
+    <path class="svg" d="M48 0L16 96v352h128v64h64l64-64h96l128-136.32V0H48zm416 288l-89.6 96H260.928L192 434.144V384H80V32h384v256z" xmlns="http://www.w3.org/2000/svg"/>
+    <path class="svg" d="M240 128h32v128h-32zM336 128h32v128h-32z" xmlns="http://www.w3.org/2000/svg"/>
+</svg>

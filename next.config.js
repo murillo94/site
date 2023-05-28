@@ -1,17 +1,22 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-const withReactSvg = require('next-react-svg');
-const path = require('path');
+module.exports = nextConfig;
 
-module.exports = withReactSvg({
-  include: path.resolve(__dirname, 'public/images'),
-  webpack(config) {
-    return config;
-  },
-  experimental: {
-    newNextLinkBehavior: true
-  },
-  swcMinify: true
-});
+// /**
+//  * @type {import('next').NextConfig}
+//  */
+
+// const withReactSvg = require('next-react-svg');
+// const path = require('path');
+
+// module.exports = withReactSvg({
+//   include: path.resolve(__dirname, 'public/images'),
+//   webpack(config) {
+//     return config;
+//   },
+//   experimental: {
+//     newNextLinkBehavior: true
+//   },
+//   swcMinify: true
+// });

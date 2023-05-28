@@ -1,0 +1,8 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.description {
+  color: var(--secondary-hex);
+}

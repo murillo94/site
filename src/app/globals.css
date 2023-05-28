@@ -1,0 +1,68 @@
+:root {
+  --foreground-hex: #fff;
+  --primary-hex: #333;
+  --secondary-hex: #585858;
+  --focus: 0 0 0 4px rgb(0 132 255/0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-hex: #1a202c;
+    --primary-hex: #e2e8f0;
+    --secondary-hex: #b4b9c0;
+  }
+}
+
+:focus {
+  box-shadow: var(--focus);
+  outline: 0;
+}
+
+::selection {
+  background-color: teal;
+  color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--primary-hex);
+  background-color: var(--foreground-hex);
+}
+
+a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: underline var(--primary-hex);
+  border-radius: 0.25rem;
+}
+
+li {
+  margin: 0.6rem 0;
+}
+
+h1 {
+  margin-bottom: 0.3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@media (max-width: 64rem) {
+  h1 {
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+}
