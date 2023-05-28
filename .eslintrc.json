@@ -1,18 +1,3 @@
 {
-  "extends": "next/core-web-vitals",
-  "settings": {
-    "import/resolver": {
-      "alias": {
-        "map": [
-          ["@/public/*", "./public"],
-          ["@/components/*", "./src/components"],
-          ["@/contexts/*", "./src/contexts"],
-          ["@/data/*", "./src/data"],
-          ["@/layouts/*", "./src/layouts"],
-          ["@/translations/*", "./src/translations"],
-          ["@/utils/*", "./src/utils"]
-        ]
-      }
-    }
-  }
+  "extends": "next/core-web-vitals"
 }

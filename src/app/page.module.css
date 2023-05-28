@@ -1,0 +1,41 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.image {
+  height: 1.875rem;
+  width: 1.875rem;
+  position: relative;
+  will-change: transform;
+}
+
+.image img {
+  border-radius: 3.75rem;
+}
+
+.image:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease-out;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 64rem) {
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

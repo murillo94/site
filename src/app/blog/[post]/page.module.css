@@ -1,0 +1,48 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50%;
+}
+
+.description {
+  color: var(--secondary-hex);
+}
+
+.content p {
+  margin-bottom: 2rem;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.content ul {
+  margin-bottom: 2rem;
+}
+
+.content li p {
+  margin: 0;
+}
+
+.content ol + ul {
+  padding-left: 5rem;
+}
+
+.content code {
+  background-color: #e2e8f0;
+  color: #333;
+  border-radius: 0.25rem;
+  padding: 0.03rem 0.25rem;
+}
+
+@media (max-width: 64rem) {
+  .article {
+    width: 100%;
+  }
+}
