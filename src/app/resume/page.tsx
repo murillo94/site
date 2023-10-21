@@ -6,33 +6,54 @@ import { InternalLinkNav } from '@/components/internal-link-nav/internal-link-na
 
 import styles from './page.module.css';
 
+export const revalidate = 600000;
 export const metadata = {
   title: 'resume - professional background'
 };
 
-const saleSpotsYears = 3.4;
-const mercosYear = 1.5;
-const magnetisYear = 1.5;
+const saleSpotsDays = 1241; // 1.241 days - 3.4 year
+const mercosDays = 547; // 547 days - 1.5 year
+const magnetisDays = 547; // 547 days - 1.5 year
 
 dayjs.extend(duration);
 
+const humaniseDate = (diff: number) => {
+  let str = '';
+  const values = [365, 30];
+  const length = values.length;
+
+  for (let i = 0; i < length; i++) {
+    const amount = Math.floor(diff / values[i]);
+    str += amount + (i === 0 ? '.' : '');
+    diff -= amount * values[i];
+  }
+
+  return str;
+};
+
 export default function Home() {
-  const diffDate = dayjs.duration(dayjs('2021-11-15').diff(new Date()));
-  const years = Math.abs(diffDate.get('years'));
-  const months = Math.abs(diffDate.get('months'));
-  const currentJobYears = parseFloat(`${years}.${months}`);
-  const totalJobsYears = Math.floor(
-    saleSpotsYears + mercosYear + magnetisYear + currentJobYears
-  );
+  const diffDate = dayjs.duration(dayjs('2021-10-15').diff(new Date()));
+  const currentJobDays = Math.abs(diffDate.asDays());
 
   return (
     <>
+      <header className={styles['off-print']}>
+        <InternalLinkNav
+          links={[
+            { slug: '/', name: 'home' },
+            { slug: '/blog', name: 'blog' }
+          ]}
+        />
+      </header>
       <div>
-        <h1>resume</h1>
+        <h1>Murillo&apos;s resume</h1>
         <p>professional background</p>
       </div>
-      <div>
-        <p>+{totalJobsYears} years of experience as a frontend engineer</p>
+      <div className={styles.description}>
+        <p>
+          I appreciate good design (UI/UX) and building products that people
+          love to use. Communication is the key for evertyhing for me.
+        </p>
       </div>
       <div className={`${styles.infos} ${styles['on-print']}`}>
         <p>name: Murillo de Miranda Pereira</p>
@@ -52,22 +73,23 @@ export default function Home() {
                 Origin
               </Link>{' '}
               <span className={styles.date}>
-                (currently - {currentJobYears} yr)
+                (currently - {humaniseDate(currentJobDays)} yr)
               </span>
             </p>
             <p className={styles.experienceSubTitle}>
               Boston, United States - remote
             </p>
             <p className={styles.experienceLibs}>
-              main libs: React, Nx (monorepo), Radix UI, React Aria
+              main libs: Typescript, React, Nx (monorepo), Radix UI, React Aria,
+              React Query
             </p>
             <ul className={styles.list}>
-              <li>
+              {/* <li>
                 Origin helps people manage their compensation, benefits, and
                 personal finances.
-              </li>
+              </li> */}
               <li>
-                i&apos;ve been working on the core team to provide users a
+                I&apos;ve been working on the core team to provide users a
                 comprehensive overview of their spending habits, spending and
                 category-based spending analysis.
               </li>
@@ -85,19 +107,21 @@ export default function Home() {
               <Link href="https://magnetis.com.br/" target="_blank">
                 Magnetis
               </Link>{' '}
-              <span className={styles.date}>({magnetisYear} yr)</span>
+              <span className={styles.date}>
+                ({humaniseDate(magnetisDays)} yr)
+              </span>
             </p>
             <p className={styles.experienceSubTitle}>
               São Paulo, Brazil - remote
             </p>
             <p className={styles.experienceLibs}>
-              main libs: React, React Native, React Navigation, Hygraph, Radix
-              UI
+              main libs: Typescript, React, React Native, React Navigation,
+              Hygraph, Radix UI, React Query
             </p>
             <ul className={styles.list}>
-              <li>
+              {/* <li>
                 Magnetis is the first digital investment manager in Brazil.
-              </li>
+              </li> */}
               <li>
                 crucial role in the development of the authentication flow and
                 automated account creation process, ensuring compliance with
@@ -109,10 +133,10 @@ export default function Home() {
                 the marketing team by providing them with a flexible platform to
                 test, optimizing user engagement and conversion.
               </li>
-              <li>
+              {/* <li>
                 demonstrated versatility by gaining exposure to technologies
                 such as Elixir, Phoenix, and MySQL during a specific period.
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
@@ -122,14 +146,18 @@ export default function Home() {
                 {' '}
                 Mercos
               </Link>{' '}
-              <span className={styles.date}>({mercosYear} yr)</span>
+              <span className={styles.date}>
+                ({humaniseDate(mercosDays)} yr)
+              </span>
             </p>
             <p className={styles.experienceSubTitle}>
               Joinville, Brazil - onsite
             </p>
-            <p className={styles.experienceLibs}>main libs: React, Django</p>
+            <p className={styles.experienceLibs}>
+              main libs: Typescript, Flow, React, Django
+            </p>
             <ul className={styles.list}>
-              <li>Mercos is a results and sales potentializer.</li>
+              {/* <li>Mercos is a results and sales potentializer.</li> */}
               <li>
                 led the frontend development of the e-commerce platform to
                 successfully restructure the project while ensuring
@@ -143,10 +171,10 @@ export default function Home() {
                 teams to ensure seamless integration and adoption of the design
                 system.
               </li>
-              <li>
+              {/* <li>
                 gained valuable experience working with Python, Django, and
                 MySQL as part of a full-stack development role.
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
@@ -158,37 +186,32 @@ export default function Home() {
               >
                 SaleSpots
               </Link>{' '}
-              <span className={styles.date}>({saleSpotsYears} yr)</span>
+              <span className={styles.date}>
+                ({humaniseDate(saleSpotsDays)} yr)
+              </span>
             </p>
             <p className={styles.experienceSubTitle}>
               Joinville, Brazil - onsite
             </p>
             <p className={styles.experienceLibs}>
-              main libs: React, AngularJS, Ionic
+              main libs: Typescript, React, AngularJS, Ionic
             </p>
             <ul className={styles.list}>
-              <li>SaleSpots is a market intelligence to find new customers.</li>
+              {/* <li>SaleSpots is a market intelligence to find new customers.</li> */}
               <li>
                 key role in the frontend architecture of SaleSpots&apos; market
                 intelligence application. Ensured the development of a
                 responsive, accessible, and scalable PWA.
               </li>
               <li>
-                expanded expertise by working with Node.js and various AWS
-                services, including Lambda, DynamoDB, and S3. Leveraged Node.js
-                to develop backend functionalities. Utilized AWS services to
+                expanded expertise by working with Node and various AWS
+                services, including Lambda, DynamoDB, and S3. Leveraged Node to
+                develop backend functionalities. Utilized AWS services to
                 enhance application performance, security, and scalability.
               </li>
             </ul>
           </div>
         </div>
-      </section>
-      <section>
-        <h2>language</h2>
-        <ul className={styles.list}>
-          <li>english - advanced</li>
-          <li>portuguese - native</li>
-        </ul>
       </section>
       <section>
         <h2>education</h2>
@@ -203,14 +226,13 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <footer className={styles['off-print']}>
-        <InternalLinkNav
-          links={[
-            { slug: '/', name: 'home' },
-            { slug: '/blog', name: 'blog' }
-          ]}
-        />
-      </footer>
+      <section>
+        <h2>language</h2>
+        <ul className={styles.list}>
+          <li>english - advanced</li>
+          <li>portuguese - native</li>
+        </ul>
+      </section>
     </>
   );
 }

@@ -1,3 +1,7 @@
+.description {
+  width: 80%;
+}
+
 .infos {
   display: none;
   flex-direction: column;
@@ -38,6 +42,10 @@
 }
 
 @media (max-width: 64rem) {
+  .description {
+    width: 100%;
+  }
+
   .list {
     width: 100%;
   }

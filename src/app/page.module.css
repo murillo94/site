@@ -20,6 +20,10 @@
   transition: transform 0.5s ease-out;
 }
 
+.footer {
+  margin-top: 3rem;
+}
+
 .socials {
   display: flex;
   align-items: center;

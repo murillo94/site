@@ -88,6 +88,14 @@ export default async function Page({ params }: Response) {
 
   return (
     <>
+      <header>
+        <InternalLinkNav
+          links={[
+            { slug: '/blog', name: 'blog' },
+            { slug: '/resume', name: 'resume' }
+          ]}
+        />
+      </header>
       <article className={styles.article}>
         <div>
           <h1>{frontmatter.title}</h1>
@@ -99,14 +107,6 @@ export default async function Page({ params }: Response) {
           <MdxContent source={serialized} />
         </section>
       </article>
-      <footer>
-        <InternalLinkNav
-          links={[
-            { slug: '/blog', name: 'blog' },
-            { slug: '/resume', name: 'resume' }
-          ]}
-        />
-      </footer>
     </>
   );
 }

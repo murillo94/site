@@ -59,6 +59,14 @@ export default async function Home() {
 
   return (
     <>
+      <header>
+        <InternalLinkNav
+          links={[
+            { slug: '/', name: 'home' },
+            { slug: '/resume', name: 'resume' }
+          ]}
+        />
+      </header>
       <div>
         <h1>blog</h1>
         <p>tech and another things</p>
@@ -77,14 +85,6 @@ export default async function Home() {
           ))}
         </ul>
       </section>
-      <footer>
-        <InternalLinkNav
-          links={[
-            { slug: '/', name: 'home' },
-            { slug: '/resume', name: 'resume' }
-          ]}
-        />
-      </footer>
     </>
   );
 }

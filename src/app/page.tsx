@@ -18,7 +18,7 @@ export default function Home() {
               priority
             />
           </div>
-          <h1>murillo de miranda pereira</h1>
+          <h1>Murillo de Miranda Pereira</h1>
         </div>
         <p>software engineer, indie maker & runner</p>
       </div>
@@ -35,7 +35,8 @@ export default function Home() {
             building{' '}
             <Link href="https://plantripai.com/" target="_blank">
               PlanTripAI
-            </Link>
+            </Link>{' '}
+            in my free time
           </li>
         </ul>
       </section>
@@ -63,10 +64,10 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            do <Link href="/blog">blog posts</Link>
+            write <Link href="/blog">blog posts</Link>
           </li>
           <li>
-            draw some{' '}
+            design some{' '}
             <Link href="https://dribbble.com/murillodmiranda" target="_blank">
               UI designs
             </Link>
@@ -77,23 +78,28 @@ export default function Home() {
         <h2>before</h2>
         <ul>
           <li>
-            2020 - 2021 frontend engineer at the{' '}
+            2021 / ~ frontend engineer at the{' '}
+            <Link href="https://useorigin.com/" target="_blank">
+              only platform that helps people manage compensation, benefits, and
+              personal finances.
+            </Link>
+          </li>
+          <li>
+            2020 / 2021 frontend engineer at the{' '}
             <Link href="https://magnetis.com.br/" target="_blank">
               first digital wealth management platform in Brazil
             </Link>
           </li>
           <li>
-            2019 - 2020 frontend engineer at an{' '}
+            2019 / 2020 frontend engineer at an{' '}
             <Link href="https://mercos.com/" target="_blank">
               awesome b2b sales system and e-commerce
             </Link>
           </li>
+          <li>2017 / ~ freelance software engineer, full-stack developer</li>
+          <li>2016 / ~ start contributing to open source</li>
           <li>
-            2017 - 2020 freelance software engineer, full-stack web developer
-          </li>
-          <li>2016 - ~ contributing to open source</li>
-          <li>
-            2016 - 2019 frontend engineer + proud first employee at a{' '}
+            2016 / 2019 frontend engineer + proud first employee at a{' '}
             <Link
               href="https://www.linkedin.com/company/salespots/"
               target="_blank"
@@ -102,7 +108,7 @@ export default function Home() {
               to sell
             </Link>
           </li>
-          <li>2010 - 2016 a period of pure code study</li>
+          <li>2010 / 2016 a period of pure code study</li>
           <li>2010 first line of code</li>
           <li>1998 boot</li>
         </ul>
@@ -160,12 +166,14 @@ export default function Home() {
             />
           </Link>
         </nav>
-        <InternalLinkNav
-          links={[
-            { slug: '/blog', name: 'blog' },
-            { slug: '/resume', name: 'resume' }
-          ]}
-        />
+        <div className={styles.footer}>
+          <InternalLinkNav
+            links={[
+              { slug: '/blog', name: 'blog' },
+              { slug: '/resume', name: 'resume' }
+            ]}
+          />
+        </div>
       </footer>
     </>
   );
