@@ -20,23 +20,17 @@ export default function Home() {
           </div>
           <h1>Murillo de Miranda Pereira</h1>
         </div>
-        <p>software engineer, indie maker & runner</p>
+        <p>software engineer & indie maker</p>
       </div>
       <section>
         <h2>currently</h2>
         <ul>
           <li>
-            senior frontend at{' '}
+            crafting financial solutions at{' '}
             <Link href="https://www.useorigin.com/" target="_blank">
               Origin
-            </Link>
-          </li>
-          <li>
-            building{' '}
-            <Link href="https://plantripai.com/" target="_blank">
-              PlanTripAI
             </Link>{' '}
-            in my free time
+            (senior frontend)
           </li>
         </ul>
       </section>
@@ -78,39 +72,52 @@ export default function Home() {
         <h2>before</h2>
         <ul>
           <li>
-            2021 / ~ frontend engineer at the{' '}
-            <Link href="https://useorigin.com/" target="_blank">
-              only platform that helps people manage compensation, benefits, and
-              personal finances.
+            2023 / 2024 • sold my first company{' '}
+            <Link href="https://plantripai.com/" target="_blank">
+              an AI tool that creates your starter customized trip itinerary in
+              seconds
             </Link>
           </li>
           <li>
-            2020 / 2021 frontend engineer at the{' '}
+            2021 / <span>present</span> • frontend engineer at the{' '}
+            <Link href="https://useorigin.com/" target="_blank">
+              only platform that helps people grow, track, manage, and save
+              money, all from one place
+            </Link>
+          </li>
+          <li>
+            2020 / 2021 • frontend engineer at the{' '}
             <Link href="https://magnetis.com.br/" target="_blank">
               first digital wealth management platform in Brazil
             </Link>
           </li>
           <li>
-            2019 / 2020 frontend engineer at an{' '}
+            2019 / 2020 • frontend engineer at an{' '}
             <Link href="https://mercos.com/" target="_blank">
               awesome b2b sales system and e-commerce
             </Link>
           </li>
-          <li>2017 / ~ freelance software engineer, full-stack developer</li>
-          <li>2016 / ~ start contributing to open source</li>
           <li>
-            2016 / 2019 frontend engineer + proud first employee at a{' '}
+            2016 / 2019 • frontend engineer and proud to be the first employee
+            at a{' '}
             <Link
               href="https://www.linkedin.com/company/salespots/"
               target="_blank"
             >
-              startup that helps users to find companies in any region of Brazil
-              to sell
+              startup that helps companies to find potencial buyers in any
+              region of Brazil
             </Link>
           </li>
-          <li>2010 / 2016 a period of pure code study</li>
-          <li>2010 first line of code</li>
-          <li>1998 boot</li>
+          <li>
+            2016 / <span>present</span> • freelance software engineer,
+            full-stack developer
+          </li>
+          <li>
+            2016 / <span>present</span> • start contributing to open source
+          </li>
+          <li>2010 / 2016 • period of pure code study</li>
+          <li>2010 • first line of code</li>
+          <li>1998 • boot</li>
         </ul>
       </section>
       <footer>

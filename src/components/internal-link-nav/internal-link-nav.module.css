@@ -6,5 +6,5 @@
 }
 
 .internals span {
-  color: teal;
+  color: var(--secondary-hex);
 }

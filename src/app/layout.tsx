@@ -7,6 +7,7 @@ import styles from './layout.module.css';
 const inter = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
 
 export const metadata = {
+  metadataBase: new URL('https://murillodmiranda.com'),
   title: 'murillodmiranda',
   description:
     'Murillo de Miranda Pereira - Interested in frontend, indie maker scene, design systems, and a11y.',

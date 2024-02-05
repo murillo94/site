@@ -1,17 +1,22 @@
 :root {
   --foreground-hex: #fff;
-  --primary-hex: #333;
+  --primary-hex: #3f3f3f;
   --secondary-hex: #585858;
   --focus: 0 0 0 4px rgb(0 132 255/0.5);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-hex: #1a202c;
     --primary-hex: #e2e8f0;
     --secondary-hex: #b4b9c0;
   }
-}
+
+  ::selection {
+    background-color: teal;
+    color: #e2e8f0;
+  }
+} */
 
 :focus {
   box-shadow: var(--focus);
@@ -19,8 +24,8 @@
 }
 
 ::selection {
-  background-color: teal;
-  color: #e2e8f0;
+  background-color: var(--primary-hex);
+  color: var(--foreground-hex);
 }
 
 * {
@@ -42,24 +47,28 @@ body {
 
 a {
   color: inherit;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: underline var(--primary-hex);
   border-radius: 0.25rem;
 }
 
 li {
-  margin: 0.6rem 0;
+  margin: 0.8rem 0;
+}
+
+li span {
+  font-weight: 600;
 }
 
 h1 {
   margin-bottom: 0.3rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
 
 @media (max-width: 64rem) {
   h1 {

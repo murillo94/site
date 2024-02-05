@@ -16,7 +16,7 @@
 }
 
 .image:hover {
-  transform: scale(1.5);
+  transform: scale(3);
   transition: transform 0.5s ease-out;
 }
 

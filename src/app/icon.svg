@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" width="3.2rem" height="3.2rem" viewBox="0 0 512 512">
     <style>
          .svg {
-            fill: #333;
+            fill: #3f3f3f;
         }
 
         @media (prefers-color-scheme: dark) {
