@@ -51,8 +51,8 @@ export default function Home() {
       </div>
       <div className={styles.description}>
         <p>
-          Passionate about crafting user-centric UI/UX for products that people
-          love to use.
+          Passionate about contributing to mission-driven teams and enhancing
+          product value through exceptional frontend development.
         </p>
         <p>Communication is the key for evertyhing.</p>
       </div>
@@ -95,10 +95,15 @@ export default function Home() {
                 and category-specific insights.
               </li>
               <li>
-                Spearheaded the Design System&apos;s development and
-                maintenance, crafting accessible and high-performance reusable
-                components in partnership with the Design Ops team, elevating
-                the user experience across platforms.
+                Enhanced user experience by spearheading the development and
+                maintenance of a comprehensive Design System, creating
+                accessible, high-performance reusable components in partnership
+                with Design Ops.
+              </li>
+              <li>
+                Mentored junior engineers and led cross-functional initiatives
+                to standardize frontend practices, contributing to product-led
+                growth through exceptional customer experiences.
               </li>
             </ul>
           </div>
@@ -117,21 +122,21 @@ export default function Home() {
             </p>
             <p className={styles.experienceLibs}>
               Main libs: Typescript, React, React Native, React Navigation,
-              Hygraph, Radix UI, React Query
+              Next.js, Hygraph, Radix UI, React Query
             </p>
             <ul className={styles.list}>
               {/* <li>
                 Magnetis is the first digital investment manager in Brazil.
               </li> */}
               <li>
-                Key contributor to designing the sign-up process and automatic
-                account setup, meeting legal standards and quickly preparing
-                users for investing.
+                Led frontend development for the sign-up process and automatic
+                account setup, meeting legal standards and optimizing user
+                onboarding experience.
               </li>
               <li>
-                Led the build of the company website and CMS, giving the
-                marketing team a dynamic tool to improve visitor interactions
-                and increase sign-ups.
+                Developed and managed the company&apos;s website and CMS,
+                empowering the marketing team with dynamic tools to increase
+                user engagement and sign-ups.
               </li>
               <li>
                 For specific features, developed the backend using Elixir,
@@ -197,7 +202,7 @@ export default function Home() {
             <ul className={styles.list}>
               {/* <li>SaleSpots is a market intelligence to find new customers.</li> */}
               <li>
-                Played a pivotal role in designing the frontend for
+                Played a crucial role in designing the frontend for
                 SaleSpots&apos; market intelligence app, focusing on creating a
                 fast, accessible, and scalable Progressive Web App (PWA).
               </li>
