@@ -72,6 +72,13 @@ export default function Home() {
         <h2>before</h2>
         <ul>
           <li>
+            2025 / <span>present</span> • building a real estate company{' '}
+            <Link href="https://proleilao.com.br/" target="_blank">
+              a tool that helps investors to find and buy properties at auction
+              in Brazil
+            </Link>
+          </li>
+          <li>
             2023 / 2024 • sold my first company{' '}
             <Link href="https://plantripai.com/" target="_blank">
               an AI tool that creates your starter customized trip itinerary in
